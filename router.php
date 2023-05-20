@@ -43,7 +43,7 @@ function route($route, $path_to_include){
   
   array_shift($route_parts);
   array_shift($request_url_parts);
-  if( $route_parts[0] == '' && count($request_url_parts) == 0 ){
+  if( isset($route_parts[0]) && $route_parts[0] == '' && count($request_url_parts) == 0 ){
     // Callback function
     if( is_callable($callback) ){
       $template = call_callback_function($callback, []);

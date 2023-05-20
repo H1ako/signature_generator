@@ -9,8 +9,8 @@ get('/api/get-signatures', function () {
   $firstName = ucfirst($_GET['first-name']);
   $lastName = ucfirst($_GET['last-name']);
   $middleName = isset($_GET['middle-name']) ? ucfirst($_GET['middle-name']) : '';
-  $randomIndex = isset($_GET['random-index']) ?? random_int(1, 9999);
-  $page = $_GET['page'] ?? $_GET['page'] <= 60 ? $_GET['page'] : 1;
+  $randomIndex = isset($_GET['random-index']) && $_GET['random-index'] != null ? intval($_GET['random-index']) : random_int(1, 9999);
+  $page = $_GET['page'] ?? 1;
   $signaturesPerPage = 1;
   include('script.php');
   
@@ -22,7 +22,7 @@ get('/api/get-signatures', function () {
   
   $data = isset($contents) ? json_decode($contents, true) : ["numberOfGeneratedSignatures" => 0];
   
-  isset($data['numberOfGeneratedSignatures']) ? $data['numberOfGeneratedSignatures'] + $signaturesPerPage : $data['numberOfGeneratedSignatures'] = 0;
+  isset($data['numberOfGeneratedSignatures']) ? $data['numberOfGeneratedSignatures'] = $data['numberOfGeneratedSignatures'] + $signaturesPerPage : $data['numberOfGeneratedSignatures'] = 0;
   
   $json = json_encode($data);
   file_put_contents($dataFile, $json);
@@ -31,12 +31,17 @@ get('/api/get-signatures', function () {
   for ($i=($page - 1) * $signaturesPerPage; $i < $page * $signaturesPerPage; $i++) {
     $image = getImageFromStyle($i);
     $imageLink = 'data:image/'.$image->getImageFormat().';base64,'.base64_encode($image->getimageblob());
-    $images = [...$images, $imageLink];
+    $image->setImageFormat('jpg');
+    $imageJpgLink = 'data:image/'.$image->getImageFormat().';base64,'.base64_encode($image->getimageblob());
+    $images = [...$images, [
+      'png' => $imageLink,
+      'jpg' => $imageJpgLink
+    ]];
     $image->destroy();
   }
   $data = [
     'signatures' => $images,
-    'randomIndex' => $randomIndex
+    'randomIndex' => $randomIndex,
   ];
 
   print_r(json_encode($data));

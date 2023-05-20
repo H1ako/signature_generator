@@ -38,7 +38,7 @@ function fillGeneratorFormWithQuery() {
 }
 
 async function generateIfDataFilled() {
-  if (!isGeneratorFormValid()) return
+  if (!isGeneratorFormValid() || isSignaturesGenerating) return
 
   await replaceWithGeneratedSignatures()
 }
@@ -87,7 +87,7 @@ async function appendGeneratedSignatures() {
 
   enableGeneratorLoader()
 
-  if (!signaturesList) return
+  if (!signaturesList || isSignaturesGenerating) return
 
   var newSignatures
   for(var i=0; i < 15;i++) {
@@ -120,15 +120,16 @@ function getSignatureCard(image) {
 
   const newCardClone = signatureCardTemplate.content.cloneNode(true)
   const newCard = newCardClone.querySelector('.signature-card')
-  newCard.setAttribute('data-signature-src', image)
+  newCard.setAttribute('data-signature-src', image.png)
+  newCard.setAttribute('data-signature-src-jpg', image.jpg)
 
   const newCardImageMainPreviewButton = newCard.querySelector('.signature-card__top')
   newCardImageMainPreviewButton.addEventListener('click', previewSignature)
   const newCardImage = newCardImageMainPreviewButton.querySelector('.top__image')
-  newCardImage.src = image
+  newCardImage.src = image.png
 
   const newCardDownloadLink = newCard.querySelector('[download-signature]')
-  newCardDownloadLink.href = image
+  newCardDownloadLink.href = image.png
   newCardDownloadLink.download = getDownloadFileName()
 
   const newCardToolsEditButton = newCard.querySelector('[edit-signature]')
@@ -194,7 +195,7 @@ async function getGeneratedSignatures() {
   const lastName = cleanFormData.lastName
   const middleName = cleanFormData.middleName
   
-  const response = await fetch(`/api/get-signatures?first-name=${firstName}&last-name=${lastName}&middle-name=${middleName}&page=${page}&randomIndex=${randomIndex ?? ''}`, {
+  const response = await fetch(`/api/get-signatures?first-name=${firstName}&last-name=${lastName}&middle-name=${middleName}&page=${page}&random-index=${randomIndex ?? ''}`, {
     method: 'GET',
   })
   if (response.status == 200) {
