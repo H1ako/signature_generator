@@ -129,8 +129,7 @@ function getSignatureCard(image) {
   newCardImage.src = image.png
 
   const newCardDownloadLink = newCard.querySelector('[download-signature]')
-  newCardDownloadLink.href = image.png
-  newCardDownloadLink.download = getDownloadFileName()
+  newCardDownloadLink.addEventListener('click', () => openImageTypeChooser(image.png, image.jpg))
 
   const newCardToolsEditButton = newCard.querySelector('[edit-signature]')
   newCardToolsEditButton.addEventListener('click', editSignature)
@@ -145,7 +144,7 @@ function getSignatureCard(image) {
 }
 
 function getDownloadFileName() {
-  return `OnlineSignatures.net-${Math.round(Math.random() * 1000)}.png`
+  return `OnlineSignatures.net-${Math.round(Math.random() * 1000)}`
 }
 
 function enableGeneratorLoader() {
@@ -247,6 +246,7 @@ async function shareSignature(e) {
 
 function shareSignatureBySocialsModal(e) {
   const link = window.location.href
+  // const imageLink = e.target.closest('[data-signature-src]').getAttribute('data-signature-src')
 
   openSocialsModal(link)
 }
@@ -268,7 +268,7 @@ async function getBlobFromString(blobString) {
 async function shareImage(title, text, blob) {
   const data = {
     files: [
-      new File([blob], 'signature.png', {
+      new File([blob], `${getDownloadFileName()}.png`, {
         type: blob.type,
       }),
     ],
@@ -292,8 +292,6 @@ function previewSignature(e) {
 
   openPreviewLightbox(signatureSrc)
 }
-
-
 
 function openPreviewLightbox(imageSrc) {
   previewLightboxImage.src = imageSrc

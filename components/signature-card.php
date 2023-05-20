@@ -13,7 +13,7 @@
       <div class="bottom__right">
         <button class="right__btn btn_view" paper-preview-signature title="<?= $localeReader->translate('Preview on Document'); ?>"><?php include('icons/view.php'); ?></button>
         <button class="right__btn btn_share" share-signature title="<?= $localeReader->translate('Share'); ?>"><?php include('icons/share.php'); ?></button>
-        <a href="#" class="right__btn btn_download" download-signature download="OnlineSignatures.net.png" title="<?= $localeReader->translate('Download'); ?>"><?php include('icons/download.php'); ?></a>
+        <button class="right__btn btn_download" download-signature download="OnlineSignatures.net.png" title="<?= $localeReader->translate('Download'); ?>"><?php include('icons/download.php'); ?></button>
       </div>
     </div>
   </li>

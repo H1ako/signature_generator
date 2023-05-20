@@ -108,8 +108,10 @@ function disableEditing() {
 }
 
 function downloadEditorSignature() {
-  editorDownloadBtn.download = getDownloadFileName()
-  editorDownloadBtn.href = editorCanvas.toDataURL('image/png')
+  const imagePng = editorCanvas.toDataURL('image/png')
+  const imageJpg = editorCanvas.toDataURL('image/jpg')
+
+  openImageTypeChooser(imagePng, imageJpg)
 }
 
 async function editSignature(e) {

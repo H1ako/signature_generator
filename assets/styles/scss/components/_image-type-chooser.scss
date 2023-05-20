@@ -1,0 +1,23 @@
+@import "../main/mixins";
+
+.image-type-chooser {
+  transition: var(--transition-main);
+  background: var(--color-bg-light);
+  border-radius: var(--border-radius-main);
+  border: var(--border-main);
+
+  &::backdrop {
+    background: rgba(0, 0, 0, 0.75);
+  }
+
+  &__content {
+    display: flex;
+    align-items: stretch;
+    gap: 1em;
+
+    .content__png-link,
+    .content__jpg-link {
+      @include button;
+    }
+  }
+}

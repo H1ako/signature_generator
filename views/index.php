@@ -32,6 +32,7 @@ try {
   <link rel="preload" as="style" href="<?= $SITE_URL ?>/assets/styles/css/index.css" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="<?= $SITE_URL ?>/assets/styles/css/index.css"></noscript>
   <script defer src="https://cdn.jsdelivr.net/npm/transliteration@2.1.8/dist/browser/bundle.umd.min.js"></script>
+  <script src="<?= $SITE_URL ?>/assets/scripts/image-type-chooser.js" defer></script>
   <script src="<?= $SITE_URL ?>/assets/scripts/socials-modal.js" defer></script>
   <script src="<?= $SITE_URL ?>/assets/scripts/editor.js" defer></script>
   <script src="<?= $SITE_URL ?>/assets/scripts/index.js" defer></script>
@@ -191,6 +192,7 @@ try {
 <?php include('components/socials-modal.php'); ?>
 <?php include('components/preview-lightbox.php'); ?>
 <?php include('components/paper-preview-lightbox.php'); ?>
+<?php include('components/image-type-chooser.php'); ?>
 <?php include('components/editor.php'); ?>
 <?php include('components/go-top.php'); ?>
 </body>

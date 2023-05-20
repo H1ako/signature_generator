@@ -14,10 +14,10 @@
       <button class="right__tool tool_share" id="editor-share" title="<?= $localeReader->translate('Share'); ?>">
         <?php include('icons/share.php'); ?>
       </button>
-      <a href="#" class="right__tool tool_download" download="OnlineSignatures.net.png" id="editor-download" title="<?= $localeReader->translate('Download'); ?>">
+      <button class="right__tool tool_download" id="editor-download" title="<?= $localeReader->translate('Download'); ?>">
         <?php include('icons/download.php'); ?>
         <span class="tool__text"><?= $localeReader->translate('Download'); ?></span>
-      </a>
+      </button>
     </span>
   </div>
 </dialog>

@@ -22,23 +22,23 @@ function updateSocialsShareLink(link) {
 }
 
 function getTwitterShareLink(link) {
-  return `${link}`
+  return `http://www.twitter.com/share?url=${link}`
 }
 
 function getTelegramShareLink(link) {
-  return `${link}`
+  return `https://telegram.me/share/url?url=${link}`
 }
 
 function getWhatsappShareLink(link) {
-  return `${link}`
+  return `https://wa.me/?text=${link}`
 }
 
 function getFacebookShareLink(link) {
-  return `${link}`
+  return `$https://www.facebook.com/sharer/sharer.php?u={link}`
 }
 
 function getRedditShareLink(link) {
-  return `${link}`
+  return `https://www.reddit.com/submit?url=${link}&title=${encodeURIComponent(SITE_NAME)}`
 }
 
 function closeSocialsModalIfOuterClick(e) {
