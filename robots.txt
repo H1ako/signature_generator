@@ -2,7 +2,6 @@ User-agent: *
 Disallow: /
 
 Host: https://onlinesignatures.net
-Sitemap: [insert your sitemap URL here]
 
 Allow: /*
 Allow: /api/*
