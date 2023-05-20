@@ -1,0 +1,14 @@
+@import "../main/mixins";
+
+.logo {
+  position: relative;
+  color: var(--color-text);
+
+  .logo__img {
+    @include image;
+
+    font-size: var(--font-size-4);
+    width: auto;
+    height: 3em;
+  }
+}

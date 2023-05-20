@@ -1,0 +1,17 @@
+.go-top {
+  @include button($padding: .75em, $font-size: var(--font-size-3), $color: var(--color-text), $background: var(--color-bg-light));
+
+  position: fixed;
+  bottom: 3em;
+  right: .5em;
+  border: var(--border-main);
+  aspect-ratio: 1;
+  border-radius: 50%;
+
+  &:not(.active) {
+    translate: 0 50%;
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+  }
+}

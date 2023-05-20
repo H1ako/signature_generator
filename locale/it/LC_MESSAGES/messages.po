@@ -1,0 +1,303 @@
+# Italian translations for PACKAGE package
+# Traduzioni italiane per il pacchetto PACKAGE..
+# Copyright (C) 2023 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-16 18:21+0400\n"
+"PO-Revision-Date: 2023-05-16 19:04+0400\n"
+"Last-Translator: <EMAIL@ADDRESS>\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: views/404.php:8 views/404.php:9 views/404.php:10
+msgid "404 Not Found Page Title"
+msgstr "404 Non trovato"
+
+#: views/404.php:11 views/404.php:12
+msgid "404 Not Found Page Meta Description"
+msgstr "404 Non trovato"
+
+#: views/404.php:13 views/index.php:11 views/index.php:12 views/index.php:13
+msgid "Home Page Meta Description"
+msgstr "Pagina Iniziale"
+
+#: views/404.php:21 views/index.php:26 views/privacy-policy.php:21
+msgid "Signature Generator"
+msgstr "Generatore di Firme"
+
+#: views/404.php:22
+msgid "404 Not Found"
+msgstr "404 Non trovato"
+
+#: views/404.php:23
+msgid "Go to homepage"
+msgstr "Vai alla homepage"
+
+#: views/index.php:8 views/index.php:9 views/index.php:10
+msgid "Home Page Title"
+msgstr "Pagina Iniziale"
+
+#: views/index.php:27
+msgid "Generate your own unique signature or <b>draw</b> it by yourself"
+msgstr "Generare la propria firma unica o <b>disegnarla</b> da soli"
+
+#: views/index.php:34
+msgid "Create your own <b>Signature</b>"
+msgstr "Create la vostra <b>Firma</b> personale"
+
+#: views/index.php:35
+msgid "Open Editor"
+msgstr "Editor aperto"
+
+#: views/index.php:47
+msgid "Loading"
+msgstr "Caricamento"
+
+#: views/index.php:51
+msgid "Load More"
+msgstr "Per saperne di più"
+
+#: views/index.php:56 views/index.php:60
+msgid "Home Page About Us"
+msgstr "Chi siamo"
+
+#: views/index.php:79
+msgid "Home Page Instruction"
+msgstr "Come si usa il generatore di firme?"
+
+#: views/index.php:164
+msgid "About us image"
+msgstr "Immagine su di noi"
+
+#: views/index.php:69
+msgid "Generate more"
+msgstr "Generare di più"
+
+#: views/privacy-policy.php:8 views/privacy-policy.php:9
+#: views/privacy-policy.php:13
+msgid "Privacy Policy Page Title"
+msgstr "Informativa sulla privacy"
+
+#: views/privacy-policy.php:10 views/privacy-policy.php:11
+#: views/privacy-policy.php:12
+msgid "Privacy Policy Page Meta Description"
+msgstr "Informativa sulla privacy"
+
+#: views/privacy-policy.php:22 components/footer.php:4 components/footer.php:5
+msgid "Privacy Policy"
+msgstr "Informativa sulla privacy"
+
+#: components/editor.php:6 components/editor.php:8
+msgid "Clear"
+msgstr "Libero"
+
+#: components/editor.php:10
+msgid "Color"
+msgstr "Colore"
+
+#: components/editor.php:11
+msgid "Thickness"
+msgstr "Spessore"
+
+#: components/editor.php:14 components/signature-card.php:15
+#: components/socials-modal.php:4
+msgid "Share"
+msgstr "Condividi"
+
+#: components/editor.php:17 components/editor.php:19
+#: components/signature-card.php:16
+msgid "Download"
+msgstr "Scaricare"
+
+#: components/footer.php:7
+msgid "2023 All Right Reserved"
+msgstr "© 2023 Tutti i diritti riservati"
+
+#: components/footer.php:8 components/footer.php:9
+msgid "Contact Us"
+msgstr "Contatto"
+
+#: components/footer.php:12
+msgid "Email"
+msgstr "Email"
+
+#: components/generator-form.php:3 components/generator-form.php:4
+msgid "First Name"
+msgstr "Nome"
+
+#: components/generator-form.php:7 components/generator-form.php:8
+msgid "Last Name"
+msgstr "Cognome"
+
+#: components/generator-form.php:11 components/generator-form.php:12
+msgid "Middle Name"
+msgstr "Patronimico"
+
+#: components/generator-form.php:14
+msgid "Generate"
+msgstr "Generare"
+
+#: components/go-top.php:1
+msgid "Go to top"
+msgstr "Vai all'inizio"
+
+#: components/language-chooser.php:2
+msgid "Page Language"
+msgstr "Lingua della pagina"
+
+#: components/paper-preview-lightbox.php:3 components/preview-lightbox.php:2
+msgid "Signature Preview Image"
+msgstr "Anteprima della firma"
+
+#: components/paper-preview-lightbox.php:4
+msgid "Background Image"
+msgstr "Immagine di sfondo"
+
+#: components/signature-card.php:3 components/signature-card.php:14
+msgid "Preview"
+msgstr "Anteprima"
+
+#: components/signature-card.php:4
+msgid "Signature"
+msgstr "Firma"
+
+#: components/signature-card.php:8 components/signature-card.php:10
+msgid "Edit"
+msgstr "Modifica"
+
+#: components/socials-modal.php:5
+msgid "By sharing you’re automatically accepting our rules and terms"
+msgstr "Condividendo accetti automaticamente le nostre regole e i nostri termini"
+
+#: components/socials-modal.php:10
+msgid "Share link"
+msgstr "Condividi il link"
+
+#: components/socials-modal.php:13
+msgid "Copy"
+msgstr "Copia"
+
+#: components/signature-card.php:14
+msgid "Preview on Document"
+msgstr "Anteprima sul documento"
+
+#: views/index.php:72 views/index.php:80 views/index.php:88 views/index.php:96
+#: views/index.php:104 views/index.php:112 views/index.php:120
+msgid "Step"
+msgstr "Passo"
+
+#: views/index.php:76 views/index.php:84 views/index.php:92 views/index.php:100
+#: views/index.php:108 views/index.php:116 views/index.php:124
+msgid "Step Image"
+msgstr "Passo Immagine"
+
+#: views/index.php:27 views/index.php:73
+msgid "Step 1 Title"
+msgstr "Compilare il modulo"
+
+#: views/index.php:74
+msgid "Step 1 Description"
+msgstr "Inserite il vostro nome, cognome e secondo nome nei campi corrispondenti della pagina iniziale"
+
+msgid "Step Image Title 1"
+msgstr "Тайтл Алт 1"
+
+msgid "Step Image 1"
+msgstr "phone-half.png"
+
+#: views/index.php:81
+msgid "Step 2 Title"
+msgstr "Fare clic su 'Genera'"
+
+#: views/index.php:82
+msgid "Step 2 Description"
+msgstr "Dopo aver inserito i dati, fare clic una volta sul pulsante 'Genera'"
+
+msgid "Step Image Title 2"
+msgstr "Тайтл Алт 1"
+
+msgid "Step Image 2"
+msgstr "phone-half.png"
+
+#: views/index.php:89
+msgid "Step 3 Title"
+msgstr "Esplorare le opzioni disponibili"
+
+#: views/index.php:90
+msgid "Step 3 Description"
+msgstr "Dopo aver fatto clic sul pulsante 'Genera', vedrete molte firme eleganti generate dal nostro servizio. Sfogliatele e scegliete la firma che vi piace di più"
+
+msgid "Step Image Title 3"
+msgstr "Тайтл Алт 1"
+
+msgid "Step Image 3"
+msgstr "phone-half.png"
+
+#: views/index.php:97
+msgid "Step 4 Title"
+msgstr "Anteprima su carta (facoltativa)"
+
+#: views/index.php:98
+msgid "Step 4 Description"
+msgstr "Se si desidera vedere l'aspetto della firma sulla carta, fare clic sul pulsante di anteprima corrispondente"
+
+msgid "Step Image Title 4"
+msgstr "Тайтл Алт 1"
+
+msgid "Step Image 4"
+msgstr "phone-half.png"
+
+#: views/index.php:105
+msgid "Step 5 Title"
+msgstr "Modifica della firma"
+
+#: views/index.php:106
+msgid "Step 5 Description"
+msgstr "Se è necessario apportare modifiche alla firma scelta, utilizzare il nostro pratico editor"
+
+msgid "Step Image Title 5"
+msgstr "Тайтл Алт 1"
+
+msgid "Step Image 5"
+msgstr "phone-half.png"
+
+#: views/index.php:113
+msgid "Step 6 Title"
+msgstr "Scarica la firma"
+
+#: views/index.php:114
+msgid "Step 6 Description"
+msgstr "Quando si è soddisfatti del risultato, fare clic su 'Download' per ottenere la firma nel formato desiderato"
+
+msgid "Step Image Title 6"
+msgstr "Тайтл Алт 1"
+
+msgid "Step Image 6"
+msgstr "phone-half.png"
+
+#: views/index.php:121
+msgid "Step 7 Title"
+msgstr "Condividi sui social media"
+
+#: views/index.php:122
+msgid "Step 7 Description"
+msgstr "Se si desidera condividere la nuova firma con altri, fare clic su 'Condividi' e selezionare i social network in cui si desidera pubblicare il link alla firma"
+
+msgid "Step Image Title 7"
+msgstr "Тайтл Алт 1"
+
+msgid "Step Image 7"
+msgstr "phone-half.png"
+
+#: views/index.php:58
+msgid "Signatures already generated:"
+msgstr "Firme già generate:"

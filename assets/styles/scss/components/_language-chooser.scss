@@ -1,0 +1,19 @@
+@import "../main/mixins";
+
+.language-chooser {
+  background: var(--color-bg-light);
+  border: var(--border-main);
+  border-radius: var(--border-radius-main);
+  padding: .35em .75em;
+  font-weight: 500;
+  cursor: pointer;
+  width: 10em;
+
+  option {
+    padding: .35em .75em;
+    background: var(--color-bg-light);
+    border: var(--border-main);
+    border-radius: var(--border-radius-main);
+    overflow: hidden;
+  }
+}

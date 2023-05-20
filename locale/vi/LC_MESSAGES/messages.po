@@ -1,0 +1,302 @@
+# Vietnamese translations for PACKAGE package.
+# Copyright (C) 2023 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-16 18:21+0400\n"
+"PO-Revision-Date: 2023-05-16 19:34+0400\n"
+"Last-Translator: <EMAIL@ADDRESS>\n"
+"Language-Team: Vietnamese\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: views/404.php:8 views/404.php:9 views/404.php:10
+msgid "404 Not Found Page Title"
+msgstr "404 Không Tìm Thấy"
+
+#: views/404.php:11 views/404.php:12
+msgid "404 Not Found Page Meta Description"
+msgstr "404 Không Tìm Thấy"
+
+#: views/404.php:13 views/index.php:11 views/index.php:12 views/index.php:13
+msgid "Home Page Meta Description"
+msgstr "Trang Chủ"
+
+#: views/404.php:21 views/index.php:26 views/privacy-policy.php:21
+msgid "Signature Generator"
+msgstr "Máy Phát Điện Chữ Ký"
+
+#: views/404.php:22
+msgid "404 Not Found"
+msgstr "404 Không Tìm Thấy"
+
+#: views/404.php:23
+msgid "Go to homepage"
+msgstr "Chuyển đến trang chủ"
+
+#: views/index.php:8 views/index.php:9 views/index.php:10
+msgid "Home Page Title"
+msgstr "Trang Chủ"
+
+#: views/index.php:27
+msgid "Generate your own unique signature or <b>draw</b> it by yourself"
+msgstr "Tạo chữ ký duy nhất của riêng bạn hoặc <b>vẽ</b> nó một mình"
+
+#: views/index.php:34
+msgid "Create your own <b>Signature</b>"
+msgstr "Tạo <b>chữ ký</b> của riêng bạn"
+
+#: views/index.php:35
+msgid "Open Editor"
+msgstr "Mở Trình Chỉnh Sửa"
+
+#: views/index.php:47
+msgid "Loading"
+msgstr "Đang tải"
+
+#: views/index.php:51
+msgid "Load More"
+msgstr "Tải Thêm"
+
+#: views/index.php:56 views/index.php:60
+msgid "Home Page About Us"
+msgstr "Về chúng tôi"
+
+#: views/index.php:79
+msgid "Home Page Instruction"
+msgstr "Làm thế nào để sử dụng trình tạo chữ ký?"
+
+#: views/index.php:164
+msgid "About us image"
+msgstr "Về chúng tôi hình ảnh"
+
+#: views/index.php:69
+msgid "Generate more"
+msgstr "Tạo thêm"
+
+#: views/privacy-policy.php:8 views/privacy-policy.php:9
+#: views/privacy-policy.php:13
+msgid "Privacy Policy Page Title"
+msgstr "Chính Sách Bảo Mật"
+
+#: views/privacy-policy.php:10 views/privacy-policy.php:11
+#: views/privacy-policy.php:12
+msgid "Privacy Policy Page Meta Description"
+msgstr "Chính Sách Bảo Mật"
+
+#: views/privacy-policy.php:22 components/footer.php:4 components/footer.php:5
+msgid "Privacy Policy"
+msgstr "Chính Sách Bảo Mật"
+
+#: components/editor.php:6 components/editor.php:8
+msgid "Clear"
+msgstr "Rõ ràng"
+
+#: components/editor.php:10
+msgid "Color"
+msgstr "Màu sắc"
+
+#: components/editor.php:11
+msgid "Thickness"
+msgstr "Độ dày"
+
+#: components/editor.php:14 components/signature-card.php:15
+#: components/socials-modal.php:4
+msgid "Share"
+msgstr "Chia sẻ"
+
+#: components/editor.php:17 components/editor.php:19
+#: components/signature-card.php:16
+msgid "Download"
+msgstr "Tải về"
+
+#: components/footer.php:7
+msgid "2023 All Right Reserved"
+msgstr "© 2023 Được Rồi"
+
+#: components/footer.php:8 components/footer.php:9
+msgid "Contact Us"
+msgstr "Liên Hệ Với Chúng Tôi"
+
+#: components/footer.php:12
+msgid "Email"
+msgstr "Email"
+
+#: components/generator-form.php:3 components/generator-form.php:4
+msgid "First Name"
+msgstr "Tên"
+
+#: components/generator-form.php:7 components/generator-form.php:8
+msgid "Last Name"
+msgstr "Họ Tên"
+
+#: components/generator-form.php:11 components/generator-form.php:12
+msgid "Middle Name"
+msgstr "Tên đệm"
+
+#: components/generator-form.php:14
+msgid "Generate"
+msgstr "Tạo"
+
+#: components/go-top.php:1
+msgid "Go to top"
+msgstr "Lên đỉnh"
+
+#: components/language-chooser.php:2
+msgid "Page Language"
+msgstr "Ngôn Ngữ Trang"
+
+#: components/paper-preview-lightbox.php:3 components/preview-lightbox.php:2
+msgid "Signature Preview Image"
+msgstr "Hình Ảnh Xem Trước Chữ Ký"
+
+#: components/paper-preview-lightbox.php:4
+msgid "Background Image"
+msgstr "Hình Nền"
+
+#: components/signature-card.php:3 components/signature-card.php:14
+msgid "Preview"
+msgstr "Xem trước"
+
+#: components/signature-card.php:4
+msgid "Signature"
+msgstr "Chữ ký"
+
+#: components/signature-card.php:8 components/signature-card.php:10
+msgid "Edit"
+msgstr "Chỉnh sửa"
+
+#: components/socials-modal.php:5
+msgid "By sharing you’re automatically accepting our rules and terms"
+msgstr "Bằng cách chia sẻ bạn sẽ tự động chấp nhận các quy tắc và điều khoản của chúng tôi"
+
+#: components/socials-modal.php:10
+msgid "Share link"
+msgstr "Chia sẻ liên kết"
+
+#: components/socials-modal.php:13
+msgid "Copy"
+msgstr "Sao chép"
+
+#: components/signature-card.php:14
+msgid "Preview on Document"
+msgstr "Xem Trước Trên Tài liệu"
+
+#: views/index.php:72 views/index.php:80 views/index.php:88 views/index.php:96
+#: views/index.php:104 views/index.php:112 views/index.php:120
+msgid "Step"
+msgstr "Bước"
+
+#: views/index.php:76 views/index.php:84 views/index.php:92 views/index.php:100
+#: views/index.php:108 views/index.php:116 views/index.php:124
+msgid "Step Image"
+msgstr "Hình Ảnh Bước"
+
+#: views/index.php:27 views/index.php:73
+msgid "Step 1 Title"
+msgstr "Điền vào biểu mẫu"
+
+#: views/index.php:74
+msgid "Step 1 Description"
+msgstr "Nhập tên, họ và tên đệm của bạn vào các trường tương ứng trên trang chủ"
+
+msgid "Step Image Title 1"
+msgstr "Тайтл Алт 1"
+
+msgid "Step Image 1"
+msgstr "phone-half.png"
+
+#: views/index.php:81
+msgid "Step 2 Title"
+msgstr "Nhấp Vào 'Tạo'"
+
+#: views/index.php:82
+msgid "Step 2 Description"
+msgstr "Sau khi nhập dữ liệu, nhấp một lần vào nút' Tạo'"
+
+msgid "Step Image Title 2"
+msgstr "Тайтл Алт 1"
+
+msgid "Step Image 2"
+msgstr "phone-half.png"
+
+#: views/index.php:89
+msgid "Step 3 Title"
+msgstr "Khám phá các tùy chọn có sẵn"
+
+#: views/index.php:90
+msgid "Step 3 Description"
+msgstr "Sau khi bạn nhấp vào Nút' Tạo', bạn sẽ thấy nhiều chữ ký phong cách được tạo bởi dịch vụ của chúng tôi. Duyệt qua chúng và chọn chữ ký bạn thích nhất"
+
+msgid "Step Image Title 3"
+msgstr "Тайтл Алт 1"
+
+msgid "Step Image 3"
+msgstr "phone-half.png"
+
+#: views/index.php:97
+msgid "Step 4 Title"
+msgstr "Xem trước trên giấy (tùy chọn)"
+
+#: views/index.php:98
+msgid "Step 4 Description"
+msgstr "Nếu bạn muốn xem chữ ký của mình sẽ trông như thế nào trên giấy, hãy nhấp vào nút xem trước tương ứng"
+
+msgid "Step Image Title 4"
+msgstr "Тайтл Алт 1"
+
+msgid "Step Image 4"
+msgstr "phone-half.png"
+
+#: views/index.php:105
+msgid "Step 5 Title"
+msgstr "Chỉnh sửa chữ ký"
+
+#: views/index.php:106
+msgid "Step 5 Description"
+msgstr "Nếu bạn cần thực hiện các thay đổi đối với chữ ký đã chọn của mình, hãy sử dụng trình chỉnh sửa tiện dụng của chúng tôi"
+
+msgid "Step Image Title 5"
+msgstr "Тайтл Алт 1"
+
+msgid "Step Image 5"
+msgstr "phone-half.png"
+
+#: views/index.php:113
+msgid "Step 6 Title"
+msgstr "Tải xuống chữ ký"
+
+#: views/index.php:114
+msgid "Step 6 Description"
+msgstr "Khi bạn hài lòng với kết quả, hãy nhấp Vào 'Tải xuống' để nhận chữ ký của bạn ở định dạng mong muốn"
+
+msgid "Step Image Title 6"
+msgstr "Тайтл Алт 1"
+
+msgid "Step Image 6"
+msgstr "phone-half.png"
+
+#: views/index.php:121
+msgid "Step 7 Title"
+msgstr "Chia sẻ trên phương tiện truyền thông xã hội"
+
+#: views/index.php:122
+msgid "Step 7 Description"
+msgstr "Nếu bạn muốn chia sẻ chữ ký mới của mình với người khác, hãy nhấp vào 'Chia sẻ' và chọn mạng xã hội nơi bạn muốn đăng liên kết đến chữ ký của mình"
+
+msgid "Step Image Title 7"
+msgstr "Тайтл Алт 1"
+
+msgid "Step Image 7"
+msgstr "phone-half.png"
+
+#: views/index.php:58
+msgid "Signatures already generated:"
+msgstr "Chữ ký đã được tạo:"

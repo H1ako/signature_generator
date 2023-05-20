@@ -1,0 +1,64 @@
+@import "../main/mixins";
+
+.preview-lightbox {
+  border: none;
+  width: var(--width-main-content);
+  background: var(--color-bg-light);
+  border: var(--border-main);
+  border-radius: var(--border-radius-main);
+  overflow: hidden;
+  overflow: hidden;
+  
+  &::backdrop {
+    background: rgba(0, 0, 0, 0.75);
+  }
+
+  &__image {
+    @include image;
+
+    margin-inline: auto;
+    width: min(100%, 70rem);
+    height: auto;
+    max-height: 80vh;
+    object-fit: contain;
+  }
+
+  &.preview-lightbox_paper-preview {
+    padding: 0;
+
+    .paper-preview__image {
+      @include image;
+
+      position: absolute;
+      object-fit: contain;
+      width: 20%;
+      rotate: -32.5deg;
+      top: 62.5%;
+      left: 23.5%;
+      translate: 0 -50%;
+    }
+
+    .paper-preview__bg-image {
+      @include image;
+
+      width: 100%;
+      height: auto;
+      max-height: 80vh;
+    }
+
+    @media screen and (width < 500px) {
+
+      .paper-preview__image {
+        width: 40%;
+        top: 62%;
+        left: 45%;
+        rotate: -27deg;
+      }
+      
+      .paper-preview__bg-image {
+        width: 200%;
+        object-position: left center;
+      }
+    }
+  }
+}

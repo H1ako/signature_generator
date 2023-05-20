@@ -1,0 +1,38 @@
+@import "../main/mixins";
+
+.generator-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  &:focus-within {
+    input:not(:placeholder-shown):invalid {
+      animation: invalidAnimation 400ms 1;
+      outline: 2px tomato solid;
+    }
+  }
+
+  &__field {
+    @include titledInput;
+
+    input::placeholder {
+      color: var(--color-text);
+      opacity: .001;
+    }
+  }
+
+  &__submit {
+    @include button;
+
+    align-self: center;
+  }
+}
+
+@keyframes invalidAnimation {
+  0% { transform: translate(30px); }
+  20% { transform: translate(-30px); }
+  40% { transform: translate(15px); }
+  60% { transform: translate(-15px); }
+  80% { transform: translate(8px); }
+  100% {transform: translate(0px); }
+}

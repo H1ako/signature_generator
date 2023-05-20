@@ -1,0 +1,10 @@
+@import "../main/mixins";
+
+.main-header {
+  @include mainContentContainer;
+
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  justify-content: space-between;
+}

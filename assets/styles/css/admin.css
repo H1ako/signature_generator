@@ -1,0 +1,41 @@
+.heading {
+  margin-inline: auto;
+  text-align: center;
+  background: red;
+}
+.heading:not(:first-of-type) {
+  margin-top: 5em;
+}
+
+.privacy-editors,
+.about-us-editors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.privacy-editors .editor,
+.about-us-editors .editor {
+  flex: 1 1 25%;
+}
+.privacy-editors .editor .editor__heading,
+.about-us-editors .editor .editor__heading {
+  margin-inline: auto;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.save-button {
+  display: flex;
+  margin-top: 2em;
+  font-size: large;
+  margin-inline: auto;
+  padding: 0.5em 2em;
+  background: lime;
+  border: 1px solid darkolivegreen;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.save-button:hover {
+  background: darkgreen;
+}/*# sourceMappingURL=admin.css.map */

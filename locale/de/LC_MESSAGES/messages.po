@@ -1,0 +1,303 @@
+# German translations for PACKAGE package
+# German translation for PACKAGE.
+# Copyright (C) 2023 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-16 18:21+0400\n"
+"PO-Revision-Date: 2023-05-16 19:20+0400\n"
+"Last-Translator: <EMAIL@ADDRESS>\n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: views/404.php:8 views/404.php:9 views/404.php:10
+msgid "404 Not Found Page Title"
+msgstr "404 nicht gefunden"
+
+#: views/404.php:11 views/404.php:12
+msgid "404 Not Found Page Meta Description"
+msgstr "404 nicht gefunden"
+
+#: views/404.php:13 views/index.php:11 views/index.php:12 views/index.php:13
+msgid "Home Page Meta Description"
+msgstr "Hauptseite"
+
+#: views/404.php:21 views/index.php:26 views/privacy-policy.php:21
+msgid "Signature Generator"
+msgstr "Unterschriften-Generator"
+
+#: views/404.php:22
+msgid "404 Not Found"
+msgstr "404 nicht gefunden"
+
+#: views/404.php:23
+msgid "Go to homepage"
+msgstr "Zur Homepage gehen"
+
+#: views/index.php:8 views/index.php:9 views/index.php:10
+msgid "Home Page Title"
+msgstr "Hauptseite"
+
+#: views/index.php:27
+msgid "Generate your own unique signature or <b>draw</b> it by yourself"
+msgstr "Generieren Sie Ihre eigene Signatur oder <b>zeichnen</b> Sie sie selbst"
+
+#: views/index.php:34
+msgid "Create your own <b>Signature</b>"
+msgstr "Erstellen Sie Ihre eigene <b>Signatur</b>"
+
+#: views/index.php:35
+msgid "Open Editor"
+msgstr "Editor öffnen"
+
+#: views/index.php:47
+msgid "Loading"
+msgstr "Laden"
+
+#: views/index.php:51
+msgid "Load More"
+msgstr "Mehr laden"
+
+#: views/index.php:56
+msgid "Home Page About Us"
+msgstr "Über uns"
+
+#: views/index.php:79
+msgid "Home Page Instruction"
+msgstr "Wie verwende ich den Signaturgenerator?"
+
+#: views/index.php:164
+msgid "About us image"
+msgstr "Über uns Bild"
+
+#: views/index.php:69
+msgid "Generate more"
+msgstr "Mehr generieren"
+
+#: views/privacy-policy.php:8 views/privacy-policy.php:9
+#: views/privacy-policy.php:13
+msgid "Privacy Policy Page Title"
+msgstr "Datenschutz"
+
+#: views/privacy-policy.php:10 views/privacy-policy.php:11
+#: views/privacy-policy.php:12
+msgid "Privacy Policy Page Meta Description"
+msgstr "Datenschutz"
+
+#: views/privacy-policy.php:22 components/footer.php:4 components/footer.php:5
+msgid "Privacy Policy"
+msgstr "Datenschutz"
+
+#: components/editor.php:6 components/editor.php:8
+msgid "Clear"
+msgstr "Klar"
+
+#: components/editor.php:10
+msgid "Color"
+msgstr "Farbe"
+
+#: components/editor.php:11
+msgid "Thickness"
+msgstr "Dicke"
+
+#: components/editor.php:14 components/signature-card.php:15
+#: components/socials-modal.php:4
+msgid "Share"
+msgstr "Teilen Sie"
+
+#: components/editor.php:17 components/editor.php:19
+#: components/signature-card.php:16
+msgid "Download"
+msgstr "Herunterladen"
+
+#: components/footer.php:7
+msgid "2023 All Right Reserved"
+msgstr "© 2023 Alle Rechte vorbehalten"
+
+#: components/footer.php:8 components/footer.php:9
+msgid "Contact Us"
+msgstr "Kontakt"
+
+#: components/footer.php:12
+msgid "Email"
+msgstr "Email"
+
+#: components/generator-form.php:3 components/generator-form.php:4
+msgid "First Name"
+msgstr "Vorname"
+
+#: components/generator-form.php:7 components/generator-form.php:8
+msgid "Last Name"
+msgstr "Nachname"
+
+#: components/generator-form.php:11 components/generator-form.php:12
+msgid "Middle Name"
+msgstr "Patronymisch"
+
+#: components/generator-form.php:14
+msgid "Generate"
+msgstr "Erzeugen"
+
+#: components/go-top.php:1
+msgid "Go to top"
+msgstr "Nach oben gehen"
+
+#: components/language-chooser.php:2
+msgid "Page Language"
+msgstr "Seite Sprache"
+
+#: components/paper-preview-lightbox.php:3 components/preview-lightbox.php:2
+msgid "Signature Preview Image"
+msgstr "Unterschrift Vorschaubild"
+
+#: components/paper-preview-lightbox.php:4
+msgid "Background Image"
+msgstr "Hintergrundbild"
+
+#: components/signature-card.php:3 components/signature-card.php:14
+msgid "Preview"
+msgstr "Vorschau"
+
+#: components/signature-card.php:4
+msgid "Signature"
+msgstr "Unterschrift"
+
+#: components/signature-card.php:8 components/signature-card.php:10
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: components/socials-modal.php:5
+msgid "By sharing you’re automatically accepting our rules and terms"
+msgstr "Mit dem Teilen akzeptierst du automatisch unsere Regeln und Bedingungen"
+
+#: components/socials-modal.php:10
+msgid "Share link"
+msgstr "Link teilen"
+
+#: components/socials-modal.php:13
+msgid "Copy"
+msgstr "Kopieren"
+
+#: components/signature-card.php:14
+msgid "Preview on Document"
+msgstr "Vorschau auf Dokument"
+
+#: views/index.php:72 views/index.php:80 views/index.php:88 views/index.php:96
+#: views/index.php:104 views/index.php:112 views/index.php:120
+msgid "Step"
+msgstr "Schritt"
+
+#: views/index.php:76 views/index.php:84 views/index.php:92 views/index.php:100
+#: views/index.php:108 views/index.php:116 views/index.php:124
+msgid "Step Image"
+msgstr "Schritt Bild"
+
+#: views/index.php:27 views/index.php:73
+msgid "Step 1 Title"
+msgstr "Füllen Sie das Formular aus"
+
+#: views/index.php:74
+msgid "Step 1 Description"
+msgstr "Geben Sie Ihren Vornamen, Nachnamen und mittleren Namen in die entsprechenden Felder auf der Startseite ein"
+
+msgid "Step Image Title 1"
+msgstr "Тайтл Алт 1"
+
+msgid "Step Image 1"
+msgstr "phone-half.png"
+
+#: views/index.php:81
+msgid "Step 2 Title"
+msgstr "Klicken Sie auf 'Erzeugen'"
+
+#: views/index.php:82
+msgid "Step 2 Description"
+msgstr "Klicken Sie nach der Eingabe der Daten einmal auf die Schaltfläche 'Generieren'"
+
+msgid "Step Image Title 2"
+msgstr "Тайтл Алт 1"
+
+msgid "Step Image 2"
+msgstr "phone-half.png"
+
+#: views/index.php:89
+msgid "Step 3 Title"
+msgstr "Erkunden Sie die verfügbaren Optionen"
+
+#: views/index.php:90
+msgid "Step 3 Description"
+msgstr "Nachdem Sie auf die Schaltfläche 'Erzeugen' geklickt haben, sehen Sie viele stilvolle Signaturen, die von unserem Dienst erstellt wurden. Blättern Sie durch sie und wählen Sie die Signatur, die Ihnen am besten gefällt"
+
+msgid "Step Image Title 3"
+msgstr "Тайтл Алт 1"
+
+msgid "Step Image 3"
+msgstr "phone-half.png"
+
+#: views/index.php:97
+msgid "Step 4 Title"
+msgstr "Vorschau auf Papier (optional)"
+
+#: views/index.php:98
+msgid "Step 4 Description"
+msgstr "Wenn Sie sehen möchten, wie Ihre Unterschrift auf dem Papier aussehen wird, klicken Sie auf die entsprechende Schaltfläche 'Vorschau'"
+
+msgid "Step Image Title 4"
+msgstr "Тайтл Алт 1"
+
+msgid "Step Image 4"
+msgstr "phone-half.png"
+
+#: views/index.php:105
+msgid "Step 5 Title"
+msgstr "Bearbeiten Sie die Unterschrift"
+
+#: views/index.php:106
+msgid "Step 5 Description"
+msgstr "Wenn Sie Ihre gewählte Signatur ändern müssen, verwenden Sie unseren praktischen Editor"
+
+msgid "Step Image Title 5"
+msgstr "Тайтл Алт 1"
+
+msgid "Step Image 5"
+msgstr "phone-half.png"
+
+#: views/index.php:113
+msgid "Step 6 Title"
+msgstr "Download der Unterschrift"
+
+#: views/index.php:114
+msgid "Step 6 Description"
+msgstr "Wenn Sie mit dem Ergebnis zufrieden sind, klicken Sie auf 'Herunterladen', um Ihre Unterschrift im gewünschten Format zu erhalten"
+
+msgid "Step Image Title 6"
+msgstr "Тайтл Алт 1"
+
+msgid "Step Image 6"
+msgstr "phone-half.png"
+
+#: views/index.php:121
+msgid "Step 7 Title"
+msgstr "Auf sozialen Medien teilen"
+
+#: views/index.php:122
+msgid "Step 7 Description"
+msgstr "Wenn Sie Ihre neue Signatur mit anderen teilen möchten, klicken Sie auf 'Teilen' und wählen Sie die sozialen Netzwerke aus, in denen Sie den Link zu Ihrer Signatur veröffentlichen möchten"
+
+msgid "Step Image Title 7"
+msgstr "Тайтл Алт 1"
+
+msgid "Step Image 7"
+msgstr "phone-half.png"
+
+#: views/index.php:58
+msgid "Signatures already generated:"
+msgstr "Die Signaturen wurden bereits erstellt:"

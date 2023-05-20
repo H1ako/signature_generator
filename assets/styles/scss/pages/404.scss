@@ -1,0 +1,34 @@
+@import "../main/mixins";
+
+.main-content {
+  justify-content: center;
+  
+  &__info {
+    background: var(--color-bg-light);
+    border-radius: var(--border-radius-main);
+    border: var(--border-main);
+    padding: var(--padding-block);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .info__title {
+      @include wrapWords;
+      
+      color: var(--color-main);
+      font-size: var(--font-size-2);
+    }
+
+    .info__subtitle {
+      @include wrapWords;
+
+      font-size: var(--font-size-3);
+    }
+
+    .info__btn {
+      @include button;
+
+      margin-top: 1em;
+    }
+  }
+}

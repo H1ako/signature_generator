@@ -1,0 +1,214 @@
+@import "../main/mixins";
+
+.editor {
+  border-radius: var(--border-radius-main);
+  overflow: hidden;
+  width: var(--width-main-content);
+  border: var(--border-main);
+  padding: 0;
+
+  &::backdrop {
+    background: rgba(0, 0, 0, 0.75);
+  }
+
+  & > svg {
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    opacity: .75;
+    width: min(90%, 60rem);
+    height: auto;
+    pointer-events: none;
+    user-select: none;
+    transition: var(--transition-main);
+    animation: editorBgStrokeAnimation infinite 500s linear;
+    stroke-dasharray: 360px;
+
+    * {
+      stroke: var(--color-main);
+    }
+
+    &.disabled {
+      display: none;
+    }
+  }
+
+  &__canvas {
+    width: 100%;
+    height: min(40vh, 40em);
+    background-color: var(--color-bg-light);
+    // background: url('../../images/editor-bg.svg') center center / 65% no-repeat;
+  }
+
+  &__tools {
+    position: relative;
+    background: var(--color-bg-lightdark);
+    padding: .5em;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: .5em;
+
+    .tools__left,
+    .tools__right {
+      position: relative;
+      display: flex;
+      align-items: stretch;
+    }
+
+    .tools__left {
+      gap: 1em;
+      flex-grow: 1;
+      
+      .left__tool  {
+        &.tool_edit,
+        &.tool_clear {
+          @include button;
+
+          flex-grow: 0;
+          flex-shrink: 0;
+
+          @media screen and (width < 800px) {
+            padding: .35em .75em;
+          }
+        }
+
+        &.tool_color {
+          position: relative;
+          -webkit-appearance: none;
+          aspect-ratio: 1 / 1;
+          height: 100%;
+          padding: 0;
+          width: auto;
+          overflow: hidden;
+          cursor: pointer;
+          border-radius: var(--border-radius-small);
+          flex-shrink: 0;
+          flex-grow: 0;
+
+          &::-webkit-color-swatch-wrapper {
+            padding: 0;
+          }
+
+          &::-webkit-color-swatch {
+            border-radius: var(--border-radius-small);
+          }
+        }
+
+        &.tool_thickness {
+          -webkit-appearance: none;
+          max-width: 10em;
+          height: 1.15em;
+          background: var(--color-bg-lightdark-accent);
+          border-radius: var(--border-radius-small);
+          align-self: center;
+          width: 0;
+          flex: 1 1 10em;
+
+          &:focus-within:focus-visible {
+            &::-moz-range-thumb {
+              filter: brightness(.75);
+            }
+
+            &::-ms-thumb {
+              filter: brightness(.75);
+            }
+
+            &::-webkit-slider-thumb {
+              filter: brightness(.75);
+            }
+          }
+
+          &::-moz-range-thumb {
+            border: none;
+            background: var(--color-main);
+            height: 160%;
+            width: .9em;
+            border-radius: var(--border-radius-small);
+            cursor: pointer;
+            transition: var(--transition-main);
+
+            &:hover {
+              filter: brightness(.75);
+            }
+          }
+
+          &::-ms-thumb {
+            border: none;
+            background: var(--color-main);
+            height: 160%;
+            width: .9em;
+            border-radius: var(--border-radius-small);
+            cursor: pointer;
+            transition: var(--transition-main);
+
+            &:hover {
+              filter: brightness(.75);
+            }
+          }
+          
+          &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            border: none;
+            background: var(--color-main);
+            height: 1.8em;
+            width: .9em;
+            border-radius: var(--border-radius-small);
+            cursor: pointer;
+            transition: var(--transition-main);
+
+            &:hover {
+              filter: brightness(.75);
+            }
+          }
+        }
+      }
+    }
+
+    .tools__right {
+      gap: .25em;
+      
+      .right__tool {
+        &.tool_share {
+          @include button($background: var(--color-bg-lightdark), $color: var(--color-text), $font-size: var(--font-size-3));
+
+          aspect-ratio: 1;
+          padding: .25em;
+        }
+
+        &.tool_download {
+          @include button($font-size: var(--font-size-5));
+
+          
+          .tool__text {
+            font-size: var(--font-size-5);
+          }
+          
+          @media screen and (width < 600px) {
+            padding: .5em;
+            aspect-ratio: 1;
+
+            .tool__text {
+              display: none;
+            }
+          }
+        }
+
+        @media screen and (width < 600px) {
+          flex: 1 1 100%;
+        }
+      }
+    }
+  }
+}
+
+@keyframes editorBgStrokeAnimation {
+  from {
+    stroke-dashoffset: 99999;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}

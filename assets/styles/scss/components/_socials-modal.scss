@@ -1,0 +1,68 @@
+@import "../main/mixins";
+
+.socials-modal {
+  transition: var(--transition-main);
+  background: var(--color-bg-light);
+  border-radius: var(--border-radius-main);
+  border: var(--border-main);
+  width: var(--width-main-content);
+
+  &::backdrop {
+    background: rgba(0, 0, 0, 0.75);
+  }
+
+  &__content {
+    @include mainContentContainer(min(100%, 50em));
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+
+    .content__titles {
+      .titles__title {
+        @include wrapWords;
+
+        font-size: var(--font-size-2);
+        text-align: center;
+      }
+  
+      .titles__subtitle {
+        @include wrapWords;
+
+        font-weight: 200;
+        font-size: var(--font-size-4);
+        text-align: center;
+      }
+    }
+
+    .content__links {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      width: 100%;
+
+      .links__url {
+        @include baseInput;
+
+        overflow: hidden;
+        display: flex;
+        align-items: stretch;
+        gap: .5em;
+
+        .url__link {
+          flex-grow: 1;
+
+          background: none;
+        }
+        
+        .url__copy {
+          @include button($background: var(--color-bg-light), $color: var(--color-text), $padding: .5em);
+
+          flex-shrink: 0;
+          border: var(--border-main);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+:root {
+  // ----COLORS----
+  --color-main: #485FC7;
+  // text colors
+  --color-text: black;
+  --color-text-light: white;
+  // background colors
+  --color-bg: #F0F8FF;
+  --color-bg-dark: black;
+  --color-bg-dark-transparent: rgba(0, 0, 0, 0.75);
+  --color-bg-light: white;
+  --color-bg-lightdark: #EDEDED;
+  --color-bg-lightdark-accent: #D9D9D9;
+  --color-border: #989898;
+  // social colors
+  --color-facebook: #0165E1;
+  --color-twitter: #1DA1F2;
+  --color-reddit: #FF4500;
+  --color-telegram: #27A7E7;
+  --color-whatsapp: #28D146;
+  // gradients
+  // ----FONT SIZES----
+  // 1rem = 10px
+  --font-size-extrabig: clamp(12rem, 18vw, 21rem);
+  --font-size-1: clamp(3.5rem, 6vw, 4.2rem);
+  --font-size-2: clamp(2.4rem, 3vw, 2.8rem);
+  --font-size-3: clamp(2rem, 2.1vw, 2.4rem);
+  --font-size-4: clamp(1.6rem, 1.75vw, 2rem);
+  --font-size-5: clamp(1.4rem, 1.4vw, 1.6rem);
+
+  // ----BORDER RADIUSES----
+  --border-radius-main: 1rem;
+  --border-radius-big: 1.5rem;
+  --border-radius-small: .5rem;
+
+  // ----TRANSITIONS----
+  --transition-main: 150ms;
+  --transition-slow: 300ms;
+  --transition-superslow: 800ms;
+
+  // ----BORDERS----
+  --border-main: .5px solid var(--color-border);
+
+  // ----SIZES----
+  --width-main-content: min(1200px, 100%);
+
+  --padding-main-content: 1.5em .75em;
+  --padding-block: 1.5em 2.5em;
+  --padding-button: .5em 2.5em;
+  --padding-input: .5em 1.25em;
+
+  --gap-block: 2em;
+
+  --line-height-main: 1.9;
+
+  @media screen and (width < 680px) {
+    --padding-block: 1em;
+    --gap-block: 1.25em;
+  }
+}

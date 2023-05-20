@@ -1,0 +1,312 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-20 15:15+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: views/404.php:10 views/404.php:11 views/404.php:12
+msgid "404 Not Found Page Title"
+msgstr ""
+
+#: views/404.php:13 views/404.php:14
+msgid "404 Not Found Page Meta Description"
+msgstr ""
+
+#: views/404.php:15 views/index.php:28 views/index.php:29 views/index.php:30
+msgid "Home Page Meta Description"
+msgstr ""
+
+#: views/404.php:24 views/privacy-policy.php:33
+msgid "Signature Generator"
+msgstr ""
+
+#: views/404.php:25
+msgid "404 Not Found"
+msgstr ""
+
+#: views/404.php:26
+msgid "Go to homepage"
+msgstr ""
+
+#: views/index.php:25 views/index.php:26 views/index.php:27
+msgid "Home Page Title"
+msgstr ""
+
+#: views/index.php:48 views/index.php:99
+msgid "Step 1 Title"
+msgstr ""
+
+#: views/index.php:49
+msgid "Generate your own unique signature or <b>draw</b> it by yourself"
+msgstr ""
+
+#: views/index.php:56
+msgid "Signatures already generated:"
+msgstr ""
+
+#: views/index.php:60
+msgid "Create your own <b>Signature</b>"
+msgstr ""
+
+#: views/index.php:61
+msgid "Open Editor"
+msgstr ""
+
+#: views/index.php:76
+msgid "Loading"
+msgstr ""
+
+#: views/index.php:80
+msgid "Load More"
+msgstr ""
+
+#: views/index.php:83
+msgid "Generate more"
+msgstr ""
+
+#: views/index.php:92 views/index.php:103
+msgid "Step Image 1"
+msgstr ""
+
+#: views/index.php:93
+msgid "Home Page Instruction"
+msgstr ""
+
+#: views/index.php:98 views/index.php:108 views/index.php:118
+#: views/index.php:128 views/index.php:138 views/index.php:148
+#: views/index.php:158
+msgid "Step"
+msgstr ""
+
+#: views/index.php:100
+msgid "Step 1 Description"
+msgstr ""
+
+#: views/index.php:103
+msgid "Step Image Title 1"
+msgstr ""
+
+#: views/index.php:109
+msgid "Step 2 Title"
+msgstr ""
+
+#: views/index.php:110
+msgid "Step 2 Description"
+msgstr ""
+
+#: views/index.php:113
+msgid "Step Image 2"
+msgstr ""
+
+#: views/index.php:113
+msgid "Step Image Title 2"
+msgstr ""
+
+#: views/index.php:119
+msgid "Step 3 Title"
+msgstr ""
+
+#: views/index.php:120
+msgid "Step 3 Description"
+msgstr ""
+
+#: views/index.php:123
+msgid "Step Image 3"
+msgstr ""
+
+#: views/index.php:123
+msgid "Step Image Title 3"
+msgstr ""
+
+#: views/index.php:129
+msgid "Step 4 Title"
+msgstr ""
+
+#: views/index.php:130
+msgid "Step 4 Description"
+msgstr ""
+
+#: views/index.php:133
+msgid "Step Image 4"
+msgstr ""
+
+#: views/index.php:133
+msgid "Step Image Title 4"
+msgstr ""
+
+#: views/index.php:139
+msgid "Step 5 Title"
+msgstr ""
+
+#: views/index.php:140
+msgid "Step 5 Description"
+msgstr ""
+
+#: views/index.php:143
+msgid "Step Image 5"
+msgstr ""
+
+#: views/index.php:143
+msgid "Step Image Title 5"
+msgstr ""
+
+#: views/index.php:149
+msgid "Step 6 Title"
+msgstr ""
+
+#: views/index.php:150
+msgid "Step 6 Description"
+msgstr ""
+
+#: views/index.php:153
+msgid "Step Image 6"
+msgstr ""
+
+#: views/index.php:153
+msgid "Step Image Title 6"
+msgstr ""
+
+#: views/index.php:159
+msgid "Step 7 Title"
+msgstr ""
+
+#: views/index.php:160
+msgid "Step 7 Description"
+msgstr ""
+
+#: views/index.php:163
+msgid "Step Image 7"
+msgstr ""
+
+#: views/index.php:163
+msgid "Step Image Title 7"
+msgstr ""
+
+#: views/index.php:176
+msgid "Home Page About Us"
+msgstr ""
+
+#: views/index.php:178
+msgid "About us image"
+msgstr ""
+
+#: views/privacy-policy.php:18 views/privacy-policy.php:19
+#: views/privacy-policy.php:23
+msgid "Privacy Policy Page Title"
+msgstr ""
+
+#: views/privacy-policy.php:20 views/privacy-policy.php:21
+#: views/privacy-policy.php:22
+msgid "Privacy Policy Page Meta Description"
+msgstr ""
+
+#: views/privacy-policy.php:34 components/footer.php:6 components/footer.php:7
+msgid "Privacy Policy"
+msgstr ""
+
+#: components/editor.php:6 components/editor.php:8
+msgid "Clear"
+msgstr ""
+
+#: components/editor.php:10
+msgid "Color"
+msgstr ""
+
+#: components/editor.php:11
+msgid "Thickness"
+msgstr ""
+
+#: components/editor.php:14 components/signature-card.php:15
+#: components/socials-modal.php:4
+msgid "Share"
+msgstr ""
+
+#: components/editor.php:17 components/editor.php:19
+#: components/signature-card.php:16
+msgid "Download"
+msgstr ""
+
+#: components/footer.php:9
+msgid "2023 All Right Reserved"
+msgstr ""
+
+#: components/footer.php:10 components/footer.php:11
+msgid "Contact Us"
+msgstr ""
+
+#: components/footer.php:14
+msgid "Email"
+msgstr ""
+
+#: components/generator-form.php:3 components/generator-form.php:4
+msgid "First Name"
+msgstr ""
+
+#: components/generator-form.php:7 components/generator-form.php:8
+msgid "Last Name"
+msgstr ""
+
+#: components/generator-form.php:11 components/generator-form.php:12
+msgid "Middle Name"
+msgstr ""
+
+#: components/generator-form.php:14
+msgid "Generate"
+msgstr ""
+
+#: components/go-top.php:1
+msgid "Go to top"
+msgstr ""
+
+#: components/language-chooser.php:2
+msgid "Page Language"
+msgstr ""
+
+#: components/paper-preview-lightbox.php:3 components/preview-lightbox.php:2
+msgid "Signature Preview Image"
+msgstr ""
+
+#: components/paper-preview-lightbox.php:4
+msgid "Background Image"
+msgstr ""
+
+#: components/signature-card.php:3
+msgid "Preview"
+msgstr ""
+
+#: components/signature-card.php:4
+msgid "Signature"
+msgstr ""
+
+#: components/signature-card.php:8 components/signature-card.php:10
+msgid "Edit"
+msgstr ""
+
+#: components/signature-card.php:14
+msgid "Preview on Document"
+msgstr ""
+
+#: components/socials-modal.php:5
+msgid "By sharing you’re automatically accepting our rules and terms"
+msgstr ""
+
+#: components/socials-modal.php:10
+msgid "Share link"
+msgstr ""
+
+#: components/socials-modal.php:13
+msgid "Copy"
+msgstr ""
