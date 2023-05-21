@@ -1,0 +1,307 @@
+{
+   "": {
+      "project-id-version": "PACKAGE VERSION",
+      "report-msgid-bugs-to": "",
+      "pot-creation-date": "2023-05-16 14:47+0400",
+      "po-revision-date": "2023-05-16 16:24+0400",
+      "last-translator": "<EMAIL@ADDRESS>",
+      "language-team": "Ukrainian",
+      "language": "uk",
+      "mime-version": "1.0",
+      "content-type": "text/plain; charset=UTF-8",
+      "content-transfer-encoding": "8bit",
+      "plural-forms": "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"
+   },
+   "404 Not Found Page Title": [
+      null,
+      "404 Не знайдено сторінку"
+   ],
+   "404 Not Found Page Meta Description": [
+      null,
+      "404 Не знайдено сторінку"
+   ],
+   "Home Page Meta Description": [
+      null,
+      "Мета опис домашньої сторінки"
+   ],
+   "Signature Generator": [
+      null,
+      "Генератор підписів"
+   ],
+   "404 Not Found": [
+      null,
+      "404 Не знайдено"
+   ],
+   "Go to homepage": [
+      null,
+      "Перейти на головну"
+   ],
+   "Home Page Title": [
+      null,
+      "Головна"
+   ],
+   "Generate your own unique signature or <b>draw</b> it by yourself": [
+      null,
+      "Створіть власний унікальний підпис або <b>намалюйте</b> його самостійно"
+   ],
+   "Create your own <b>Signature</b>": [
+      null,
+      "Створіть власний <b>Підпис</b>"
+   ],
+   "Open Editor": [
+      null,
+      "Відкритий Редактор"
+   ],
+   "Home Page About Us": [
+      null,
+      "Про нас"
+   ],
+   "Home Page Instruction": [
+      null,
+      "Як використовувати генератор підпису?"
+   ],
+   "About us image": [
+      null,
+      "Імідж про нас"
+   ],
+   "Generate more": [
+      null,
+      "Генеруйте більше"
+   ],
+   "Privacy Policy Page Title": [
+      null,
+      "Політика сайту"
+   ],
+   "Privacy Policy Page Meta Description": [
+      null,
+      "Політика сайту"
+   ],
+   "Privacy Policy": [
+      null,
+      "Політика сайту"
+   ],
+   "Clear": [
+      null,
+      "Очистити"
+   ],
+   "Color": [
+      null,
+      "Колір"
+   ],
+   "Thickness": [
+      null,
+      "Товщина"
+   ],
+   "Share": [
+      null,
+      "Поділитися"
+   ],
+   "Download": [
+      null,
+      "Завантажити"
+   ],
+   "2023 All Right Reserved": [
+      null,
+      "© 2023 Всі права захищені"
+   ],
+   "Contact Us": [
+      null,
+      "Зв'яжіться з нами"
+   ],
+   "Email": [
+      null,
+      "Електронна пошта"
+   ],
+   "First Name": [
+      null,
+      "Ім'я"
+   ],
+   "Last Name": [
+      null,
+      "Прізвище"
+   ],
+   "Middle Name": [
+      null,
+      "По батькові"
+   ],
+   "Generate": [
+      null,
+      "Згенерувати"
+   ],
+   "Go to top": [
+      null,
+      "Наверх"
+   ],
+   "Page Language": [
+      null,
+      "Мова сторінки"
+   ],
+   "Signature Preview Image": [
+      null,
+      "Прев'ю-картинка Підписи"
+   ],
+   "Background Image": [
+      null,
+      "Фонове зображення"
+   ],
+   "Preview": [
+      null,
+      "Прев'ю"
+   ],
+   "Signature": [
+      null,
+      "Підпис"
+   ],
+   "Edit": [
+      null,
+      "Змінити"
+   ],
+   "By sharing you’re automatically accepting our rules and terms": [
+      null,
+      "Ділячись, ви автоматично приймаєте наші правила та умови"
+   ],
+   "Share link": [
+      null,
+      "Посилання на сторінку"
+   ],
+   "Copy": [
+      null,
+      "Скопіювати"
+   ],
+   "Loading": [
+      null,
+      "Завантаження"
+   ],
+   "Load More": [
+      null,
+      "Завантажити ще"
+   ],
+   "Preview on Document": [
+      null,
+      "Превью у документі"
+   ],
+   "Step": [
+      null,
+      "Крок"
+   ],
+   "Step Image": [
+      null,
+      "Зображення кроку"
+   ],
+   "Step 1 Title": [
+      null,
+      "Заповнити форму"
+   ],
+   "Step 1 Description": [
+      null,
+      "Введіть своє ім'я, прізвище та по батькові у відповідні поля на головній сторінці"
+   ],
+   "Step Image Title 1": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 1": [
+      null,
+      "phone-half.png"
+   ],
+   "Step 2 Title": [
+      null,
+      "Натисніть 'Згенерувати'"
+   ],
+   "Step 2 Description": [
+      null,
+      "Після введення даних натисніть один раз на кнопку 'Згенерувати'"
+   ],
+   "Step Image Title 2": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 2": [
+      null,
+      "phone-half.png"
+   ],
+   "Step 3 Title": [
+      null,
+      "Ознайомтеся з доступними варіантами"
+   ],
+   "Step 3 Description": [
+      null,
+      "Після натискання кнопки 'Створити' ви побачите безліч стильних підписів, згенерованих нашим сервісом. Перегляньте їх і виберіть підпис, який вам найбільше подобається"
+   ],
+   "Step Image Title 3": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 3": [
+      null,
+      "phone-half.png"
+   ],
+   "Step 4 Title": [
+      null,
+      "Попередній перегляд на папері (необов'язково)"
+   ],
+   "Step 4 Description": [
+      null,
+      "Якщо ви хочете побачити, як ваш підпис буде виглядати на папері, натисніть на відповідну кнопку попереднього перегляду"
+   ],
+   "Step Image Title 4": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 4": [
+      null,
+      "phone-half.png"
+   ],
+   "Step 5 Title": [
+      null,
+      "Відредагуйте підпис"
+   ],
+   "Step 5 Description": [
+      null,
+      "Якщо вам потрібно внести зміни до обраного підпису, скористайтеся нашим зручним редактором"
+   ],
+   "Step Image Title 5": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 5": [
+      null,
+      "phone-half.png"
+   ],
+   "Step 6 Title": [
+      null,
+      "Завантажити підпис"
+   ],
+   "Step 6 Description": [
+      null,
+      "Коли ви задоволені результатом, натисніть 'Завантажити', щоб отримати свій підпис у потрібному форматі"
+   ],
+   "Step Image Title 6": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 6": [
+      null,
+      "phone-half.png"
+   ],
+   "Step 7 Title": [
+      null,
+      "Поділіться в соціальних мережах"
+   ],
+   "Step 7 Description": [
+      null,
+      "Якщо ви хочете поділитися своїм новим підписом з іншими, натисніть 'Поділитися' і виберіть соціальні мережі, в яких ви хочете опублікувати посилання на ваш підпис"
+   ],
+   "Step Image Title 7": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 7": [
+      null,
+      "phone-half.png"
+   ],
+   "Signatures already generated:": [
+      null,
+      "Підписи вже зібрані:"
+   ]
+}

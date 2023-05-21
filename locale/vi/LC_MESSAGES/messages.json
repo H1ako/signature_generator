@@ -1,0 +1,307 @@
+{
+   "": {
+      "project-id-version": "PACKAGE VERSION",
+      "report-msgid-bugs-to": "",
+      "pot-creation-date": "2023-05-16 18:21+0400",
+      "po-revision-date": "2023-05-16 19:34+0400",
+      "last-translator": "<EMAIL@ADDRESS>",
+      "language-team": "Vietnamese",
+      "language": "vi",
+      "mime-version": "1.0",
+      "content-type": "text/plain; charset=UTF-8",
+      "content-transfer-encoding": "8bit",
+      "plural-forms": "nplurals=1; plural=0;"
+   },
+   "404 Not Found Page Title": [
+      null,
+      "404 Không Tìm Thấy"
+   ],
+   "404 Not Found Page Meta Description": [
+      null,
+      "404 Không Tìm Thấy"
+   ],
+   "Home Page Meta Description": [
+      null,
+      "Trang Chủ"
+   ],
+   "Signature Generator": [
+      null,
+      "Máy Phát Điện Chữ Ký"
+   ],
+   "404 Not Found": [
+      null,
+      "404 Không Tìm Thấy"
+   ],
+   "Go to homepage": [
+      null,
+      "Chuyển đến trang chủ"
+   ],
+   "Home Page Title": [
+      null,
+      "Trang Chủ"
+   ],
+   "Generate your own unique signature or <b>draw</b> it by yourself": [
+      null,
+      "Tạo chữ ký duy nhất của riêng bạn hoặc <b>vẽ</b> nó một mình"
+   ],
+   "Create your own <b>Signature</b>": [
+      null,
+      "Tạo <b>chữ ký</b> của riêng bạn"
+   ],
+   "Open Editor": [
+      null,
+      "Mở Trình Chỉnh Sửa"
+   ],
+   "Loading": [
+      null,
+      "Đang tải"
+   ],
+   "Load More": [
+      null,
+      "Tải Thêm"
+   ],
+   "Home Page About Us": [
+      null,
+      "Về chúng tôi"
+   ],
+   "Home Page Instruction": [
+      null,
+      "Làm thế nào để sử dụng trình tạo chữ ký?"
+   ],
+   "About us image": [
+      null,
+      "Về chúng tôi hình ảnh"
+   ],
+   "Generate more": [
+      null,
+      "Tạo thêm"
+   ],
+   "Privacy Policy Page Title": [
+      null,
+      "Chính Sách Bảo Mật"
+   ],
+   "Privacy Policy Page Meta Description": [
+      null,
+      "Chính Sách Bảo Mật"
+   ],
+   "Privacy Policy": [
+      null,
+      "Chính Sách Bảo Mật"
+   ],
+   "Clear": [
+      null,
+      "Rõ ràng"
+   ],
+   "Color": [
+      null,
+      "Màu sắc"
+   ],
+   "Thickness": [
+      null,
+      "Độ dày"
+   ],
+   "Share": [
+      null,
+      "Chia sẻ"
+   ],
+   "Download": [
+      null,
+      "Tải về"
+   ],
+   "2023 All Right Reserved": [
+      null,
+      "© 2023 Được Rồi"
+   ],
+   "Contact Us": [
+      null,
+      "Liên Hệ Với Chúng Tôi"
+   ],
+   "Email": [
+      null,
+      "Email"
+   ],
+   "First Name": [
+      null,
+      "Tên"
+   ],
+   "Last Name": [
+      null,
+      "Họ Tên"
+   ],
+   "Middle Name": [
+      null,
+      "Tên đệm"
+   ],
+   "Generate": [
+      null,
+      "Tạo"
+   ],
+   "Go to top": [
+      null,
+      "Lên đỉnh"
+   ],
+   "Page Language": [
+      null,
+      "Ngôn Ngữ Trang"
+   ],
+   "Signature Preview Image": [
+      null,
+      "Hình Ảnh Xem Trước Chữ Ký"
+   ],
+   "Background Image": [
+      null,
+      "Hình Nền"
+   ],
+   "Preview": [
+      null,
+      "Xem trước"
+   ],
+   "Signature": [
+      null,
+      "Chữ ký"
+   ],
+   "Edit": [
+      null,
+      "Chỉnh sửa"
+   ],
+   "By sharing you’re automatically accepting our rules and terms": [
+      null,
+      "Bằng cách chia sẻ bạn sẽ tự động chấp nhận các quy tắc và điều khoản của chúng tôi"
+   ],
+   "Share link": [
+      null,
+      "Chia sẻ liên kết"
+   ],
+   "Copy": [
+      null,
+      "Sao chép"
+   ],
+   "Preview on Document": [
+      null,
+      "Xem Trước Trên Tài liệu"
+   ],
+   "Step": [
+      null,
+      "Bước"
+   ],
+   "Step Image": [
+      null,
+      "Hình Ảnh Bước"
+   ],
+   "Step 1 Title": [
+      null,
+      "Điền vào biểu mẫu"
+   ],
+   "Step 1 Description": [
+      null,
+      "Nhập tên, họ và tên đệm của bạn vào các trường tương ứng trên trang chủ"
+   ],
+   "Step Image Title 1": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 1": [
+      null,
+      "phone-half.png"
+   ],
+   "Step 2 Title": [
+      null,
+      "Nhấp Vào 'Tạo'"
+   ],
+   "Step 2 Description": [
+      null,
+      "Sau khi nhập dữ liệu, nhấp một lần vào nút' Tạo'"
+   ],
+   "Step Image Title 2": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 2": [
+      null,
+      "phone-half.png"
+   ],
+   "Step 3 Title": [
+      null,
+      "Khám phá các tùy chọn có sẵn"
+   ],
+   "Step 3 Description": [
+      null,
+      "Sau khi bạn nhấp vào Nút' Tạo', bạn sẽ thấy nhiều chữ ký phong cách được tạo bởi dịch vụ của chúng tôi. Duyệt qua chúng và chọn chữ ký bạn thích nhất"
+   ],
+   "Step Image Title 3": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 3": [
+      null,
+      "phone-half.png"
+   ],
+   "Step 4 Title": [
+      null,
+      "Xem trước trên giấy (tùy chọn)"
+   ],
+   "Step 4 Description": [
+      null,
+      "Nếu bạn muốn xem chữ ký của mình sẽ trông như thế nào trên giấy, hãy nhấp vào nút xem trước tương ứng"
+   ],
+   "Step Image Title 4": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 4": [
+      null,
+      "phone-half.png"
+   ],
+   "Step 5 Title": [
+      null,
+      "Chỉnh sửa chữ ký"
+   ],
+   "Step 5 Description": [
+      null,
+      "Nếu bạn cần thực hiện các thay đổi đối với chữ ký đã chọn của mình, hãy sử dụng trình chỉnh sửa tiện dụng của chúng tôi"
+   ],
+   "Step Image Title 5": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 5": [
+      null,
+      "phone-half.png"
+   ],
+   "Step 6 Title": [
+      null,
+      "Tải xuống chữ ký"
+   ],
+   "Step 6 Description": [
+      null,
+      "Khi bạn hài lòng với kết quả, hãy nhấp Vào 'Tải xuống' để nhận chữ ký của bạn ở định dạng mong muốn"
+   ],
+   "Step Image Title 6": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 6": [
+      null,
+      "phone-half.png"
+   ],
+   "Step 7 Title": [
+      null,
+      "Chia sẻ trên phương tiện truyền thông xã hội"
+   ],
+   "Step 7 Description": [
+      null,
+      "Nếu bạn muốn chia sẻ chữ ký mới của mình với người khác, hãy nhấp vào 'Chia sẻ' và chọn mạng xã hội nơi bạn muốn đăng liên kết đến chữ ký của mình"
+   ],
+   "Step Image Title 7": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 7": [
+      null,
+      "phone-half.png"
+   ],
+   "Signatures already generated:": [
+      null,
+      "Chữ ký đã được tạo:"
+   ]
+}

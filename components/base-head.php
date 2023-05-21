@@ -6,18 +6,16 @@
 <link itemprop="mainEntityOfPage" href="<?= $SITE_URL ?>" />
 <meta itemprop="author" content="@<?= $SITE_NAME ?>">
 <meta itemprop="name" content="<?= $SITE_NAME ?>">
-<meta itemprop="image" content="<?= $SITE_URL ?>/assets/images/<?= $META_IMAGE ?>">
+
 <link rel="shortcut icon" href="<?= $SITE_URL ?>/assets/images/<?= $SITE_ICON ?>" type="image/x-icon">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="<?= $SITE_NAME ?>">
 <meta name="twitter:creator" content="<?= $SITE_NAME ?>">
-<meta name="twitter:image" content="<?= $SITE_URL ?>/assets/images/<?= $META_IMAGE ?>">
 
 <meta property="og:locale" content="<?= $currentLocale['short_code']; ?>">
 <meta property="og:type" content="website" />
 <meta property="og:url" content="<?= $SITE_URL ?>"/>
-<meta property="og:image" content="<?= $SITE_URL ?>/assets/images/<?= $META_IMAGE ?>"/>
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="<?= $SITE_NAME ?>" />

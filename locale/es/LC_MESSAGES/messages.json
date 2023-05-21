@@ -1,0 +1,307 @@
+{
+   "": {
+      "project-id-version": "PACKAGE VERSION",
+      "report-msgid-bugs-to": "",
+      "pot-creation-date": "2023-05-16 18:21+0400",
+      "po-revision-date": "2023-05-16 18:58+0400",
+      "last-translator": "<EMAIL@ADDRESS>",
+      "language-team": "Spanish",
+      "language": "es",
+      "mime-version": "1.0",
+      "content-type": "text/plain; charset=UTF-8",
+      "content-transfer-encoding": "8bit",
+      "plural-forms": "nplurals=2; plural=(n != 1);"
+   },
+   "404 Not Found Page Title": [
+      null,
+      "404 no encontrado"
+   ],
+   "404 Not Found Page Meta Description": [
+      null,
+      "404 no encontrado"
+   ],
+   "Home Page Meta Description": [
+      null,
+      "Página de inicio"
+   ],
+   "Signature Generator": [
+      null,
+      "Generador de firmas"
+   ],
+   "404 Not Found": [
+      null,
+      "404 no encontrado"
+   ],
+   "Go to homepage": [
+      null,
+      "Ir al inicio"
+   ],
+   "Home Page Title": [
+      null,
+      "Página de inicio"
+   ],
+   "Generate your own unique signature or <b>draw</b> it by yourself": [
+      null,
+      "Genera tu propia firma única o <b>dibújala tú mismo</b>."
+   ],
+   "Create your own <b>Signature</b>": [
+      null,
+      "Crea tu propia <b>Firma</b>"
+   ],
+   "Open Editor": [
+      null,
+      "Editor abierto"
+   ],
+   "Loading": [
+      null,
+      "Cargando"
+   ],
+   "Load More": [
+      null,
+      "Más información"
+   ],
+   "Home Page About Us": [
+      null,
+      "Quiénes somos"
+   ],
+   "Home Page Instruction": [
+      null,
+      "¿Cómo se utiliza el generador de firmas?"
+   ],
+   "About us image": [
+      null,
+      "Acerca de nosotros"
+   ],
+   "Generate more": [
+      null,
+      "Generar más"
+   ],
+   "Privacy Policy Page Title": [
+      null,
+      "Política de privacidad"
+   ],
+   "Privacy Policy Page Meta Description": [
+      null,
+      "Política de privacidad"
+   ],
+   "Privacy Policy": [
+      null,
+      "Política de privacidad"
+   ],
+   "Clear": [
+      null,
+      "Claro"
+   ],
+   "Color": [
+      null,
+      "Color"
+   ],
+   "Thickness": [
+      null,
+      "Espesor"
+   ],
+   "Share": [
+      null,
+      "Compartir"
+   ],
+   "Download": [
+      null,
+      "Descargar"
+   ],
+   "2023 All Right Reserved": [
+      null,
+      "© 2023 Todos los derechos reservados"
+   ],
+   "Contact Us": [
+      null,
+      "Contacto"
+   ],
+   "Email": [
+      null,
+      "Correo electrónico"
+   ],
+   "First Name": [
+      null,
+      "Nombre"
+   ],
+   "Last Name": [
+      null,
+      "Apellido"
+   ],
+   "Middle Name": [
+      null,
+      "Patronímico"
+   ],
+   "Generate": [
+      null,
+      "Genere"
+   ],
+   "Go to top": [
+      null,
+      "Sobre"
+   ],
+   "Page Language": [
+      null,
+      "Página Idioma"
+   ],
+   "Signature Preview Image": [
+      null,
+      "Imagen previa de la firma"
+   ],
+   "Background Image": [
+      null,
+      "Imagen de fondo"
+   ],
+   "Preview": [
+      null,
+      "Vista previa"
+   ],
+   "Signature": [
+      null,
+      "Firma"
+   ],
+   "Edit": [
+      null,
+      "Editar"
+   ],
+   "By sharing you’re automatically accepting our rules and terms": [
+      null,
+      "Al compartir estás aceptando automáticamente nuestras normas y condiciones"
+   ],
+   "Share link": [
+      null,
+      "Compartir enlace"
+   ],
+   "Copy": [
+      null,
+      "Copia"
+   ],
+   "Preview on Document": [
+      null,
+      "Vista previa en el documento"
+   ],
+   "Step": [
+      null,
+      "Paso"
+   ],
+   "Step Image": [
+      null,
+      "Paso Imagen"
+   ],
+   "Step 1 Title": [
+      null,
+      "Rellene el formulario"
+   ],
+   "Step 1 Description": [
+      null,
+      "Introduzca su nombre, apellidos y segundo nombre en los campos correspondientes de la página de inicio"
+   ],
+   "Step Image Title 1": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 1": [
+      null,
+      "phone-half.png"
+   ],
+   "Step 2 Title": [
+      null,
+      "Haga clic en 'Generar'"
+   ],
+   "Step 2 Description": [
+      null,
+      "Una vez introducidos los datos, pulse una vez el botón 'Generar'"
+   ],
+   "Step Image Title 2": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 2": [
+      null,
+      "phone-half.png"
+   ],
+   "Step 3 Title": [
+      null,
+      "Explore las opciones disponibles"
+   ],
+   "Step 3 Description": [
+      null,
+      "Después de hacer clic en el botón 'Generar', verás muchas firmas elegantes generadas por nuestro servicio. Navegue por ellas y elija la firma que más le guste"
+   ],
+   "Step Image Title 3": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 3": [
+      null,
+      "phone-half.png"
+   ],
+   "Step 4 Title": [
+      null,
+      "Vista previa en papel (opcional)"
+   ],
+   "Step 4 Description": [
+      null,
+      "Si quieres ver cómo quedará tu firma en papel, haz clic en el botón de vista previa correspondiente"
+   ],
+   "Step Image Title 4": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 4": [
+      null,
+      "phone-half.png"
+   ],
+   "Step 5 Title": [
+      null,
+      "Editar la firma"
+   ],
+   "Step 5 Description": [
+      null,
+      "Si necesitas hacer cambios en la firma elegida, utiliza nuestro práctico editor"
+   ],
+   "Step Image Title 5": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 5": [
+      null,
+      "phone-half.png"
+   ],
+   "Step 6 Title": [
+      null,
+      "Descargar la firma"
+   ],
+   "Step 6 Description": [
+      null,
+      "Cuando esté satisfecho con el resultado, haga clic en 'Descargar' para obtener su firma en el formato deseado."
+   ],
+   "Step Image Title 6": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 6": [
+      null,
+      "phone-half.png"
+   ],
+   "Step 7 Title": [
+      null,
+      "Compartir en las redes sociales"
+   ],
+   "Step 7 Description": [
+      null,
+      "Si quieres compartir tu nueva firma con otras personas, haz clic en 'Compartir' y selecciona las redes sociales en las que quieres publicar el enlace a tu firma"
+   ],
+   "Step Image Title 7": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 7": [
+      null,
+      "phone-half.png"
+   ],
+   "Signatures already generated:": [
+      null,
+      "Firmas ya generadas:"
+   ]
+}

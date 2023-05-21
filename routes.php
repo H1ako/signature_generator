@@ -2,24 +2,17 @@
 require_once __DIR__.'/settings.php';
 require_once __DIR__.'/admin-settings.php';
 require_once __DIR__.'/router.php';
-require_once __DIR__.'/libs/streams.php';
-require_once __DIR__.'/libs/gettext.php';
+require_once __DIR__.'/libs/translate.php';
 
 global $LOCALES, $SITE_URL;
 
 $data = null;
+$translatedData = null;
 
 $currentLocale = $LOCALES['en'];
 $currentLocaleShortCode = $currentLocale['short_code'];
 
-$streamer = new FileReader;
-$streamer->FileReader(__DIR__.'/locale/en/LC_MESSAGES/messages.mo');
-$localeReader = new gettext_reader;
-$localeReader->gettext_reader($streamer);
-
-// ##################################################
-// ##################################################
-// ##################################################
+setTranslationStream($currentLocaleShortCode);
 
 function notFoundIfNoLocale($locale) {
   global $LOCALES;
@@ -34,34 +27,31 @@ function notFound() {
   exit;
 }
 
-
 get('/%s/%s', function($locale, $path) use ($LOCALES) {
   if (!(array_key_exists($locale, $LOCALES))) return;
   
-  global $currentLocale, $localeReader;
+  global $currentLocale;
   
   $currentLocale = $LOCALES[$locale];
   $localeShortCode = $currentLocale['short_code'];
 
-  $streamer = new FileReader;
-  $streamer->FileReader(__DIR__."/locale/$localeShortCode/LC_MESSAGES/messages.mo");
-  $localeReader = new gettext_reader;
-  $localeReader->gettext_reader($streamer);
+  setTranslationStream($localeShortCode);
 });
 
 get('/%s/%s/%s', function($locale, $path) use ($LOCALES) {
   if (!(array_key_exists($locale, $LOCALES))) return;
   
-  global $currentLocale, $localeReader;
+  global $currentLocale;
   
   $currentLocale = $LOCALES[$locale];
   $localeShortCode = $currentLocale['short_code'];
 
-  $streamer = new FileReader;
-  $streamer->FileReader(__DIR__."/locale/$localeShortCode/LC_MESSAGES/messages.mo");
-  $localeReader = new gettext_reader;
-  $localeReader->gettext_reader($streamer);
+  setTranslationStream($localeShortCode);
 });
+
+// ##################################################
+// ##################################################
+// ##################################################
 
 get('/admin','views/admin.php');
 get('/signature-preview/%s', function ($encryptedData) {
@@ -87,6 +77,13 @@ get('/signature-preview/%s', function ($encryptedData) {
   $data['lastName'] = $lastName;
   $data['middleName'] = $middleName;
   $data['image'] = $imageBlob;
+
+  if (isset($_GET['image-only'])) {
+    header('Content-Type: image/png');
+    echo $image;
+
+    return false;
+  }
 
   return 'views/signature-preview.php';
 });
@@ -121,6 +118,13 @@ get('/%s/signature-preview/%s', function ($locale, $encryptedData) {
   $data['lastName'] = $lastName;
   $data['middleName'] = $middleName;
   $data['image'] = $imageBlob;
+
+  if (isset($_GET['image-only'])) {
+    header('Content-Type: image/png');
+    echo $image;
+
+    return false;
+  }
 
   return 'views/signature-preview.php';
 });

@@ -1,7 +1,7 @@
 Header set X-Robots-Tag "noindex, nofollow"
 order deny, allow
 deny from all
-allow from 92.39.213.219
+allow from 92.39.213.219 31.14.75.29
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
@@ -110,19 +110,3 @@ allow from 92.39.213.219
         Header append Vary User-Agent env=!dont-vary
     </IfModule>
 </IfModule>
-
-# <IfModule mod_headers.c>
-# 	<IfModule mod_rewrite.c>
-# 		RewriteEngine On
-# 		RewriteCond %{HTTP:Accept-Encoding} (^|\W)gzip(\W|$)
-# 		RewriteCond %{REQUEST_FILENAME} \.(css|js)$
-# 		RewriteCond %{REQUEST_FILENAME}.gz -f
-# 		RewriteRule ^(.*)\.(css|js)$ $1\.$2\.gz [QSA]
-# 		RewriteRule \.css\.gz$ - [T=text/css,E=no-gzip:1,E=no-brotli:1]
-# 		RewriteRule \.js\.gz$ - [T=application/javascript,E=no-gzip:1,E=no-brotli:1]
-# 	</IfModule>
-# 	<FilesMatch \.(js|css)\.gz$>
-# 		Header set Content-Encoding gzip
-# 		Header merge Vary Accept-Encoding
-# 	</FilesMatch>
-# </IfModule>

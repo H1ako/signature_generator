@@ -21,6 +21,9 @@ $nameTitle = "$lastName $firstName $middleName"
   <meta name="description" content="">
   <meta name="og:description" content="">
   <meta name="twitter:description" content="">
+  <meta itemprop="image" content="<?= $_SERVER['REQUEST_URI'] ?>?image-only">
+  <meta name="twitter:image" content="<?= $_SERVER['REQUEST_URI'] ?>?image-only">
+  <meta property="og:image" content="<?= $_SERVER['REQUEST_URI'] ?>?image-only"/>
   <?php include_once('components/base-head.php'); ?>
   <link rel="preload" as="style" href="<?= $SITE_URL ?>/assets/styles/css/preview.css" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="<?= $SITE_URL ?>/assets/styles/css/preview.css"></noscript>
@@ -29,7 +32,7 @@ $nameTitle = "$lastName $firstName $middleName"
 <?php include_once('components/header.php'); ?>
 <main class="main-content">
   <section class="main-content__info">
-    <h1 class="info__subtitle"><?= $localeReader->translate('Signature Generator'); ?></h1>
+    <h1 class="info__subtitle"><?= translate('Signature Generator'); ?></h1>
     <h2 class="info__title"><?= $nameTitle ?></h2>
   </section>
   <section class="main-content__advertisement">
@@ -38,7 +41,7 @@ $nameTitle = "$lastName $firstName $middleName"
   <section class="main-content__preview">
     <img src="<?= $image ?>" alt="<?= $nameTitle ?>" class="preview__image">
   </section>
-  <a href="/<?= $currentLocaleShortCode === 'en' ? '' : $currentLocaleShortCode ?>" class="more-button" title="<?= $localeReader->translate('Generate more'); ?>"><?= $localeReader->translate('Generate more'); ?></a>
+  <a href="/<?= $currentLocaleShortCode === 'en' ? '' : $currentLocaleShortCode ?>" class="more-button" title="<?= translate('Generate more'); ?>"><?= translate('Generate more'); ?></a>
 </main>
 <?php include_once('components/footer.php'); ?>
 </body>

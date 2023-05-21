@@ -1,0 +1,307 @@
+{
+   "": {
+      "project-id-version": "PACKAGE VERSION",
+      "report-msgid-bugs-to": "",
+      "pot-creation-date": "2023-05-16 18:21+0400",
+      "po-revision-date": "2023-05-16 19:50+0400",
+      "last-translator": "<EMAIL@ADDRESS>",
+      "language-team": "Portuguese",
+      "language": "pt",
+      "mime-version": "1.0",
+      "content-type": "text/plain; charset=UTF-8",
+      "content-transfer-encoding": "8bit",
+      "plural-forms": "nplurals=2; plural=(n != 1);"
+   },
+   "404 Not Found Page Title": [
+      null,
+      "404 Não encontrado"
+   ],
+   "404 Not Found Page Meta Description": [
+      null,
+      "404 Não encontrado"
+   ],
+   "Home Page Meta Description": [
+      null,
+      "Página inicial"
+   ],
+   "Signature Generator": [
+      null,
+      "Gerador de assinaturas"
+   ],
+   "404 Not Found": [
+      null,
+      "404 Não encontrado"
+   ],
+   "Go to homepage": [
+      null,
+      "Ir para a página inicial"
+   ],
+   "Home Page Title": [
+      null,
+      "Página inicial"
+   ],
+   "Generate your own unique signature or <b>draw</b> it by yourself": [
+      null,
+      "Gerar a sua própria assinatura exclusiva ou <b>desenhá-la</b> por si próprio"
+   ],
+   "Create your own <b>Signature</b>": [
+      null,
+      "Criar a sua própria <b>assinatura</b>"
+   ],
+   "Open Editor": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Loading": [
+      null,
+      "Abrir o editor"
+   ],
+   "Load More": [
+      null,
+      "Carregar mais"
+   ],
+   "Home Page About Us": [
+      null,
+      "Sobre nós"
+   ],
+   "Home Page Instruction": [
+      null,
+      "Como é que utilizo o gerador de assinaturas?"
+   ],
+   "About us image": [
+      null,
+      "Imagem sobre nós"
+   ],
+   "Generate more": [
+      null,
+      "Gerar mais"
+   ],
+   "Privacy Policy Page Title": [
+      null,
+      "Política de privacidade"
+   ],
+   "Privacy Policy Page Meta Description": [
+      null,
+      "Política de privacidade"
+   ],
+   "Privacy Policy": [
+      null,
+      "Política de privacidade"
+   ],
+   "Clear": [
+      null,
+      "Limpo"
+   ],
+   "Color": [
+      null,
+      "Cor"
+   ],
+   "Thickness": [
+      null,
+      "Espessura"
+   ],
+   "Share": [
+      null,
+      "Partilhar"
+   ],
+   "Download": [
+      null,
+      "Descarregar"
+   ],
+   "2023 All Right Reserved": [
+      null,
+      "© 2023 Todos os direitos reservados"
+   ],
+   "Contact Us": [
+      null,
+      "Contactar-nos"
+   ],
+   "Email": [
+      null,
+      "Correio electrónico"
+   ],
+   "First Name": [
+      null,
+      "Nome próprio"
+   ],
+   "Last Name": [
+      null,
+      "Apelido"
+   ],
+   "Middle Name": [
+      null,
+      "Patronímico"
+   ],
+   "Generate": [
+      null,
+      "Gerar"
+   ],
+   "Go to top": [
+      null,
+      "Ir para o topo"
+   ],
+   "Page Language": [
+      null,
+      "Língua da página"
+   ],
+   "Signature Preview Image": [
+      null,
+      "Imagem de pré-visualização da assinatura"
+   ],
+   "Background Image": [
+      null,
+      "Imagem de fundo"
+   ],
+   "Preview": [
+      null,
+      "Pré-visualização"
+   ],
+   "Signature": [
+      null,
+      "Assinatura"
+   ],
+   "Edit": [
+      null,
+      "Editar"
+   ],
+   "By sharing you’re automatically accepting our rules and terms": [
+      null,
+      "Ao partilhar, está a aceitar automaticamente as nossas regras e condições"
+   ],
+   "Share link": [
+      null,
+      "Partilhar ligação"
+   ],
+   "Copy": [
+      null,
+      "Cópia"
+   ],
+   "Preview on Document": [
+      null,
+      "Pré-visualização no documento"
+   ],
+   "Step": [
+      null,
+      "Etapa"
+   ],
+   "Step Image": [
+      null,
+      "Imagem da etapa"
+   ],
+   "Step 1 Title": [
+      null,
+      "Preencher o formulário"
+   ],
+   "Step 1 Description": [
+      null,
+      "Introduza o seu nome próprio, apelido e nome do meio nos campos correspondentes da página inicial"
+   ],
+   "Step Image Title 1": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 1": [
+      null,
+      "phone-half.png"
+   ],
+   "Step 2 Title": [
+      null,
+      "Clique em 'Gerar'"
+   ],
+   "Step 2 Description": [
+      null,
+      "Depois de introduzir os dados, clique uma vez no botão 'Gerar'"
+   ],
+   "Step Image Title 2": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 2": [
+      null,
+      "phone-half.png"
+   ],
+   "Step 3 Title": [
+      null,
+      "Explorar as opções disponíveis"
+   ],
+   "Step 3 Description": [
+      null,
+      "Depois de clicar no botão 'Gerar', verá muitas assinaturas com estilo geradas pelo nosso serviço. Navegue por elas e escolha a assinatura que mais lhe agrada"
+   ],
+   "Step Image Title 3": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 3": [
+      null,
+      "phone-half.png"
+   ],
+   "Step 4 Title": [
+      null,
+      "Pré-visualização em papel (opcional)"
+   ],
+   "Step 4 Description": [
+      null,
+      "Se quiser ver o aspecto da sua assinatura no papel, clique no botão de pré-visualização correspondente"
+   ],
+   "Step Image Title 4": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 4": [
+      null,
+      "phone-half.png"
+   ],
+   "Step 5 Title": [
+      null,
+      "Editar a assinatura"
+   ],
+   "Step 5 Description": [
+      null,
+      "Se precisar de fazer alterações à assinatura escolhida, utilize o nosso prático editor"
+   ],
+   "Step Image Title 5": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 5": [
+      null,
+      "phone-half.png"
+   ],
+   "Step 6 Title": [
+      null,
+      "Descarregar a assinatura"
+   ],
+   "Step 6 Description": [
+      null,
+      "Quando estiver satisfeito com o resultado, clique em 'Descarregar' para obter a sua assinatura no formato pretendido"
+   ],
+   "Step Image Title 6": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 6": [
+      null,
+      "phone-half.png"
+   ],
+   "Step 7 Title": [
+      null,
+      "Partilhar nas redes sociais"
+   ],
+   "Step 7 Description": [
+      null,
+      "Se pretender partilhar a sua nova assinatura com outras pessoas, clique em 'Partilhar' e seleccione as redes sociais onde pretende publicar a ligação para a sua assinatura"
+   ],
+   "Step Image Title 7": [
+      null,
+      "Тайтл Алт 1"
+   ],
+   "Step Image 7": [
+      null,
+      "phone-half.png"
+   ],
+   "Signatures already generated:": [
+      null,
+      "Assinaturas já geradas:"
+   ]
+}
