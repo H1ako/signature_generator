@@ -17,7 +17,7 @@ function updateSocialsShareLink(link) {
   socialTelegramBtn.href = getTelegramShareLink(link)
   socialWhatsappBtn.href = getWhatsappShareLink(link)
   socialFacebookBtn.href = getFacebookShareLink(link)
-  socialRedditBtn.href = getFacebookShareLink(link)
+  socialRedditBtn.href = getRedditShareLink(link)
   socialsModalLinkText.value = link
 }
 
@@ -34,7 +34,7 @@ function getWhatsappShareLink(link) {
 }
 
 function getFacebookShareLink(link) {
-  return `$https://www.facebook.com/sharer/sharer.php?u={link}`
+  return `$https://www.facebook.com/sharer/sharer.php?u=${link}`
 }
 
 function getRedditShareLink(link) {

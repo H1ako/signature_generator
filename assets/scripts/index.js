@@ -122,6 +122,7 @@ function getSignatureCard(image) {
   const newCard = newCardClone.querySelector('.signature-card')
   newCard.setAttribute('data-signature-src', image.png)
   newCard.setAttribute('data-signature-src-jpg', image.jpg)
+  newCard.setAttribute('style-index', page)
 
   const newCardImageMainPreviewButton = newCard.querySelector('.signature-card__top')
   newCardImageMainPreviewButton.addEventListener('click', previewSignature)
@@ -245,17 +246,27 @@ async function shareSignature(e) {
 }
 
 function shareSignatureBySocialsModal(e) {
-  const link = window.location.href
-  // const imageLink = e.target.closest('[data-signature-src]').getAttribute('data-signature-src')
+  const styleIndex = e.target.closest('[data-signature-src]').getAttribute('style-index')
+  const link = getSignatureSharelink(styleIndex)
 
   openSocialsModal(link)
+}
+
+function getSignatureSharelink(styleIndex) {
+  const generatorFormData = new FormData(generatorForm)
+  const firstName = generatorFormData.get('first-name')
+  const lastName = generatorFormData.get('last-name')
+  const middleName = generatorFormData.get('middle-name')
+  const randomId = Math.floor(Math.random() * 100000)
+
+  return `${window.location.origin}/signature-preview/${randomId}?first-name=${firstName}&last-name=${lastName}&middle-name=${middleName}&style-index=${styleIndex}&random-index=${randomIndex}`
 }
 
 async function shareSignatureWithNavigator(e) {
   const imageLink = await e.target.closest('[data-signature-src]').getAttribute('data-signature-src')
   const imageBlob = await getBlobFromString(imageLink)
 
-  shareImage('My Signature', 'Check out my Signature', imageBlob)
+  shareImage(getDownloadFileName(), 'Check out my Signature', imageBlob)
 }
 
 async function getBlobFromString(blobString) {
