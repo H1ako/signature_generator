@@ -227,6 +227,7 @@
   display: grid;
   place-items: center;
   text-align: center;
+  box-shadow: var(--box-shadow-main);
 }
 
 .editor {
@@ -520,6 +521,7 @@
   border: var(--border-main);
   border-radius: var(--border-radius-main);
   overflow: hidden;
+  box-shadow: var(--box-shadow-main);
 }
 .signature-card__top {
   padding: 0;
@@ -750,6 +752,7 @@
   right: 0.5em;
   border: var(--border-main);
   aspect-ratio: 1;
+  box-shadow: var(--box-shadow-main);
   border-radius: 50%;
 }
 .go-top svg {
@@ -844,6 +847,7 @@
   background: var(--color-bg-light);
   border-radius: var(--border-radius-main);
   border: var(--border-main);
+  box-shadow: var(--box-shadow-main);
   padding: var(--padding-block);
   display: flex;
   gap: 1em;
@@ -895,6 +899,7 @@
   background: var(--color-bg-light);
   border-radius: var(--border-radius-main);
   border: var(--border-main);
+  box-shadow: var(--box-shadow-main);
   padding: var(--padding-block);
   display: flex;
   align-items: center;
@@ -1064,6 +1069,7 @@
   height: 2.5em;
   z-index: 1;
   border: var(--border-main);
+  box-shadow: var(--box-shadow-main);
   flex-shrink: 0;
 }
 .main-content__generated-signatures .generated-signatures__loader svg {
@@ -1191,6 +1197,7 @@
   background: var(--color-bg-light);
   border-radius: var(--border-radius-main);
   border: var(--border-main);
+  box-shadow: var(--box-shadow-main);
   padding: var(--padding-block);
   width: 100%;
 }
@@ -1305,6 +1312,7 @@
   background: var(--color-bg-light);
   border-radius: var(--border-radius-main);
   border: var(--border-main);
+  box-shadow: var(--box-shadow-main);
   padding: var(--padding-block);
   width: 100%;
   display: flex;

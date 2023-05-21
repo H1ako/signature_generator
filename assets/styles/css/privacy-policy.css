@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: var(--box-shadow-main);
 }
 .main-content__titles .titles__title {
   overflow-wrap: break-word;
@@ -36,6 +37,7 @@
   background: var(--color-bg-light);
   border-radius: var(--border-radius-main);
   border: var(--border-main);
+  box-shadow: var(--box-shadow-main);
   padding: var(--padding-block);
 }
 .main-content__description > p {

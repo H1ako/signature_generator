@@ -11,7 +11,7 @@ $SITE_LOGO = 'logo.webp';
 $SITE_URL = 'https://onlinesignatures.net'; // no slash at the end(https://example.com)
 $META_IMAGE = 'icon.jpg';
 
-$CONTACT_EMAIL = 'support@siggenerator.com';
+$CONTACT_EMAIL = 'suport@onlinesignatures.net';
 
 // Pages Additional Settings
 $ABOUTUS_IMAGE = 'slider2.jpeg';

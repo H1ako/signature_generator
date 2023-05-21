@@ -1,4 +1,5 @@
-@import "../main/mixins";
+//------COMPONENTS------
+@import "../components/advertisement";
 
 .main-content {
   justify-content: center;
@@ -10,7 +11,9 @@
     padding: var(--padding-block);
     display: flex;
     flex-direction: column;
+    box-shadow: var(--box-shadow-main);
     align-items: center;
+    box-shadow: var(--box-shadow-main);
 
     .info__title {
       @include wrapWords;
@@ -32,8 +35,11 @@
     border-radius: var(--border-radius-main);
     border: var(--border-main);
     padding: var(--padding-block);
+    box-shadow: var(--box-shadow-main);
     display: grid;
     place-items: center;
+    box-shadow: var(--box-shadow-main);
+    flex-grow: 1;
 
     .preview__image {
       @include image;
@@ -43,5 +49,13 @@
       border-radius: var(--border-radius-main);
       padding: 1em;
     }
+  }
+
+  .more-button {
+    @include button($font-size: var(--font-size-4));
+
+    width: min(100%, 80rem);
+    margin-inline: auto;
+    margin-bottom: .5em;
   }
 }

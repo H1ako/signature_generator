@@ -1,9 +1,12 @@
 <?php
+
 require_once __DIR__.'/settings.php';
 require_once __DIR__.'/admin-settings.php';
 require_once __DIR__.'/router.php';
 
-get('/api/get-signatures', function () {
+global $SITE_URL;
+
+get('/api/get-signatures', function () use ($SITE_URL) {
   if (!array_key_exists('first-name', $_GET) || !array_key_exists('first-name', $_GET)) return false;
   
   $firstName = ucfirst($_GET['first-name']);
@@ -14,28 +17,22 @@ get('/api/get-signatures', function () {
   $signaturesPerPage = 1;
   include('script.php');
   
-  $dataFile = 'data.json';
-  
-  try {
-    $contents = file_get_contents($dataFile);
-  } catch (Error $e) {}
-  
-  $data = isset($contents) ? json_decode($contents, true) : ["numberOfGeneratedSignatures" => 0];
-  
-  isset($data['numberOfGeneratedSignatures']) ? $data['numberOfGeneratedSignatures'] = $data['numberOfGeneratedSignatures'] + $signaturesPerPage : $data['numberOfGeneratedSignatures'] = 0;
-  
-  $json = json_encode($data);
-  file_put_contents($dataFile, $json);
-  
   $images = [];
   for ($i=($page - 1) * $signaturesPerPage; $i < $page * $signaturesPerPage; $i++) {
     $image = getImageFromStyle($i);
     $imageLink = 'data:image/'.$image->getImageFormat().';base64,'.base64_encode($image->getimageblob());
     $image->setImageFormat('jpg');
     $imageJpgLink = 'data:image/'.$image->getImageFormat().';base64,'.base64_encode($image->getimageblob());
+
+    $fullName = $middleName ? "$lastName $firstName" : "$lastName $firstName $middleName";
+    $textToEncode = "$page $randomIndex $fullName";
+    $encodedText = encodeTextForUrl($textToEncode);
+    $shareLink = "$SITE_URL/signature-preview/$encodedText";
+
     $images = [...$images, [
       'png' => $imageLink,
-      'jpg' => $imageJpgLink
+      'jpg' => $imageJpgLink,
+      'shareLink' => $shareLink
     ]];
     $image->destroy();
   }
@@ -49,6 +46,13 @@ get('/api/get-signatures', function () {
   return false;
 });
 
+function encodeTextForUrl($text) {
+  $encoded = base64_encode($text);
+  $urlEncoded = str_replace(array('+', '/', '='), array('-', '_', ''), $encoded);
+
+  return $urlEncoded;
+}
+
 put('/api/increase-installations-number', function() {
   $dataFile = 'data.json';
 
@@ -59,6 +63,23 @@ put('/api/increase-installations-number', function() {
   $data = isset($contents) ? json_decode($contents, true) : ["numberOfInstallations" => 0];
   
   isset($data['numberOfInstallations']) ? $data['numberOfInstallations']++ : $data['numberOfInstallations'] = 0;
+  
+  $json = json_encode($data);
+  file_put_contents($dataFile, $json);
+
+  return false;
+});
+
+put('/api/increase-generations-number', function() {
+  $dataFile = 'data.json';
+
+  try {
+    $contents = file_get_contents($dataFile);
+  } catch (Error $e) {}
+
+  $data = isset($contents) ? json_decode($contents, true) : ["numberOfGeneratedSignatures" => 0];
+  
+  isset($data['numberOfGeneratedSignatures']) ? $data['numberOfGeneratedSignatures']++ : $data['numberOfGeneratedSignatures'] = 0;
   
   $json = json_encode($data);
   file_put_contents($dataFile, $json);

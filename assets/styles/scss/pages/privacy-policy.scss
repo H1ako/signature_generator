@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: var(--box-shadow-main);
 
     .titles__title {
       @include wrapWords;
@@ -34,6 +35,7 @@
     background: var(--color-bg-light);
     border-radius: var(--border-radius-main);
     border: var(--border-main);
+    box-shadow: var(--box-shadow-main);
     padding: var(--padding-block);
 
     & > p {

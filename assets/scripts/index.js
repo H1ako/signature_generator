@@ -59,6 +59,7 @@ async function replaceWithGeneratedSignatures() {
   if (!signaturesList || !isGeneratorFormValid()) return
   
   resetGeneratorData()
+  increaseNumberOfGenerations()
 
   const signaturesListAdvertisementBlocks = signaturesList.querySelectorAll('.advertisement')
   signaturesList.innerHTML = ''
@@ -76,6 +77,12 @@ function resetGeneratorData() {
   generatorLoader.classList.remove('no-more-signatures')
 
   enableGeneratorLoader()
+}
+
+function increaseNumberOfGenerations() {
+  fetch('/api/increase-generations-number', {
+    method: 'put'
+  })
 }
 
 async function appendGeneratedSignatures() {
@@ -122,7 +129,7 @@ function getSignatureCard(image) {
   const newCard = newCardClone.querySelector('.signature-card')
   newCard.setAttribute('data-signature-src', image.png)
   newCard.setAttribute('data-signature-src-jpg', image.jpg)
-  newCard.setAttribute('style-index', page)
+  newCard.setAttribute('share-link', image.shareLink)
 
   const newCardImageMainPreviewButton = newCard.querySelector('.signature-card__top')
   newCardImageMainPreviewButton.addEventListener('click', previewSignature)
@@ -246,20 +253,9 @@ async function shareSignature(e) {
 }
 
 function shareSignatureBySocialsModal(e) {
-  const styleIndex = e.target.closest('[data-signature-src]').getAttribute('style-index')
-  const link = getSignatureSharelink(styleIndex)
+  const link = e.target.closest('[data-signature-src]').getAttribute('share-link')
 
   openSocialsModal(link)
-}
-
-function getSignatureSharelink(styleIndex) {
-  const generatorFormData = new FormData(generatorForm)
-  const firstName = generatorFormData.get('first-name')
-  const lastName = generatorFormData.get('last-name')
-  const middleName = generatorFormData.get('middle-name')
-  const randomId = Math.floor(Math.random() * 100000)
-
-  return `${window.location.origin}/signature-preview/${randomId}?first-name=${firstName}&last-name=${lastName}&middle-name=${middleName}&style-index=${styleIndex}&random-index=${randomIndex}`
 }
 
 async function shareSignatureWithNavigator(e) {

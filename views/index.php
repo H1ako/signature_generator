@@ -178,7 +178,6 @@ try {
     <div class="about__block">
       <img src="<?= $SITE_URL ?>/assets/images/<?= $ABOUTUS_IMAGE ?>" alt="<?= $localeReader->translate('About us image'); ?>" title="<?= $localeReader->translate('About us image'); ?>" width="1100" height="500" class="block__img" itemprop="image">
       <div class="block__text big-text" itemprop="articleBody">
-        <?php print_r($contents["aboutUs_$localeShortCode"]);?>
         <?= isset($contents["aboutUs_$localeShortCode"]) ? $contents["aboutUs_$localeShortCode"] : '' ?>
       </div>
     </div>

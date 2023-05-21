@@ -6,6 +6,7 @@
   right: .5em;
   border: var(--border-main);
   aspect-ratio: 1;
+  box-shadow: var(--box-shadow-main);
   border-radius: 50%;
 
   &:not(.active) {

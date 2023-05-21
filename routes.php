@@ -26,9 +26,14 @@ function notFoundIfNoLocale($locale) {
 
   if (array_key_exists($locale, $LOCALES)) return;
 
+  notFound();
+}
+
+function notFound() {
   include_once('views/404.php');
   exit;
 }
+
 
 get('/%s/%s', function($locale, $path) use ($LOCALES) {
   if (!(array_key_exists($locale, $LOCALES))) return;
@@ -59,20 +64,24 @@ get('/%s/%s/%s', function($locale, $path) use ($LOCALES) {
 });
 
 get('/admin','views/admin.php');
-get('/signature-preview/%s', function ($randomId) {
+get('/signature-preview/%s', function ($encryptedData) {
   global $data;
-  $randomIndex = isset($_GET['random-index']) ? $_GET['random-index'] : null;
-  $styleIndex = isset($_GET['style-index']) ? $_GET['style-index'] : null;
-  $firstName = isset($_GET['first-name']) ? $_GET['first-name'] : null;
-  $lastName = isset($_GET['last-name']) ? $_GET['last-name'] : null;
-  $middleName = isset($_GET['middle-name']) ? $_GET['middle-name'] : '';
-  if ($randomIndex === null || $styleIndex === null || $firstName === null || $lastName === null) return false;
+
+  $decryptedData = decodeTextForUrl($encryptedData);
+  $splittedDecryptedData = explode(" ", $decryptedData);
+  
+  $styleIndex = isset($splittedDecryptedData[0]) ? $splittedDecryptedData[0] : null;
+  $randomIndex = isset($splittedDecryptedData[1]) ? $splittedDecryptedData[1] : null;
+  $firstName = isset($splittedDecryptedData[3]) ? $splittedDecryptedData[3] : null;
+  $lastName = isset($splittedDecryptedData[2]) ?  $splittedDecryptedData[2] : null;
+  $middleName = isset($splittedDecryptedData[4]) ?  $splittedDecryptedData[4] : '';
+  if ($randomIndex === null || $styleIndex === null || $firstName === null || $lastName === null) notFound();
 
   include('script.php');
-  $image = getImageFromStyle($styleIndex);
+  $image = getImageFromStyle($styleIndex - 1);
   $image->setFormat('jpg');
 
-  $imageBlob = $imageJpgLink = 'data:image/'.$image->getImageFormat().';base64,'.base64_encode($image->getimageblob());
+  $imageBlob = 'data:image/'.$image->getImageFormat().';base64,'.base64_encode($image->getimageblob());
   
   $data['firstName'] = $firstName;
   $data['lastName'] = $lastName;
@@ -81,20 +90,32 @@ get('/signature-preview/%s', function ($randomId) {
 
   return 'views/signature-preview.php';
 });
-get('/%s/signature-preview/%s', function ($locale, $randomId) {
+
+function decodeTextForUrl($text) {
+  $base64 = str_replace(array('-', '_'), array('+', '/'), $text);
+  $decoded = base64_decode($base64);
+
+  return $decoded;
+}
+
+get('/%s/signature-preview/%s', function ($locale, $encryptedData) {
   global $data;
-  $randomIndex = isset($_GET['random-index']) ? $_GET['random-index'] : null;
-  $styleIndex = isset($_GET['style-index']) ? $_GET['style-index'] : null;
-  $firstName = isset($_GET['first-name']) ? $_GET['first-name'] : null;
-  $lastName = isset($_GET['last-name']) ? $_GET['last-name'] : null;
-  $middleName = isset($_GET['middle-name']) ? $_GET['middle-name'] : '';
-  if ($randomIndex === null || $styleIndex === null || $firstName === null || $lastName === null) return false;
+
+  $decryptedData = decodeTextForUrl($encryptedData);
+  $splittedDecryptedData = explode(" ", $decryptedData);
+  
+  $styleIndex = isset($splittedDecryptedData[0]) ? $splittedDecryptedData[0] : null;
+  $randomIndex = isset($splittedDecryptedData[1]) ? $splittedDecryptedData[1] : null;
+  $firstName = isset($splittedDecryptedData[3]) ? $splittedDecryptedData[3] : null;
+  $lastName = isset($splittedDecryptedData[2]) ?  $splittedDecryptedData[2] : null;
+  $middleName = isset($splittedDecryptedData[4]) ?  $splittedDecryptedData[4] : '';
+  if ($randomIndex === null || $styleIndex === null || $firstName === null || $lastName === null) notFound();
 
   include('script.php');
-  $image = getImageFromStyle($styleIndex);
+  $image = getImageFromStyle($styleIndex - 1);
   $image->setFormat('jpg');
 
-  $imageBlob = $imageJpgLink = 'data:image/'.$image->getImageFormat().';base64,'.base64_encode($image->getimageblob());
+  $imageBlob = 'data:image/'.$image->getImageFormat().';base64,'.base64_encode($image->getimageblob());
   
   $data['firstName'] = $firstName;
   $data['lastName'] = $lastName;

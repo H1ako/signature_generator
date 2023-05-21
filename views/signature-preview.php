@@ -32,9 +32,13 @@ $nameTitle = "$lastName $firstName $middleName"
     <h1 class="info__subtitle"><?= $localeReader->translate('Signature Generator'); ?></h1>
     <h2 class="info__title"><?= $nameTitle ?></h2>
   </section>
+  <section class="main-content__advertisement">
+    <?php include('components/advertisement-1.php'); ?>
+  </section>
   <section class="main-content__preview">
     <img src="<?= $image ?>" alt="<?= $nameTitle ?>" class="preview__image">
   </section>
+  <a href="/<?= $currentLocaleShortCode === 'en' ? '' : $currentLocaleShortCode ?>" class="more-button" title="<?= $localeReader->translate('Generate more'); ?>"><?= $localeReader->translate('Generate more'); ?></a>
 </main>
 <?php include_once('components/footer.php'); ?>
 </body>
