@@ -25,7 +25,7 @@ try {
   <meta property="og:image" content="<?= $SITE_URL ?>/assets/images/<?= $META_IMAGE ?>"/>
   <title><?= translate('Privacy Policy Page Title'); ?></title>
   <?php include_once('components/base-head.php'); ?>
-  <<link rel="stylesheet" href="<?= $SITE_URL ?>/assets/styles/css/privacy-policy.css">
+  <link rel="stylesheet" href="<?= $SITE_URL ?>/assets/styles/css/privacy-policy.css">
 </head>
 <body>
 <?php include_once('components/header.php'); ?>
