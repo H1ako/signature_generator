@@ -32,10 +32,11 @@
       position: absolute;
       object-fit: contain;
       width: 20%;
-      rotate: -32.5deg;
-      top: 62.5%;
+      rotate: -30.5deg;
+      top: 59%;
       left: 23.5%;
       translate: 0 -50%;
+      height: auto;
     }
 
     .paper-preview__bg-image {
@@ -44,6 +45,7 @@
       width: 100%;
       height: auto;
       max-height: 80vh;
+      object-position: left 70%;
     }
 
     @media screen and (width < 500px) {

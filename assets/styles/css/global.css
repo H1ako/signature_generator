@@ -543,7 +543,7 @@ b {
   transition: var(--transition-main);
   font-size: var(--font-size-4);
   width: auto;
-  height: 3em;
+  height: 1.75em;
 }
 
 .socials {

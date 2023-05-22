@@ -14,4 +14,4 @@ $META_IMAGE = 'icon.jpg';
 $CONTACT_EMAIL = 'suport@onlinesignatures.net';
 
 // Pages Additional Settings
-$ABOUTUS_IMAGE = 'slider2.jpeg';
+$ABOUTUS_IMAGE = 'signature.webp';

@@ -720,10 +720,11 @@
   -o-object-fit: contain;
      object-fit: contain;
   width: 20%;
-  rotate: -32.5deg;
-  top: 62.5%;
+  rotate: -30.5deg;
+  top: 59%;
   left: 23.5%;
   translate: 0 -50%;
+  height: auto;
 }
 .preview-lightbox.preview-lightbox_paper-preview .paper-preview__bg-image {
   -o-object-fit: cover;
@@ -737,6 +738,8 @@
   width: 100%;
   height: auto;
   max-height: 80vh;
+  -o-object-position: left 70%;
+     object-position: left 70%;
 }
 @media screen and (width < 500px) {
   .preview-lightbox.preview-lightbox_paper-preview .paper-preview__image {

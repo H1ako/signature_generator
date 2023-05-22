@@ -17,32 +17,6 @@ const signatureCardTemplate = document.querySelector('#signature-card-template')
 const goForMoreSignaturesBtn = document.querySelector('[go-for-more-signatures]')
 const goForMoreSignaturesAnchor = document.querySelector('[go-for-more-signatures-anchor]')
 
-function fillGeneratorFormWithQuery() {
-  const urlParams = new URLSearchParams(window.location.search)
-  
-  const firstName = urlParams.get('first-name')
-  const lastName = urlParams.get('last-name')
-  const middleName = urlParams.get('middle-name')
-  const data = {
-    'first-name': firstName,
-    'last-name': lastName,
-    'middle-name': middleName
-  }
-
-  for (const [key, value] of Object.entries(data)) {
-    const input = generatorForm.elements[key]
-    if (!input || !value) continue
-
-    input.value = value
-  }
-}
-
-async function generateIfDataFilled() {
-  if (!isGeneratorFormValid() || isSignaturesGenerating) return
-
-  await replaceWithGeneratedSignatures()
-}
-
 function generatorFormHandler(e) {
   e.preventDefault()
   if (!isGeneratorFormValid()) return
@@ -55,7 +29,6 @@ function generatorFormHandler(e) {
 }
 
 async function replaceWithGeneratedSignatures() {
-  updateUrlQueryByFormData()
   if (!signaturesList || !isGeneratorFormValid()) return
   
   resetGeneratorData()
@@ -219,15 +192,6 @@ async function getGeneratedSignatures() {
   return []
 }
 
-function updateUrlQueryByFormData() {
-  const formData = new FormData(generatorForm)
-  const firstName = formData.get('first-name')
-  const lastName = formData.get('last-name')
-  const middleName = formData.get('middle-name')
-
-  window.history.replaceState(null, null, (firstName || lastName || middleName) ? `?first-name=${firstName ?? ''}&last-name=${lastName ?? ''}&middle-name=${middleName ?? ''}` : window.location.pathname)
-}
-
 function getTransliteratedGeneratorData(formData) {
   const firstName = transliterate?.(formData.get('first-name'))
   const lastName = transliterate?.(formData.get('last-name'))
@@ -381,8 +345,6 @@ function goToOpenEditorBtn() {
 }
 
 disableGeneratorLoader()
-fillGeneratorFormWithQuery()
-generateIfDataFilled()
 generatorForm && generatorForm.addEventListener('submit', generatorFormHandler)
 if (generatorLoader) {
   const generatorLoaderObserver = new IntersectionObserver((entries) => {
