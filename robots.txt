@@ -3,8 +3,48 @@ Disallow: /
 
 Host: https://onlinesignatures.net
 
-Allow: /*
-Allow: /api/*
-Allow: /assets/*
+Allow: /
+Allow: /api/
+Allow: /assets/
+
 Disallow: /admin
-Disallow: /api/admin/*
+Disallow: /api/admin/
+
+Disallow: /privacy-policy
+Disallow: /de/privacy-policy
+Disallow: /en/privacy-policy
+Disallow: /es/privacy-policy
+Disallow: /fr/privacy-policy
+Disallow: /it/privacy-policy
+Disallow: /pl/privacy-policy
+Disallow: /pt/privacy-policy
+Disallow: /ru/privacy-policy
+Disallow: /tr/privacy-policy
+Disallow: /ua/privacy-policy
+Disallow: /vi/privacy-policy
+
+Disallow: /signature-preview/
+Disallow: /de/signature-preview/
+Disallow: /en/signature-preview/
+Disallow: /es/signature-preview/
+Disallow: /fr/signature-preview/
+Disallow: /it/signature-preview/
+Disallow: /pl/signature-preview/
+Disallow: /pt/signature-preview/
+Disallow: /ru/signature-preview/
+Disallow: /tr/signature-preview/
+Disallow: /ua/signature-preview/
+Disallow: /vi/signature-preview/
+
+Disallow: /signature-preview/*?image-only
+Disallow: /de/signature-preview/*?image-only
+Disallow: /en/signature-preview/*?image-only
+Disallow: /es/signature-preview/*?image-only
+Disallow: /fr/signature-preview/*?image-only
+Disallow: /it/signature-preview/*?image-only
+Disallow: /pl/signature-preview/*?image-only
+Disallow: /pt/signature-preview/*?image-only
+Disallow: /ru/signature-preview/*?image-only
+Disallow: /tr/signature-preview/*?image-only
+Disallow: /ua/signature-preview/*?image-only
+Disallow: /vi/signature-preview/*?image-only
