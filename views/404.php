@@ -17,8 +17,7 @@ $currentLocaleShortCode = $currentLocale['short_code'];
   <meta name="twitter:image" content="<?= $SITE_URL ?>/assets/images/<?= $META_IMAGE ?>">
   <meta property="og:image" content="<?= $SITE_URL ?>/assets/images/<?= $META_IMAGE ?>"/>
   <?php include_once('components/base-head.php'); ?>
-  <link rel="preload" as="style" href="<?= $SITE_URL ?>/assets/styles/css/404.css" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="<?= $SITE_URL ?>/assets/styles/css/404.css"></noscript>
+  <link rel="stylesheet" href="<?= $SITE_URL ?>/assets/styles/css/404.css">
 </head>
 <body>
 <?php include_once('components/header.php'); ?>

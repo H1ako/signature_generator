@@ -28,6 +28,8 @@
     }
 
     .face__left {
+      gap: 1em;
+
       .left__title {
         @include wrapWords;
 
@@ -39,7 +41,7 @@
         
         font-size: var(--font-size-4);
         font-weight: 300;
-        max-width: min(100%, 34rem);
+        max-width: min(100%, 50rem);
       }
     }
     

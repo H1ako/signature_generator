@@ -1,8 +1,8 @@
 ./views/404.php
 ./views/index.php
 ./views/privacy-policy.php
+./views/signature-preview.php
 
-./components/advertisement.php
 ./components/base-head.php
 ./components/editor.php
 ./components/footer.php

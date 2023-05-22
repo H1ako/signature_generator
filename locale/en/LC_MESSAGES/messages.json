@@ -22,11 +22,11 @@
    ],
    "Home Page Meta Description": [
       null,
-      "Home Page test description"
+      "Create a signature online 📝 easily, quickly, and safely. Our signature generator offers a free and convenient way to create and customize a unique signature that emphasizes your professionalism and uniqueness."
    ],
    "Signature Generator": [
       null,
-      "Signature Generator"
+      "Signature generator"
    ],
    "404 Not Found": [
       null,
@@ -38,7 +38,7 @@
    ],
    "Home Page Title": [
       null,
-      "Home Page"
+      "Online Signature Generator 🖊️ Create a Unique Signature"
    ],
    "Generate your own unique signature or <b>draw</b> it by yourself": [
       null,
@@ -46,11 +46,11 @@
    ],
    "Create your own <b>Signature</b>": [
       null,
-      "Create your own <b>Signature</b>"
+      "Create your own <b>signature</b>"
    ],
    "Open Editor": [
       null,
-      "Open Editor"
+      "Open editor"
    ],
    "Home Page About Us": [
       null,
@@ -70,7 +70,7 @@
    ],
    "Privacy Policy Page Title": [
       null,
-      "Privacy Policy"
+      "Privacy policy"
    ],
    "Privacy Policy Page Meta Description": [
       null,
@@ -78,7 +78,7 @@
    ],
    "Privacy Policy": [
       null,
-      "Privacy Policy"
+      "Privacy policy"
    ],
    "Clear": [
       null,
@@ -102,7 +102,7 @@
    ],
    "2023 All Right Reserved": [
       null,
-      "© 2023 All Right Reserved"
+      "© 2023 All rights reserved"
    ],
    "Contact Us": [
       null,
@@ -303,5 +303,13 @@
    "Signatures already generated:": [
       null,
       "Signatures already generated:"
+   ],
+   "Signature preview page title": [
+      null,
+      ""
+   ],
+   "Signature preview meta description": [
+      null,
+      ""
    ]
 }

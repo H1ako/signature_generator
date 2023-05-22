@@ -303,5 +303,13 @@
    "Signatures already generated:": [
       null,
       "Podpisy zostały już wygenerowane:"
+   ],
+   "Signature preview page title": [
+      null,
+      ""
+   ],
+   "Signature preview meta description": [
+      null,
+      ""
    ]
 }

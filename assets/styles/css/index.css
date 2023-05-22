@@ -860,6 +860,9 @@
   flex-direction: column;
   justify-content: center;
 }
+.main-content__face .face__left {
+  gap: 1em;
+}
 .main-content__face .face__left .left__title {
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -878,7 +881,7 @@
           hyphens: auto;
   font-size: var(--font-size-4);
   font-weight: 300;
-  max-width: min(100%, 34rem);
+  max-width: min(100%, 50rem);
 }
 @media screen and (width < 680px) {
   .main-content__face {

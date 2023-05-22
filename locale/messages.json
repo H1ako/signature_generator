@@ -1,0 +1,310 @@
+{
+   "404 Not Found Page Title": [
+      null,
+      ""
+   ],
+   "404 Not Found Page Meta Description": [
+      null,
+      ""
+   ],
+   "Signature Generator": [
+      null,
+      ""
+   ],
+   "404 Not Found": [
+      null,
+      ""
+   ],
+   "Go to homepage": [
+      null,
+      ""
+   ],
+   "Home Page Title": [
+      null,
+      ""
+   ],
+   "Home Page Meta Description": [
+      null,
+      ""
+   ],
+   "Generate your own unique signature or <b>draw</b> it by yourself": [
+      null,
+      ""
+   ],
+   "Signatures already generated:": [
+      null,
+      ""
+   ],
+   "Create your own <b>Signature</b>": [
+      null,
+      ""
+   ],
+   "Open Editor": [
+      null,
+      ""
+   ],
+   "Loading": [
+      null,
+      ""
+   ],
+   "Load More": [
+      null,
+      ""
+   ],
+   "Generate more": [
+      null,
+      ""
+   ],
+   "Step Image 1": [
+      null,
+      ""
+   ],
+   "Home Page Instruction": [
+      null,
+      ""
+   ],
+   "Step": [
+      null,
+      ""
+   ],
+   "Step 1 Title": [
+      null,
+      ""
+   ],
+   "Step 1 Description": [
+      null,
+      ""
+   ],
+   "Step Image Title 1": [
+      null,
+      ""
+   ],
+   "Step 2 Title": [
+      null,
+      ""
+   ],
+   "Step 2 Description": [
+      null,
+      ""
+   ],
+   "Step Image 2": [
+      null,
+      ""
+   ],
+   "Step Image Title 2": [
+      null,
+      ""
+   ],
+   "Step 3 Title": [
+      null,
+      ""
+   ],
+   "Step 3 Description": [
+      null,
+      ""
+   ],
+   "Step Image 3": [
+      null,
+      ""
+   ],
+   "Step Image Title 3": [
+      null,
+      ""
+   ],
+   "Step 4 Title": [
+      null,
+      ""
+   ],
+   "Step 4 Description": [
+      null,
+      ""
+   ],
+   "Step Image 4": [
+      null,
+      ""
+   ],
+   "Step Image Title 4": [
+      null,
+      ""
+   ],
+   "Step 5 Title": [
+      null,
+      ""
+   ],
+   "Step 5 Description": [
+      null,
+      ""
+   ],
+   "Step Image 5": [
+      null,
+      ""
+   ],
+   "Step Image Title 5": [
+      null,
+      ""
+   ],
+   "Step 6 Title": [
+      null,
+      ""
+   ],
+   "Step 6 Description": [
+      null,
+      ""
+   ],
+   "Step Image 6": [
+      null,
+      ""
+   ],
+   "Step Image Title 6": [
+      null,
+      ""
+   ],
+   "Step 7 Title": [
+      null,
+      ""
+   ],
+   "Step 7 Description": [
+      null,
+      ""
+   ],
+   "Step Image 7": [
+      null,
+      ""
+   ],
+   "Step Image Title 7": [
+      null,
+      ""
+   ],
+   "Home Page About Us": [
+      null,
+      ""
+   ],
+   "About us image": [
+      null,
+      ""
+   ],
+   "Privacy Policy Page Title": [
+      null,
+      ""
+   ],
+   "Privacy Policy Page Meta Description": [
+      null,
+      ""
+   ],
+   "Privacy Policy": [
+      null,
+      ""
+   ],
+   "Signature preview page title": [
+      null,
+      ""
+   ],
+   "Signature preview meta description": [
+      null,
+      ""
+   ],
+   "Clear": [
+      null,
+      ""
+   ],
+   "Color": [
+      null,
+      ""
+   ],
+   "Thickness": [
+      null,
+      ""
+   ],
+   "Share": [
+      null,
+      ""
+   ],
+   "Download": [
+      null,
+      ""
+   ],
+   "2023 All Right Reserved": [
+      null,
+      ""
+   ],
+   "Contact Us": [
+      null,
+      ""
+   ],
+   "Email": [
+      null,
+      ""
+   ],
+   "First Name": [
+      null,
+      ""
+   ],
+   "Last Name": [
+      null,
+      ""
+   ],
+   "Middle Name": [
+      null,
+      ""
+   ],
+   "Generate": [
+      null,
+      ""
+   ],
+   "Go to top": [
+      null,
+      ""
+   ],
+   "Page Language": [
+      null,
+      ""
+   ],
+   "Signature Preview Image": [
+      null,
+      ""
+   ],
+   "Background Image": [
+      null,
+      ""
+   ],
+   "Preview": [
+      null,
+      ""
+   ],
+   "Signature": [
+      null,
+      ""
+   ],
+   "Edit": [
+      null,
+      ""
+   ],
+   "Preview on Document": [
+      null,
+      ""
+   ],
+   "By sharing you’re automatically accepting our rules and terms": [
+      null,
+      ""
+   ],
+   "Share link": [
+      null,
+      ""
+   ],
+   "Copy": [
+      null,
+      ""
+   ],
+   "": {
+      "project-id-version": "PACKAGE VERSION",
+      "report-msgid-bugs-to": "",
+      "pot-creation-date": "2023-05-22 14:07+0400",
+      "po-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+      "last-translator": "FULL NAME <EMAIL@ADDRESS>",
+      "language-team": "LANGUAGE <LL@li.org>",
+      "language": "",
+      "mime-version": "1.0",
+      "content-type": "text/plain; charset=UTF-8",
+      "content-transfer-encoding": "8bit"
+   }
+}

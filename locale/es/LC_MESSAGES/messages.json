@@ -22,7 +22,7 @@
    ],
    "Home Page Meta Description": [
       null,
-      "Página de inicio"
+      "Generador de firmas 📝 de manera fácil, rápida y segura. Nuestro generador de firmas ofrece una forma gratuita y conveniente de crear y personalizar una firma única que resalte tu profesionalismo y singularidad."
    ],
    "Signature Generator": [
       null,
@@ -38,7 +38,7 @@
    ],
    "Home Page Title": [
       null,
-      "Página de inicio"
+      "Generador de firmas 🖊️ Crea una firma única"
    ],
    "Generate your own unique signature or <b>draw</b> it by yourself": [
       null,
@@ -46,7 +46,7 @@
    ],
    "Create your own <b>Signature</b>": [
       null,
-      "Crea tu propia <b>Firma</b>"
+      "Crear <b>firma</b> personal"
    ],
    "Open Editor": [
       null,
@@ -134,7 +134,7 @@
    ],
    "Generate": [
       null,
-      "Genere"
+      "Generar"
    ],
    "Go to top": [
       null,
@@ -303,5 +303,13 @@
    "Signatures already generated:": [
       null,
       "Firmas ya generadas:"
+   ],
+   "Signature preview page title": [
+      null,
+      ""
+   ],
+   "Signature preview meta description": [
+      null,
+      ""
    ]
 }

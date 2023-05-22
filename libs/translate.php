@@ -2,7 +2,7 @@
 function translate($textIndex) {
   global $translatedData;
 
-  if (!isset($translatedData) || !isset($translatedData[$textIndex])) return $textIndex;
+  if (!isset($translatedData) || !isset($translatedData[$textIndex][1]) || !strlen($translatedData[$textIndex][1])) return $textIndex;
 
   return $translatedData[$textIndex][1];
 }

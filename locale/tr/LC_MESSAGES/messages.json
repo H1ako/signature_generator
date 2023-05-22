@@ -303,5 +303,13 @@
    "Signatures already generated:": [
       null,
       "İmzalar zaten oluşturuldu:"
+   ],
+   "Signature preview page title": [
+      null,
+      ""
+   ],
+   "Signature preview meta description": [
+      null,
+      ""
    ]
 }

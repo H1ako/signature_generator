@@ -15,18 +15,17 @@ $nameTitle = "$lastName $firstName $middleName"
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="twitter:title" content="">
-  <meta property="og:title" content="" />
-  <title><?= $nameTitle ?></title>
-  <meta name="description" content="">
-  <meta name="og:description" content="">
-  <meta name="twitter:description" content="">
+  <meta name="twitter:title" content="<?= $nameTitle ?> - <?= translate('Signature preview page title'); ?>">
+  <meta property="og:title" content="<?= $nameTitle ?> - <?= translate('Signature preview page title'); ?>" />
+  <title><?= $nameTitle ?> - <?= translate('Signature preview page title'); ?></title>
+  <meta name="description" content="<?= $nameTitle ?> - <?= translate('Signature preview meta description'); ?>">
+  <meta name="og:description" content="<?= $nameTitle ?> - <?= translate('Signature preview meta description'); ?>">
+  <meta name="twitter:description" content="<?= $nameTitle ?> - <?= translate('Signature preview meta description'); ?>">
   <meta itemprop="image" content="<?= $_SERVER['REQUEST_URI'] ?>?image-only">
   <meta name="twitter:image" content="<?= $_SERVER['REQUEST_URI'] ?>?image-only">
   <meta property="og:image" content="<?= $_SERVER['REQUEST_URI'] ?>?image-only"/>
   <?php include_once('components/base-head.php'); ?>
-  <link rel="preload" as="style" href="<?= $SITE_URL ?>/assets/styles/css/preview.css" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="<?= $SITE_URL ?>/assets/styles/css/preview.css"></noscript>
+  <link rel="stylesheet" href="<?= $SITE_URL ?>/assets/styles/css/preview.css">
 </head>
 <body>
 <?php include_once('components/header.php'); ?>

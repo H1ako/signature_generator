@@ -32,8 +32,7 @@ try {
   <meta name="twitter:image" content="<?= $SITE_URL ?>/assets/images/<?= $META_IMAGE ?>">
   <meta property="og:image" content="<?= $SITE_URL ?>/assets/images/<?= $META_IMAGE ?>"/>
   <?php include_once('components/base-head.php'); ?>
-  <link rel="preload" as="style" href="<?= $SITE_URL ?>/assets/styles/css/index.css" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="<?= $SITE_URL ?>/assets/styles/css/index.css"></noscript>
+  <link rel="stylesheet" href="<?= $SITE_URL ?>/assets/styles/css/index.css">
   <script defer src="https://cdn.jsdelivr.net/npm/transliteration@2.1.8/dist/browser/bundle.umd.min.js"></script>
   <script src="<?= $SITE_URL ?>/assets/scripts/image-type-chooser.js" defer></script>
   <script src="<?= $SITE_URL ?>/assets/scripts/socials-modal.js" defer></script>
@@ -86,15 +85,8 @@ try {
     </button>
     <button class="generated-signatures__go-for-more" go-for-more-signatures title="<?= translate('Generate more'); ?>"><?= translate('Generate more'); ?></button>
   </section>
-  <section class="main-content__instruction" itemscope="" itemtype="http://schema.org/Article">
-    <meta itemprop="url sameAs" content="<?= $SITE_URL ?>">
-    <meta itemprop="name" content="<?= $SITE_NAME ?>">
-    <div style="display: none;" itemscope="" itemprop="author" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="<?= $SITE_NAME ?>">
-      <meta itemprop="url" content="<?= $SITE_URL ?>">
-    </div>
-    <meta itemprop="image" content="<?= $SITE_URL ?>/assets/images/<?= translate('Step Image 1'); ?>">
-    <h2 class="instruction__heading" itemprop="headline"><?= translate('Home Page Instruction'); ?></h2>
+  <section class="main-content__instruction">
+    <h2 class="instruction__heading"><?= translate('Home Page Instruction'); ?></h2>
     <div class="instruction__block">
       <ul class="block__steps" itemscope itemtype="http://schema.org/ItemList">
         <li class="steps__step" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">

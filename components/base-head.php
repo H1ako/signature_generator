@@ -19,9 +19,7 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="<?= $SITE_NAME ?>" />
-
-<link rel="preload" as="style" href="<?= $SITE_URL ?>/assets/styles/css/global.css" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="<?= $SITE_URL ?>/assets/styles/css/global.css"></noscript>
+<link rel="stylesheet" href="<?= $SITE_URL ?>/assets/styles/css/global.css">
 <script defer>
   const CURRENT_LOCALE = "<?= $currentLocale['short_code']; ?>"
   const HOST_URL = window.location.origin

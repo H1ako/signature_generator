@@ -22,11 +22,11 @@
    ],
    "Home Page Meta Description": [
       null,
-      "Page d'accueil"
+      "Créer une signature en ligne 📝 rapidement, simplement et en toute sécurité. Notre générateur de signatures offre un moyen gratuit et pratique de créer et personnaliser une signature unique qui mettra en valeur votre professionnalisme et votre unicité."
    ],
    "Signature Generator": [
       null,
-      "Générateur De Signature"
+      "Générateur de signature"
    ],
    "404 Not Found": [
       null,
@@ -38,7 +38,7 @@
    ],
    "Home Page Title": [
       null,
-      "Page d'accueil"
+      "Générateur de signature en ligne 🖊️ Créez une signature unique"
    ],
    "Generate your own unique signature or <b>draw</b> it by yourself": [
       null,
@@ -46,11 +46,11 @@
    ],
    "Create your own <b>Signature</b>": [
       null,
-      "Créez votre propre <b>Signature</b>"
+      "Générateur de <b>signature</b> manuscrite"
    ],
    "Open Editor": [
       null,
-      "Éditeur ouvert"
+      "Ouvrir editeur"
    ],
    "Loading": [
       null,
@@ -66,7 +66,7 @@
    ],
    "Home Page Instruction": [
       null,
-      "Comment utiliser le générateur de signature ?"
+      "Comment utiliser le générateur de signature?"
    ],
    "About us image": [
       null,
@@ -303,5 +303,13 @@
    "Signatures already generated:": [
       null,
       "Signatures déjà générées:"
+   ],
+   "Signature preview page title": [
+      null,
+      ""
+   ],
+   "Signature preview meta description": [
+      null,
+      ""
    ]
 }

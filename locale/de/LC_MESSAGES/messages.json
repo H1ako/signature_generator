@@ -22,11 +22,11 @@
    ],
    "Home Page Meta Description": [
       null,
-      "Hauptseite"
+      "Erstellen Sie online eine Unterschrift 📝 einfach, schnell und sicher. Unser unterschrift generator bietet eine kostenlose und bequeme Möglichkeit, eine einzigartige Unterschrift zu erstellen und anzupassen, die Ihre Professionalität und Einzigartigkeit unterstreicht."
    ],
    "Signature Generator": [
       null,
-      "Unterschriften-Generator"
+      "Unterschrift generator"
    ],
    "404 Not Found": [
       null,
@@ -38,7 +38,7 @@
    ],
    "Home Page Title": [
       null,
-      "Hauptseite"
+      "Online unterschrift generator 🖊️ Erstellen Sie eine einzigartige Unterschrift"
    ],
    "Generate your own unique signature or <b>draw</b> it by yourself": [
       null,
@@ -46,7 +46,7 @@
    ],
    "Create your own <b>Signature</b>": [
       null,
-      "Erstellen Sie Ihre eigene <b>Signatur</b>"
+      "Erstellen sie Ihre eigene <b>signatur</b>"
    ],
    "Open Editor": [
       null,
@@ -66,7 +66,7 @@
    ],
    "Home Page Instruction": [
       null,
-      "Wie verwende ich den Signaturgenerator?"
+      "Wie verwende ich den unterschrift generator?"
    ],
    "About us image": [
       null,
@@ -78,15 +78,15 @@
    ],
    "Privacy Policy Page Title": [
       null,
-      "Datenschutz"
+      "Website richtlinien"
    ],
    "Privacy Policy Page Meta Description": [
       null,
-      "Datenschutz"
+      "Website richtlinien"
    ],
    "Privacy Policy": [
       null,
-      "Datenschutz"
+      "Website richtlinien"
    ],
    "Clear": [
       null,
@@ -110,7 +110,7 @@
    ],
    "2023 All Right Reserved": [
       null,
-      "© 2023 Alle Rechte vorbehalten"
+      "© 2023 Alle rechte vorbehalten"
    ],
    "Contact Us": [
       null,
@@ -303,5 +303,13 @@
    "Signatures already generated:": [
       null,
       "Die Signaturen wurden bereits erstellt:"
+   ],
+   "Signature preview page title": [
+      null,
+      ""
+   ],
+   "Signature preview meta description": [
+      null,
+      ""
    ]
 }
