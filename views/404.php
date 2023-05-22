@@ -1,4 +1,4 @@
-<?php global $SITE_URL, $currentLocale, $localeReader;
+<?php global $SITE_URL, $currentLocale, $localeReader, $META_IMAGE;
 $currentLocaleShortCode = $currentLocale['short_code'];
 ?>
 <!DOCTYPE html>

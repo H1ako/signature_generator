@@ -1,4 +1,4 @@
-<?php global $SITE_URL, $currentLocale, $localeReader, $SITE_NAME;
+<?php global $SITE_URL, $currentLocale, $localeReader, $SITE_NAME, $META_IMAGE;
 $localeShortCode = $currentLocale['short_code'];
 $dataFile = 'big-descriptions.json';
 
