@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-20 15:15+0400\n"
+"POT-Creation-Date: 2023-05-22 18:52+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,23 +21,20 @@ msgstr ""
 msgid "404 Not Found Page Title"
 msgstr ""
 
-#: views/404.php:13 views/404.php:14
+#: views/404.php:13 views/404.php:14 views/404.php:15
 msgid "404 Not Found Page Meta Description"
 msgstr ""
 
-#: views/404.php:15 views/index.php:28 views/index.php:29 views/index.php:30
-msgid "Home Page Meta Description"
-msgstr ""
-
-#: views/404.php:24 views/privacy-policy.php:33
+#: views/404.php:26 views/index.php:51 views/privacy-policy.php:35
+#: views/signature-preview.php:34
 msgid "Signature Generator"
 msgstr ""
 
-#: views/404.php:25
+#: views/404.php:27
 msgid "404 Not Found"
 msgstr ""
 
-#: views/404.php:26
+#: views/404.php:28
 msgid "Go to homepage"
 msgstr ""
 
@@ -45,166 +42,170 @@ msgstr ""
 msgid "Home Page Title"
 msgstr ""
 
-#: views/index.php:48 views/index.php:99
-msgid "Step 1 Title"
+#: views/index.php:28 views/index.php:29 views/index.php:30
+msgid "Home Page Meta Description"
 msgstr ""
 
-#: views/index.php:49
+#: views/index.php:52
 msgid "Generate your own unique signature or <b>draw</b> it by yourself"
 msgstr ""
 
-#: views/index.php:56
+#: views/index.php:59
 msgid "Signatures already generated:"
 msgstr ""
 
-#: views/index.php:60
+#: views/index.php:63
 msgid "Create your own <b>Signature</b>"
 msgstr ""
 
-#: views/index.php:61
+#: views/index.php:64
 msgid "Open Editor"
 msgstr ""
 
-#: views/index.php:76
+#: views/index.php:79
 msgid "Loading"
 msgstr ""
 
-#: views/index.php:80
+#: views/index.php:83
 msgid "Load More"
 msgstr ""
 
-#: views/index.php:83
+#: views/index.php:86 views/signature-preview.php:43
 msgid "Generate more"
 msgstr ""
 
-#: views/index.php:92 views/index.php:103
-msgid "Step Image 1"
-msgstr ""
-
-#: views/index.php:93
+#: views/index.php:89
 msgid "Home Page Instruction"
 msgstr ""
 
-#: views/index.php:98 views/index.php:108 views/index.php:118
-#: views/index.php:128 views/index.php:138 views/index.php:148
-#: views/index.php:158
+#: views/index.php:94 views/index.php:104 views/index.php:114
+#: views/index.php:124 views/index.php:134 views/index.php:144
+#: views/index.php:154
 msgid "Step"
 msgstr ""
 
-#: views/index.php:100
+#: views/index.php:95
+msgid "Step 1 Title"
+msgstr ""
+
+#: views/index.php:96
 msgid "Step 1 Description"
 msgstr ""
 
-#: views/index.php:103
+#: views/index.php:99
+msgid "Step Image 1"
+msgstr ""
+
+#: views/index.php:99
 msgid "Step Image Title 1"
 msgstr ""
 
-#: views/index.php:109
+#: views/index.php:105
 msgid "Step 2 Title"
 msgstr ""
 
-#: views/index.php:110
+#: views/index.php:106
 msgid "Step 2 Description"
 msgstr ""
 
-#: views/index.php:113
+#: views/index.php:109
 msgid "Step Image 2"
 msgstr ""
 
-#: views/index.php:113
+#: views/index.php:109
 msgid "Step Image Title 2"
 msgstr ""
 
-#: views/index.php:119
+#: views/index.php:115
 msgid "Step 3 Title"
 msgstr ""
 
-#: views/index.php:120
+#: views/index.php:116
 msgid "Step 3 Description"
 msgstr ""
 
-#: views/index.php:123
+#: views/index.php:119
 msgid "Step Image 3"
 msgstr ""
 
-#: views/index.php:123
+#: views/index.php:119
 msgid "Step Image Title 3"
 msgstr ""
 
-#: views/index.php:129
+#: views/index.php:125
 msgid "Step 4 Title"
 msgstr ""
 
-#: views/index.php:130
+#: views/index.php:126
 msgid "Step 4 Description"
 msgstr ""
 
-#: views/index.php:133
+#: views/index.php:129
 msgid "Step Image 4"
 msgstr ""
 
-#: views/index.php:133
+#: views/index.php:129
 msgid "Step Image Title 4"
 msgstr ""
 
-#: views/index.php:139
+#: views/index.php:135
 msgid "Step 5 Title"
 msgstr ""
 
-#: views/index.php:140
+#: views/index.php:136
 msgid "Step 5 Description"
 msgstr ""
 
-#: views/index.php:143
+#: views/index.php:139
 msgid "Step Image 5"
 msgstr ""
 
-#: views/index.php:143
+#: views/index.php:139
 msgid "Step Image Title 5"
 msgstr ""
 
-#: views/index.php:149
+#: views/index.php:145
 msgid "Step 6 Title"
 msgstr ""
 
-#: views/index.php:150
+#: views/index.php:146
 msgid "Step 6 Description"
 msgstr ""
 
-#: views/index.php:153
+#: views/index.php:149
 msgid "Step Image 6"
 msgstr ""
 
-#: views/index.php:153
+#: views/index.php:149
 msgid "Step Image Title 6"
 msgstr ""
 
-#: views/index.php:159
+#: views/index.php:155
 msgid "Step 7 Title"
 msgstr ""
 
-#: views/index.php:160
+#: views/index.php:156
 msgid "Step 7 Description"
 msgstr ""
 
-#: views/index.php:163
+#: views/index.php:159
 msgid "Step Image 7"
 msgstr ""
 
-#: views/index.php:163
+#: views/index.php:159
 msgid "Step Image Title 7"
 msgstr ""
 
-#: views/index.php:176
+#: views/index.php:172
 msgid "Home Page About Us"
 msgstr ""
 
-#: views/index.php:178
+#: views/index.php:174
 msgid "About us image"
 msgstr ""
 
 #: views/privacy-policy.php:18 views/privacy-policy.php:19
-#: views/privacy-policy.php:23
+#: views/privacy-policy.php:26
 msgid "Privacy Policy Page Title"
 msgstr ""
 
@@ -213,8 +214,18 @@ msgstr ""
 msgid "Privacy Policy Page Meta Description"
 msgstr ""
 
-#: views/privacy-policy.php:34 components/footer.php:6 components/footer.php:7
+#: views/privacy-policy.php:36 components/footer.php:6 components/footer.php:7
 msgid "Privacy Policy"
+msgstr ""
+
+#: views/signature-preview.php:18 views/signature-preview.php:19
+#: views/signature-preview.php:20
+msgid "Signature preview page title"
+msgstr ""
+
+#: views/signature-preview.php:21 views/signature-preview.php:22
+#: views/signature-preview.php:23
+msgid "Signature preview meta description"
 msgstr ""
 
 #: components/editor.php:6 components/editor.php:8
@@ -309,4 +320,8 @@ msgstr ""
 
 #: components/socials-modal.php:13
 msgid "Copy"
+msgstr ""
+
+#: components/socials-modal.php:14
+msgid "Copied"
 msgstr ""

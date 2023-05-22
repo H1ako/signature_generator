@@ -22,7 +22,7 @@
    ],
    "Home Page Meta Description": [
       null,
-      "Pagina Iniziale"
+      "Crea facilmente una firma online 📝 in modo rapido, semplice e sicuro. Il nostro generatore di firme offre un modo gratuito e pratico per creare e personalizzare una firma unica che metta in risalto il tuo professionalismo e la tua unicità."
    ],
    "Signature Generator": [
       null,
@@ -38,19 +38,19 @@
    ],
    "Home Page Title": [
       null,
-      "Pagina Iniziale"
+      "Generatore di firme online 🖊️ Crea una firma unica"
    ],
    "Generate your own unique signature or <b>draw</b> it by yourself": [
       null,
-      "Generare la propria firma unica o <b>disegnarla</b> da soli"
+      "Inserisci le tue iniziali nel modulo o disegna a mano la tua <b>firma univoca</b>"
    ],
    "Create your own <b>Signature</b>": [
       null,
-      "Create la vostra <b>Firma</b> personale"
+      "Crea una <b>firma</b> scritta a mano"
    ],
    "Open Editor": [
       null,
-      "Editor aperto"
+      "Aprire editor"
    ],
    "Loading": [
       null,
@@ -114,7 +114,7 @@
    ],
    "Contact Us": [
       null,
-      "Contatto"
+      "Connettiti con noi"
    ],
    "Email": [
       null,
@@ -311,5 +311,9 @@
    "Signature preview meta description": [
       null,
       ""
+   ],
+   "Copied": [
+      null,
+      "Copiato"
    ]
 }

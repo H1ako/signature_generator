@@ -22,11 +22,11 @@
    ],
    "Home Page Meta Description": [
       null,
-      "Trang Chủ"
+      "Dễ dàng tạo chữ ký trực tuyến 📝 nhanh chóng, đơn giản và an toàn. Trình tạo chữ ký của chúng tôi cung cấp một cách miễn phí và tiện lợi để tạo và tùy chỉnh chữ ký độc đáo, nhấn mạnh sự chuyên nghiệp và sự độc đáo của bạn"
    ],
    "Signature Generator": [
       null,
-      "Máy Phát Điện Chữ Ký"
+      "Trình tạo chữ ký"
    ],
    "404 Not Found": [
       null,
@@ -38,15 +38,15 @@
    ],
    "Home Page Title": [
       null,
-      "Trang Chủ"
+      "Trình tạo chữ ký trực tuyến 🖊️ Tạo ra chữ ký độc đáo"
    ],
    "Generate your own unique signature or <b>draw</b> it by yourself": [
       null,
-      "Tạo chữ ký duy nhất của riêng bạn hoặc <b>vẽ</b> nó một mình"
+      "Nhập các chữ cái viết tắt của bạn vào biểu mẫu hoặc vẽ <b>chữ ký độc đáo</b> của riêng bạn bằng tay."
    ],
    "Create your own <b>Signature</b>": [
       null,
-      "Tạo <b>chữ ký</b> của riêng bạn"
+      "Tạo <b>chữ ký</b> đẹp theo tên và năm sinh"
    ],
    "Open Editor": [
       null,
@@ -78,11 +78,11 @@
    ],
    "Privacy Policy Page Title": [
       null,
-      "Chính Sách Bảo Mật"
+      "Chính sách bảo mật 🖊️ Online Signature"
    ],
    "Privacy Policy Page Meta Description": [
       null,
-      "Chính Sách Bảo Mật"
+      "Sự riêng tư của bạn là ưu tiên hàng đầu của chúng tôi. Chúng tôi bảo vệ dữ liệu của bạn bằng cách sử dụng các phương pháp bảo mật hiện đại. Thông tin và dữ liệu cá nhân mà chúng tôi sử dụng chỉ được xử lý với mục đích cung cấp dịch vụ và không được tiết lộ cho bên thứ ba."
    ],
    "Privacy Policy": [
       null,
@@ -126,7 +126,7 @@
    ],
    "Last Name": [
       null,
-      "Họ Tên"
+      "Họ"
    ],
    "Middle Name": [
       null,
@@ -134,7 +134,7 @@
    ],
    "Generate": [
       null,
-      "Tạo"
+      "Tạo ra"
    ],
    "Go to top": [
       null,
@@ -302,7 +302,7 @@
    ],
    "Signatures already generated:": [
       null,
-      "Chữ ký đã được tạo:"
+      "Chữ ký được tạo:"
    ],
    "Signature preview page title": [
       null,
@@ -311,5 +311,9 @@
    "Signature preview meta description": [
       null,
       ""
+   ],
+   "Copied": [
+      null,
+      "Sao chép"
    ]
 }

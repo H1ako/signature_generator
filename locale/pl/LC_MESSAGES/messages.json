@@ -22,7 +22,7 @@
    ],
    "Home Page Meta Description": [
       null,
-      "Strona główna"
+      "Stwórz podpis online 📝 łatwo, szybko i bezpiecznie. Nasz generator podpisów oferuje darmowy i wygodny sposób tworzenia i personalizacji unikalnego podpisu, który podkreśli twoje profesjonalizm i wyjątkowość."
    ],
    "Signature Generator": [
       null,
@@ -38,11 +38,11 @@
    ],
    "Home Page Title": [
       null,
-      "Strona główna"
+      "Generator podpisów online 🖊️ Stwórz unikalny podpis"
    ],
    "Generate your own unique signature or <b>draw</b> it by yourself": [
       null,
-      "Wygeneruj własny unikalny podpis lub <b>narysuj</b> go samodzielnie"
+      "Wpisz swoje inicjały na formularzu lub odręcznie narysuj własny <b>unikalny podpis</b>"
    ],
    "Create your own <b>Signature</b>": [
       null,
@@ -311,5 +311,9 @@
    "Signature preview meta description": [
       null,
       ""
+   ],
+   "Copied": [
+      null,
+      "Skopiowany"
    ]
 }

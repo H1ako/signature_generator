@@ -55,10 +55,6 @@
       null,
       ""
    ],
-   "Step Image 1": [
-      null,
-      ""
-   ],
    "Home Page Instruction": [
       null,
       ""
@@ -72,6 +68,10 @@
       ""
    ],
    "Step 1 Description": [
+      null,
+      ""
+   ],
+   "Step Image 1": [
       null,
       ""
    ],
@@ -295,10 +295,14 @@
       null,
       ""
    ],
+   "Copied": [
+      null,
+      ""
+   ],
    "": {
       "project-id-version": "PACKAGE VERSION",
       "report-msgid-bugs-to": "",
-      "pot-creation-date": "2023-05-22 14:07+0400",
+      "pot-creation-date": "2023-05-22 18:52+0400",
       "po-revision-date": "YEAR-MO-DA HO:MI+ZONE",
       "last-translator": "FULL NAME <EMAIL@ADDRESS>",
       "language-team": "LANGUAGE <LL@li.org>",

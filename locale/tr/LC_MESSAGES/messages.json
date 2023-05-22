@@ -22,11 +22,11 @@
    ],
    "Home Page Meta Description": [
       null,
-      "Ana Sayfa"
+      "Kolayca çevrimiçi bir imza oluşturun 📝 hızlı, kolay ve güvenli bir şekilde. İmza oluşturucu muz, profesyonelliğinizi ve benzersizliğinizi vurgulayan ücretsiz ve kullanışlı bir yöntem sunar."
    ],
    "Signature Generator": [
       null,
-      "İmza Jeneratörü"
+      "İmza Oluşturucu"
    ],
    "404 Not Found": [
       null,
@@ -38,19 +38,19 @@
    ],
    "Home Page Title": [
       null,
-      "Ana Sayfa"
+      "Çevrimiçi İmza Oluşturucu 🖊️ Benzersiz bir imza oluşturun"
    ],
    "Generate your own unique signature or <b>draw</b> it by yourself": [
       null,
-      "Kendi benzersiz imzanızı oluşturun veya <b>kendiniz çizin</b>"
+      "Forma baş harflerinizi girin veya elle kendi <b>benzersiz imzanızı</b> çizin"
    ],
    "Create your own <b>Signature</b>": [
       null,
-      "Kendi <b>İmzanızı</b> oluşturun"
+      "Isimden <b>imza</b> oluşturma"
    ],
    "Open Editor": [
       null,
-      "Açık Editör"
+      "Editörü aç"
    ],
    "Loading": [
       null,
@@ -311,5 +311,9 @@
    "Signature preview meta description": [
       null,
       ""
+   ],
+   "Copied": [
+      null,
+      "Kopyalandı"
    ]
 }

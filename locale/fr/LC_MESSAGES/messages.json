@@ -42,7 +42,7 @@
    ],
    "Generate your own unique signature or <b>draw</b> it by yourself": [
       null,
-      "Générez votre propre signature unique ou <b>dessinez</b> la vous-même"
+      "Entrez vos initiales sur le formulaire ou dessinez votre propre <b>signature unique</b> à la main"
    ],
    "Create your own <b>Signature</b>": [
       null,
@@ -311,5 +311,9 @@
    "Signature preview meta description": [
       null,
       ""
+   ],
+   "Copied": [
+      null,
+      "Copié"
    ]
 }

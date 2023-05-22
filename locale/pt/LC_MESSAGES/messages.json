@@ -22,11 +22,11 @@
    ],
    "Home Page Meta Description": [
       null,
-      "Página inicial"
+      "Crie facilmente uma assinatura online 📝 de forma fácil, rápida e segura. Nosso gerador de assinatura oferece uma maneira gratuita e conveniente de criar e personalizar uma assinatura única que destaque sua profissionalismo e singularidade."
    ],
    "Signature Generator": [
       null,
-      "Gerador de assinaturas"
+      "Gerador de assinatura"
    ],
    "404 Not Found": [
       null,
@@ -38,11 +38,11 @@
    ],
    "Home Page Title": [
       null,
-      "Página inicial"
+      "Gerador de assinatura online 🖊️ Crie uma assinatura única"
    ],
    "Generate your own unique signature or <b>draw</b> it by yourself": [
       null,
-      "Gerar a sua própria assinatura exclusiva ou <b>desenhá-la</b> por si próprio"
+      "Digite suas iniciais no formulário ou desenhe sua própria <b>assinatura exclusiva</b> à mão"
    ],
    "Create your own <b>Signature</b>": [
       null,
@@ -50,7 +50,7 @@
    ],
    "Open Editor": [
       null,
-      "Тайтл Алт 1"
+      "Editor aberto"
    ],
    "Loading": [
       null,
@@ -311,5 +311,9 @@
    "Signature preview meta description": [
       null,
       ""
+   ],
+   "Copied": [
+      null,
+      "Copiado"
    ]
 }

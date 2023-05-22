@@ -42,7 +42,7 @@
    ],
    "Generate your own unique signature or <b>draw</b> it by yourself": [
       null,
-      "Generate your own unique signature or <b>draw</b> it by yourself"
+      "Enter your initials on the form or draw your own <b>unique signature</b> by hand"
    ],
    "Create your own <b>Signature</b>": [
       null,
@@ -306,10 +306,14 @@
    ],
    "Signature preview page title": [
       null,
-      ""
+      "My Unique Signature"
    ],
    "Signature preview meta description": [
       null,
-      ""
+      "Create your own unique signature with the online signature generator. And download it in the format you want for free."
+   ],
+   "Copied": [
+      null,
+      "Copied"
    ]
 }
