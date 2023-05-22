@@ -61,6 +61,30 @@
 
           flex-shrink: 0;
           border: var(--border-main);
+          position: relative;
+          overflow: hidden;
+
+          .copy__copied-layout {
+            position: absolute;
+            inset: 0;
+            border: var(--border-main);
+            transition: var(--transition-main);
+            background: inherit;
+            translate: 0 -100%;
+            display: grid;
+            place-items: center;
+            border-color: var(--color-main);
+          }
+          
+          &.active {
+            background: var(--color-main);
+            color: var(--color-text-light);
+            fill: var(--color-text-light);
+
+            .copy__copied-layout {
+              translate: 0;
+            }
+          }
         }
       }
     }

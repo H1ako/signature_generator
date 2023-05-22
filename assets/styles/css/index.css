@@ -82,6 +82,8 @@
   background: var(--color-bg-light);
   flex-shrink: 0;
   border: var(--border-main);
+  position: relative;
+  overflow: hidden;
 }
 .socials-modal__content .content__links .links__url .url__copy svg {
   height: 1em;
@@ -104,6 +106,25 @@
 .socials-modal__content .content__links .links__url .url__copy:hover:before, .socials-modal__content .content__links .links__url .url__copy:focus-within:focus-visible:before {
   filter: brightness(0.8);
 }
+.socials-modal__content .content__links .links__url .url__copy .copy__copied-layout {
+  position: absolute;
+  inset: 0;
+  border: var(--border-main);
+  transition: var(--transition-main);
+  background: inherit;
+  translate: 0 -100%;
+  display: grid;
+  place-items: center;
+  border-color: var(--color-main);
+}
+.socials-modal__content .content__links .links__url .url__copy.active {
+  background: var(--color-main);
+  color: var(--color-text-light);
+  fill: var(--color-text-light);
+}
+.socials-modal__content .content__links .links__url .url__copy.active .copy__copied-layout {
+  translate: 0;
+}
 
 .generator-form {
   display: flex;
@@ -124,7 +145,6 @@
 }
 .generator-form__field p {
   margin-left: 1em;
-  text-transform: capitalize;
   font-size: var(--font-size-5);
 }
 .generator-form__field input {

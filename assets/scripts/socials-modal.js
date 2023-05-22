@@ -64,6 +64,12 @@ function checkIfOuterClick(element, event) {
 
 function copyShareLink() {
   navigator.clipboard.writeText(socialsModalLinkText.value)
+
+  copyShareLinkBtn.classList.add('active')
+
+  setTimeout(() => {
+    copyShareLinkBtn.classList.remove('active')
+  }, 500)
 }
 
 socialsModal && socialsModal.addEventListener('click', closeSocialsModalIfOuterClick)

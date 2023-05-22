@@ -11,6 +11,7 @@
         <button class="url__copy" copy-share-link>
           <?php include('icons/copy.php') ?>
           <span class="copy__text"><?= translate('Copy'); ?></span>
+          <span class="copy__copied-layout">Copied</span>
         </button>
       </div>
     </section>
