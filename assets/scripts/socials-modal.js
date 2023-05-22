@@ -8,6 +8,8 @@ const socialsModalLinkText = socialsModal && socialsModal.querySelector('#social
 const copyShareLinkBtn = socialsModal && socialsModal.querySelector('[copy-share-link]')
 
 function openSocialsModal(link) {
+  link = getUrlWithNewLanguage(link, CURRENT_LOCALE)
+  
   updateSocialsShareLink(link)
   openModal(socialsModal)
 }

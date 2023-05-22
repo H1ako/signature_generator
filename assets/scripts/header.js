@@ -2,14 +2,12 @@ const languageChooser = document.querySelector('#language-chooser')
 
 function updateSiteLagnuage(e) {
   const newLanguage = e.target.value
-  const newUrl = getUrlWithNewLanguage(newLanguage)
+  const newUrl = getUrlWithNewLanguage(window.location.href, newLanguage)
 
   window.location.replace(newUrl)
 }
 
-function getUrlWithNewLanguage(newLanguage) {
-  var url = window.location.href
-  
+function getUrlWithNewLanguage(url, newLanguage) {
   const LANGUAGE_POS_INDEX = 0
 
   let newLanguageCode = newLanguage
