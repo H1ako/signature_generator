@@ -337,6 +337,8 @@
               background: linear-gradient(rgba(255, 255, 255, 0) 70%, var(--color-bg-light) 100%);
               right: 0;
               top: 0;
+              pointer-events: none;
+              user-select: none;
             }
 
             .right__img {

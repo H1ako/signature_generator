@@ -37,6 +37,14 @@
       left: 23.5%;
       translate: 0 -50%;
       height: auto;
+
+      @media screen and (height < 530px) {
+        top: 52%;
+      }
+
+      @media screen and (height < 360px) {
+        top: 42%;
+      }
     }
 
     .paper-preview__bg-image {

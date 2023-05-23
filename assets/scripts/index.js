@@ -207,12 +207,6 @@ function stopLoading() {
 }
 
 async function shareSignature(e) {
-  if (isNavigateShareWorks) {
-    shareSignatureWithNavigator(e)
-
-    return
-  }
-
   shareSignatureBySocialsModal(e)
 }
 
@@ -222,40 +216,11 @@ function shareSignatureBySocialsModal(e) {
   openSocialsModal(link)
 }
 
-async function shareSignatureWithNavigator(e) {
-  const imageLink = await e.target.closest('[data-signature-src]').getAttribute('data-signature-src')
-  const imageBlob = await getBlobFromString(imageLink)
-
-  shareImage(getDownloadFileName(), 'Check out my Signature', imageBlob)
-}
-
 async function getBlobFromString(blobString) {
   const response = await fetch(blobString)
   const blob = await response.blob()
   
   return blob
-}
-
-async function shareImage(title, text, blob) {
-  const data = {
-    files: [
-      new File([blob], `${getDownloadFileName()}.png`, {
-        type: blob.type,
-      }),
-    ],
-    title: title,
-    text: text,
-  }
-
-  try {
-    if (!navigator.share || !(navigator.canShare(data))) {
-      throw new Error("Can't share data.", data)
-    }
-
-    await navigator.share(data)
-  } catch (err) {
-    console.error(err.name, err.message)
-  }
 }
 
 function previewSignature(e) {

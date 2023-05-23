@@ -726,6 +726,16 @@
   translate: 0 -50%;
   height: auto;
 }
+@media screen and (height < 530px) {
+  .preview-lightbox.preview-lightbox_paper-preview .paper-preview__image {
+    top: 52%;
+  }
+}
+@media screen and (height < 360px) {
+  .preview-lightbox.preview-lightbox_paper-preview .paper-preview__image {
+    top: 42%;
+  }
+}
 .preview-lightbox.preview-lightbox_paper-preview .paper-preview__bg-image {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1282,6 +1292,10 @@
   background: linear-gradient(rgba(255, 255, 255, 0) 70%, var(--color-bg-light) 100%);
   right: 0;
   top: 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .main-content__instruction .instruction__block .block__steps .steps__step .step__right .right__img {
   -o-object-fit: cover;
