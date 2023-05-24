@@ -69,6 +69,8 @@ get('/signature-preview/%s', function ($encryptedData) {
 
   include('script.php');
   $image = getImageFromStyle($styleIndex - 1);
+  if (!$image) notFound();
+  
   $image->setFormat('jpg');
 
   $imageBlob = 'data:image/'.$image->getImageFormat().';base64,'.base64_encode($image->getimageblob());
@@ -110,6 +112,8 @@ get('/%s/signature-preview/%s', function ($locale, $encryptedData) {
 
   include('script.php');
   $image = getImageFromStyle($styleIndex - 1);
+  if (!$image) notFound();
+
   $image->setFormat('jpg');
 
   $imageBlob = 'data:image/'.$image->getImageFormat().';base64,'.base64_encode($image->getimageblob());

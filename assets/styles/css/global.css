@@ -309,6 +309,10 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "Flag";
+  src: url("/assets/fonts/FlagsColorWorld.ttf");
+}
 *,
 *::after,
 *::before {
@@ -515,6 +519,9 @@ b {
   border: var(--border-main);
   border-radius: var(--border-radius-main);
   overflow: hidden;
+}
+.language-chooser option .icon {
+  font-family: "Flag";
 }
 
 .main-header {

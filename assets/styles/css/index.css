@@ -720,13 +720,23 @@
   -o-object-fit: contain;
      object-fit: contain;
   width: 20%;
-  rotate: -30.5deg;
-  top: 59%;
+  rotate: -28.5deg;
+  top: 55%;
   left: 23.5%;
   translate: 0 -50%;
   height: auto;
 }
-@media screen and (height < 530px) {
+@media screen and (width < 1150px) {
+  .preview-lightbox.preview-lightbox_paper-preview .paper-preview__image {
+    top: 59%;
+  }
+}
+@media screen and (width < 800px) {
+  .preview-lightbox.preview-lightbox_paper-preview .paper-preview__image {
+    top: 60%;
+  }
+}
+@media screen and (height < 500px) {
   .preview-lightbox.preview-lightbox_paper-preview .paper-preview__image {
     top: 52%;
   }
@@ -756,7 +766,6 @@
     width: 40%;
     top: 62%;
     left: 45%;
-    rotate: -27deg;
   }
   .preview-lightbox.preview-lightbox_paper-preview .paper-preview__bg-image {
     width: 200%;

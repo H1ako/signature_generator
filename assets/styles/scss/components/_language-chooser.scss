@@ -15,5 +15,9 @@
     border: var(--border-main);
     border-radius: var(--border-radius-main);
     overflow: hidden;
+    
+    .icon {
+      font-family: 'Flag';
+    }
   }
 }

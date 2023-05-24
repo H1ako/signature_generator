@@ -20,6 +20,8 @@ get('/api/get-signatures', function () use ($SITE_URL) {
   $images = [];
   for ($i=($page - 1) * $signaturesPerPage; $i < $page * $signaturesPerPage; $i++) {
     $image = getImageFromStyle($i);
+    if (!$image) break;
+    
     $imageLink = 'data:image/'.$image->getImageFormat().';base64,'.base64_encode($image->getimageblob());
     $image->setImageFormat('jpg');
     $imageJpgLink = 'data:image/'.$image->getImageFormat().';base64,'.base64_encode($image->getimageblob());
