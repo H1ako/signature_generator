@@ -202,7 +202,7 @@
    ],
    "Step Image 1": [
       null,
-      "phone-half.png"
+      "step_1.png"
    ],
    "Step 2 Title": [
       null,
@@ -218,7 +218,7 @@
    ],
    "Step Image 2": [
       null,
-      "phone-half.png"
+      "step_2.png"
    ],
    "Step 3 Title": [
       null,
@@ -234,7 +234,7 @@
    ],
    "Step Image 3": [
       null,
-      "phone-half.png"
+      "step_3.png"
    ],
    "Step 4 Title": [
       null,
@@ -250,7 +250,7 @@
    ],
    "Step Image 4": [
       null,
-      "phone-half.png"
+      "step_4.png"
    ],
    "Step 5 Title": [
       null,
@@ -266,7 +266,7 @@
    ],
    "Step Image 5": [
       null,
-      "phone-half.png"
+      "step_5.png"
    ],
    "Step 6 Title": [
       null,
@@ -282,7 +282,7 @@
    ],
    "Step Image 6": [
       null,
-      "phone-half.png"
+      "step_6.png"
    ],
    "Step 7 Title": [
       null,
@@ -298,7 +298,7 @@
    ],
    "Step Image 7": [
       null,
-      "phone-half.png"
+      "step_7.png"
    ],
    "Signatures already generated:": [
       null,
@@ -306,11 +306,11 @@
    ],
    "Signature preview page title": [
       null,
-      ""
+      "Мій унікальний підпис"
    ],
    "Signature preview meta description": [
       null,
-      ""
+      "Створіть свій унікальний підпис, за допомогою генератора підписів онлайн. І скачайте в потрібному форматі абсолютно безкоштовно."
    ],
    "Copied": [
       null,

@@ -78,11 +78,11 @@
    ],
    "Privacy Policy Page Title": [
       null,
-      "Politique de confidentialité"
+      "Politique du site 🖊 Online Signature"
    ],
    "Privacy Policy Page Meta Description": [
       null,
-      "Politique de confidentialité"
+      "Votre vie privée est notre priorité. Nous protégeons vos données en utilisant des méthodes de sécurité de pointe. Les informations et les données personnelles que nous utilisons ne sont traitées que dans le but de fournir des services et ne sont pas transmises à des tiers."
    ],
    "Privacy Policy": [
       null,
@@ -202,7 +202,7 @@
    ],
    "Step Image 1": [
       null,
-      "phone-half.png"
+      "step_1.png"
    ],
    "Step 2 Title": [
       null,
@@ -218,7 +218,7 @@
    ],
    "Step Image 2": [
       null,
-      "phone-half.png"
+      "step_2.png"
    ],
    "Step 3 Title": [
       null,
@@ -234,7 +234,7 @@
    ],
    "Step Image 3": [
       null,
-      "phone-half.png"
+      "step_3.png"
    ],
    "Step 4 Title": [
       null,
@@ -250,7 +250,7 @@
    ],
    "Step Image 4": [
       null,
-      "phone-half.png"
+      "step_4.png"
    ],
    "Step 5 Title": [
       null,
@@ -266,7 +266,7 @@
    ],
    "Step Image 5": [
       null,
-      "phone-half.png"
+      "step_5.png"
    ],
    "Step 6 Title": [
       null,
@@ -282,7 +282,7 @@
    ],
    "Step Image 6": [
       null,
-      "phone-half.png"
+      "step_6.png"
    ],
    "Step 7 Title": [
       null,
@@ -298,7 +298,7 @@
    ],
    "Step Image 7": [
       null,
-      "phone-half.png"
+      "step_7.png"
    ],
    "Signatures already generated:": [
       null,
@@ -306,11 +306,11 @@
    ],
    "Signature preview page title": [
       null,
-      ""
+      "Ma signature unique"
    ],
    "Signature preview meta description": [
       null,
-      ""
+      "Créez votre propre signature unique avec le générateur de signature en ligne. Et téléchargez-la gratuitement dans le format requis."
    ],
    "Copied": [
       null,
