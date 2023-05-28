@@ -16,6 +16,7 @@ const paperPreviewLightboxImage = paperPreviewLightbox && paperPreviewLightbox.q
 const signatureCardTemplate = document.querySelector('#signature-card-template')
 const goForMoreSignaturesBtn = document.querySelector('[go-for-more-signatures]')
 const goForMoreSignaturesAnchor = document.querySelector('[go-for-more-signatures-anchor]')
+const signaturesSection = document.querySelector('.main-content__generated-signatures')
 
 function generatorFormHandler(e) {
   e.preventDefault()
@@ -44,6 +45,7 @@ async function replaceWithGeneratedSignatures() {
 }
 
 function resetGeneratorData() {
+  signaturesSection.classList.add('before-generation')
   page = 0
   isNoMoreSignatures = false
   randomIndex = null
@@ -87,11 +89,19 @@ async function appendGeneratedSignatures() {
 }
 
 function addSignaturesToList(signatures) {
+  const signaturesListAdvertisementBlocks = signaturesList.querySelectorAll('.advertisement')
+
   signatures.forEach(image => {
     const newSignatureCard = getSignatureCard(image)
     if (!newSignatureCard) return
 
-    signaturesList.insertBefore(newSignatureCard, signaturesList.children[signaturesList.children.length - 2])
+    if (signaturesListAdvertisementBlocks.length > 0) {
+      signaturesList.insertBefore(newSignatureCard, signaturesList.children[signaturesList.children.length - 2])
+      
+      return
+    }
+
+    signaturesList.appendChild(newSignatureCard)
   })
 }
 
@@ -132,6 +142,7 @@ function enableGeneratorLoader() {
   if (!generatorLoader) return
 
   generatorLoader.classList.remove('disabled')
+  signaturesSection.classList.remove('before-generation')
 }
 
 async function generateSignatures() {

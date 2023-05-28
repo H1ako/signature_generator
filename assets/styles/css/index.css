@@ -1041,6 +1041,9 @@
   flex-direction: column;
   gap: 1em;
 }
+.main-content__generated-signatures.before-generation {
+  display: none;
+}
 .main-content__generated-signatures .generated-signatures__list {
   width: 100%;
   gap: 1em;

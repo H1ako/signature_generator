@@ -6,6 +6,7 @@
 <link itemprop="mainEntityOfPage" href="<?= $SITE_URL ?>" />
 <meta itemprop="author" content="@<?= $SITE_NAME ?>">
 <meta itemprop="name" content="<?= $SITE_NAME ?>">
+<meta property="url" content="<?= $SITE_URL . $_SERVER['REQUEST_URI'] ?>"/>
 
 <link rel="shortcut icon" href="<?= $SITE_URL ?>/assets/images/<?= $SITE_ICON ?>" type="image/x-icon">
 
@@ -15,7 +16,7 @@
 
 <meta property="og:locale" content="<?= $currentLocale['short_code']; ?>">
 <meta property="og:type" content="website" />
-<meta property="og:url" content="<?= $SITE_URL ?>"/>
+<meta property="og:url" content="<?= $SITE_URL . $_SERVER['REQUEST_URI'] ?>"/>
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="<?= $SITE_NAME ?>" />

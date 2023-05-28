@@ -3,8 +3,16 @@
 require_once __DIR__.'/settings.php';
 require_once __DIR__.'/admin-settings.php';
 require_once __DIR__.'/router.php';
+require_once __DIR__.'/libs/translate.php';
 
-global $SITE_URL;
+global $SITE_URL, $LOCALES;
+
+$translatedData = null;
+
+$currentLocale = $LOCALES['en'];
+$currentLocaleShortCode = $currentLocale['short_code'];
+
+setTranslationStream($currentLocaleShortCode);
 
 get('/api/get-signatures', function () use ($SITE_URL) {
   if (!array_key_exists('first-name', $_GET) || !array_key_exists('first-name', $_GET)) return false;
@@ -89,6 +97,8 @@ put('/api/increase-generations-number', function() {
   return false;
 });
 
+/*
+
 post('/api/admin/update-text', function() {
   $data = file_get_contents('php://input');
   $newData = isset($data) ? $data : [];
@@ -98,3 +108,7 @@ post('/api/admin/update-text', function() {
 
   return false;
 });
+*/
+
+include_once('views/404.php');
+exit;

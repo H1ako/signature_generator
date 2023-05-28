@@ -63,10 +63,8 @@ try {
     <h2 class="editor__heading" go-for-more-signatures-anchor><?= translate('Create your own <b>Signature</b>'); ?></h2>
     <button class="editor__open-editor" open-editor><?= translate('Open Editor'); ?></button>
   </section>
-  <section class="main-content__advertisement">
-    <?php include('components/advertisement-1.php'); ?>
-  </section>
-  <section class="main-content__generated-signatures">
+  <section class="main-content__advertisement"><?php include('components/advertisement-1.php'); ?></section>
+  <section class="main-content__generated-signatures before-generation">
     <ul class="generated-signatures__list" id="signatures-list">
       <?php include('components/advertisement-2.php'); ?>
       <?php include('components/advertisement-3.php'); ?>
@@ -96,7 +94,7 @@ try {
             <p class="left__description" itemprop="description"><?= translate('Step 1 Description'); ?></p>
           </div>
           <div class="step__right">
-            <img itemprop="image" src="<?= $SITE_URL ?>/assets/images/<?= translate('Step Image 1'); ?>" width="300" height="300" title="<?= translate('Step Image Title 1'); ?>" alt="<?= translate('Step Image Title 1'); ?>" class="right__img">
+            <img itemprop="image" src="<?= $SITE_URL ?>/assets/images/<?= translate('Step Image 1'); ?>" width="220" height="200" title="<?= translate('Step Image Title 1'); ?>" alt="<?= translate('Step Image Title 1'); ?>" class="right__img">
           </div>
         </li>
         <li class="steps__step" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
@@ -106,7 +104,7 @@ try {
             <p class="left__description" itemprop="description"><?= translate('Step 2 Description'); ?></p>
           </div>
           <div class="step__right">
-            <img itemprop="image" src="<?= $SITE_URL ?>/assets/images/<?= translate('Step Image 2'); ?>" width="300" height="300" title="<?= translate('Step Image Title 2'); ?>" alt="<?= translate('Step Image Title 2'); ?>" class="right__img">
+            <img loading="lazy" itemprop="image" src="<?= $SITE_URL ?>/assets/images/<?= translate('Step Image 2'); ?>" width="220" height="200" title="<?= translate('Step Image Title 2'); ?>" alt="<?= translate('Step Image Title 2'); ?>" class="right__img">
           </div>
         </li>
         <li class="steps__step" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
@@ -116,7 +114,7 @@ try {
             <p class="left__description" itemprop="description"><?= translate('Step 3 Description'); ?></p>
           </div>
           <div class="step__right">
-            <img itemprop="image" src="<?= $SITE_URL ?>/assets/images/<?= translate('Step Image 3'); ?>" width="300" height="300" title="<?= translate('Step Image Title 3'); ?>" alt="<?= translate('Step Image Title 3'); ?>" class="right__img">
+            <img loading="lazy" itemprop="image" src="<?= $SITE_URL ?>/assets/images/<?= translate('Step Image 3'); ?>" width="220" height="200" title="<?= translate('Step Image Title 3'); ?>" alt="<?= translate('Step Image Title 3'); ?>" class="right__img">
           </div>
         </li>
         <li class="steps__step" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
@@ -126,7 +124,7 @@ try {
             <p class="left__description" itemprop="description"><?= translate('Step 4 Description'); ?></p>
           </div>
           <div class="step__right">
-            <img itemprop="image" src="<?= $SITE_URL ?>/assets/images/<?= translate('Step Image 4'); ?>" width="300" height="300" title="<?= translate('Step Image Title 4'); ?>" alt="<?= translate('Step Image Title 4'); ?>" class="right__img">
+            <img loading="lazy" itemprop="image" src="<?= $SITE_URL ?>/assets/images/<?= translate('Step Image 4'); ?>" width="220" height="200" title="<?= translate('Step Image Title 4'); ?>" alt="<?= translate('Step Image Title 4'); ?>" class="right__img">
           </div>
         </li>
         <li class="steps__step" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
@@ -136,7 +134,7 @@ try {
             <p class="left__description" itemprop="description"><?= translate('Step 5 Description'); ?></p>
           </div>
           <div class="step__right">
-            <img itemprop="image" src="<?= $SITE_URL ?>/assets/images/<?= translate('Step Image 5'); ?>" width="300" height="300" title="<?= translate('Step Image Title 5'); ?>" alt="<?= translate('Step Image Title 5'); ?>" class="right__img">
+            <img loading="lazy" itemprop="image" src="<?= $SITE_URL ?>/assets/images/<?= translate('Step Image 5'); ?>" width="220" height="200" title="<?= translate('Step Image Title 5'); ?>" alt="<?= translate('Step Image Title 5'); ?>" class="right__img">
           </div>
         </li>
         <li class="steps__step" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
@@ -146,7 +144,7 @@ try {
             <p class="left__description" itemprop="description"><?= translate('Step 6 Description'); ?></p>
           </div>
           <div class="step__right">
-            <img itemprop="image" src="<?= $SITE_URL ?>/assets/images/<?= translate('Step Image 6'); ?>" width="300" height="300" title="<?= translate('Step Image Title 6'); ?>" alt="<?= translate('Step Image Title 6'); ?>" class="right__img">
+            <img loading="lazy" itemprop="image" src="<?= $SITE_URL ?>/assets/images/<?= translate('Step Image 6'); ?>" width="220" height="200" title="<?= translate('Step Image Title 6'); ?>" alt="<?= translate('Step Image Title 6'); ?>" class="right__img">
           </div>
         </li>
         <li class="steps__step" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
@@ -156,7 +154,7 @@ try {
             <p class="left__description" itemprop="description"><?= translate('Step 7 Description'); ?></p>
           </div>
           <div class="step__right">
-            <img itemprop="image" src="<?= $SITE_URL ?>/assets/images/<?= translate('Step Image 7'); ?>" width="300" height="300" title="<?= translate('Step Image Title 7'); ?>" alt="<?= translate('Step Image Title 7'); ?>" class="right__img">
+            <img loading="lazy" itemprop="image" src="<?= $SITE_URL ?>/assets/images/<?= translate('Step Image 7'); ?>" width="220" height="200" title="<?= translate('Step Image Title 7'); ?>" alt="<?= translate('Step Image Title 7'); ?>" class="right__img">
           </div>
         </li>
       </ul>
@@ -171,7 +169,7 @@ try {
     </div>
     <h2 class="about__heading" itemprop="headline"><?= translate('Home Page About Us'); ?></h2>
     <div class="about__block">
-      <img src="<?= $SITE_URL ?>/assets/images/<?= $ABOUTUS_IMAGE ?>" alt="<?= translate('About us image'); ?>" title="<?= translate('About us image'); ?>" width="1100" height="500" class="block__img" itemprop="image">
+      <img loading="lazy" src="<?= $SITE_URL ?>/assets/images/<?= $ABOUTUS_IMAGE ?>" alt="<?= translate('About us image'); ?>" title="<?= translate('About us image'); ?>" width="1100" height="500" class="block__img" itemprop="image">
       <div class="block__text big-text" itemprop="articleBody">
         <?= isset($contents["aboutUs_$localeShortCode"]) ? $contents["aboutUs_$localeShortCode"] : '' ?>
       </div>

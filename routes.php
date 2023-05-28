@@ -53,7 +53,7 @@ get('/%s/%s/%s', function($locale, $path) use ($LOCALES) {
 // ##################################################
 // ##################################################
 
-get('/admin','views/admin.php');
+//get('/admin','views/admin.php');
 get('/signature-preview/%s', function ($encryptedData) {
   global $data;
 
