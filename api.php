@@ -14,6 +14,13 @@ $currentLocaleShortCode = $currentLocale['short_code'];
 
 setTranslationStream($currentLocaleShortCode);
 
+function notFound() {
+  http_response_code(404);
+
+  include_once('views/404.php');
+  exit;
+}
+
 get('/api/get-signatures', function () use ($SITE_URL) {
   if (!array_key_exists('first-name', $_GET) || !array_key_exists('first-name', $_GET)) return false;
   
@@ -110,5 +117,4 @@ post('/api/admin/update-text', function() {
 });
 */
 
-include_once('views/404.php');
-exit;
+notFound();

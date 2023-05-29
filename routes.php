@@ -23,6 +23,8 @@ function notFoundIfNoLocale($locale) {
 }
 
 function notFound() {
+  http_response_code(404);
+
   include_once('views/404.php');
   exit;
 }
@@ -151,5 +153,4 @@ get('/%s/privacy-policy', function($locale) {
 // ##################################################
 // ##################################################
 
-include_once('views/404.php');
-exit;
+notFound();
