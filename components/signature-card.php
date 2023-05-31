@@ -11,7 +11,6 @@
         </button>
       </div>
       <div class="bottom__right">
-        <button class="right__btn btn_view" paper-preview-signature title="<?= translate('Preview on Document'); ?>"><?php include('icons/view.php'); ?></button>
         <button class="right__btn btn_share" share-signature title="<?= translate('Share'); ?>"><?php include('icons/share.php'); ?></button>
         <button class="right__btn btn_download" download-signature download="OnlineSignatures.net.png" title="<?= translate('Download'); ?>"><?php include('icons/download.php'); ?></button>
       </div>

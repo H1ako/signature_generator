@@ -662,7 +662,7 @@
     gap: 0.15em !important;
   }
   .signature-card__bottom .bottom__left {
-    flex: 1 1 25%;
+    flex: 1 1 33%;
     justify-content: stretch;
   }
   .signature-card__bottom .bottom__left .left__edit-btn {
@@ -683,7 +683,7 @@
   border: var(--border-main);
   border-radius: var(--border-radius-main);
   overflow: hidden;
-  overflow: hidden;
+  padding: 0;
 }
 .preview-lightbox::backdrop {
   background: rgba(0, 0, 0, 0.75);
@@ -697,56 +697,20 @@
   display: grid;
   place-content: center;
   transition: var(--transition-main);
-  margin-inline: auto;
-  width: min(100%, 70rem);
-  height: auto;
-  max-height: 80vh;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.preview-lightbox.preview-lightbox_paper-preview {
-  padding: 0;
-}
-.preview-lightbox.preview-lightbox_paper-preview .paper-preview__image {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  color: var(--color-text);
-  display: grid;
-  place-content: center;
-  transition: var(--transition-main);
   position: absolute;
   -o-object-fit: contain;
      object-fit: contain;
   width: 20%;
-  rotate: -28.5deg;
-  top: 55%;
-  left: 23.5%;
-  translate: 0 -50%;
-  height: auto;
+  height: 18rem;
+  width: 20%;
+  bottom: calc(19% + 7vh);
+  left: 44.5%;
+  -o-object-position: left bottom;
+     object-position: left bottom;
+  rotate: 327deg;
+  filter: invert(8%) sepia(100%) saturate(15500%) hue-rotate(201deg) brightness(97%) contrast(142%);
 }
-@media screen and (width < 1150px) {
-  .preview-lightbox.preview-lightbox_paper-preview .paper-preview__image {
-    top: 59%;
-  }
-}
-@media screen and (width < 800px) {
-  .preview-lightbox.preview-lightbox_paper-preview .paper-preview__image {
-    top: 60%;
-  }
-}
-@media screen and (height < 500px) {
-  .preview-lightbox.preview-lightbox_paper-preview .paper-preview__image {
-    top: 52%;
-  }
-}
-@media screen and (height < 360px) {
-  .preview-lightbox.preview-lightbox_paper-preview .paper-preview__image {
-    top: 42%;
-  }
-}
-.preview-lightbox.preview-lightbox_paper-preview .paper-preview__bg-image {
+.preview-lightbox__bg-image {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -758,19 +722,32 @@
   width: 100%;
   height: auto;
   max-height: 80vh;
-  -o-object-position: left 70%;
-     object-position: left 70%;
+  -o-object-position: right 80%;
+     object-position: right 80%;
+}
+@media screen and (width < 750px) {
+  .preview-lightbox__image {
+    width: 40%;
+    left: 28.5%;
+  }
+  .preview-lightbox__bg-image {
+    width: 200%;
+    margin-left: -65%;
+    -o-object-position: right 70%;
+       object-position: right 70%;
+  }
 }
 @media screen and (width < 500px) {
-  .preview-lightbox.preview-lightbox_paper-preview .paper-preview__image {
+  .preview-lightbox__image {
     width: 40%;
-    top: 62%;
-    left: 45%;
+    left: 32.5%;
+    height: 11rem;
   }
-  .preview-lightbox.preview-lightbox_paper-preview .paper-preview__bg-image {
-    width: 200%;
-    -o-object-position: left center;
-       object-position: left center;
+  .preview-lightbox__bg-image {
+    width: 250%;
+    margin-left: -85%;
+    -o-object-position: right 75%;
+       object-position: right 75%;
   }
 }
 

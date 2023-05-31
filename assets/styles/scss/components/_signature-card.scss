@@ -36,7 +36,6 @@
     .bottom__right {
       display: flex;
       align-items: stretch;
-      // flex: 1 1 50%;
     }
 
     .bottom__left {
@@ -62,7 +61,7 @@
       gap: .15em !important;
 
       .bottom__left {
-        flex: 1 1 25%;
+        flex: 1 1 33%;
         justify-content: stretch;
 
         .left__edit-btn {

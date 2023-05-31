@@ -183,7 +183,6 @@ try {
 <?php include('components/footer.php'); ?>
 <?php include('components/socials-modal.php'); ?>
 <?php include('components/preview-lightbox.php'); ?>
-<?php include('components/paper-preview-lightbox.php'); ?>
 <?php include('components/image-type-chooser.php'); ?>
 <?php include('components/editor.php'); ?>
 <?php include('components/go-top.php'); ?>

@@ -20,7 +20,7 @@ $fonts;
 
 include_once('draw-styles.php');
 
-function getImageFromStyle($styleIndex) {
+function getImageFromStyle($styleIndex, $trimImage=true) {
   global $image, $textDraw, $curvesDraw, $styles, $textWidth, $textHeight, $width, $height, $thickness, $textBoxBottomY, $textMostTopY, $textMostRightX, $textMostRightY, $textMostLeftX, $textMostLeftY;
   
   if (!array_key_exists($styleIndex, $styles)) return false;
@@ -80,7 +80,7 @@ function getImageFromStyle($styleIndex) {
   if ($angle) {
     $image->rotateImage('white', $angle);
   }
-  $image->trimImage(0);
+  $trimImage && $image->trimImage(0);
   $image->setImageAlphaChannel(\Imagick::ALPHACHANNEL_ACTIVATE);
   $image->transparentPaintImage($bgColor, 0, 10000, false);
 

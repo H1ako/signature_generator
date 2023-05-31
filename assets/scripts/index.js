@@ -11,8 +11,6 @@ const signatureShareBtns = document.querySelectorAll('[share-signature]')
 const goToTopBtn = document.querySelector('[go-top]')
 const previewLightbox = document.querySelector('#preview-lightbox')
 const previewLightboxImage = previewLightbox && previewLightbox.querySelector('img')
-const paperPreviewLightbox = document.querySelector('#paper-preview-lightbox')
-const paperPreviewLightboxImage = paperPreviewLightbox && paperPreviewLightbox.querySelector('.paper-preview__image')
 const signatureCardTemplate = document.querySelector('#signature-card-template')
 const goForMoreSignaturesBtn = document.querySelector('[go-for-more-signatures]')
 const goForMoreSignaturesAnchor = document.querySelector('[go-for-more-signatures-anchor]')
@@ -125,9 +123,6 @@ function getSignatureCard(image) {
   const newCardToolsEditButton = newCard.querySelector('[edit-signature]')
   newCardToolsEditButton.addEventListener('click', editSignature)
   
-  const newCardToolsPreviewButton = newCard.querySelector('.btn_view')
-  newCardToolsPreviewButton.addEventListener('click', paperPreviewSignature)
-
   const newCardToolsShareButton = newCard.querySelector('.btn_share')
   newCardToolsShareButton.addEventListener('click', shareSignature)
 
@@ -246,18 +241,6 @@ function openPreviewLightbox(imageSrc) {
   openModal(previewLightbox)
 }
 
-function paperPreviewSignature(e) {
-  const signatureSrc = e.target.closest('[data-signature-src]').getAttribute('data-signature-src')
-
-  openPaperPreviewLightbox(signatureSrc)
-}
-
-function openPaperPreviewLightbox(imageSrc) {
-  paperPreviewLightboxImage.src = imageSrc
-  
-  openModal(paperPreviewLightbox)
-}
-
 function openModal(modal) {
   modal && modal.showModal()
   document.body.style.overflow = 'hidden'
@@ -274,22 +257,10 @@ function closeModal(modal) {
   document.body.style.removeProperty('overflow')
 }
 
-function closePaperPreviewLightbox() {
-  paperPreviewLightboxImage.src = ''
-  
-  closeModal(paperPreviewLightbox)
-}
-
 function closePreviewLightboxlIfOuterClick(e) {
   if (!checkIfOuterClick(previewLightbox, e)) return
 
   closePreviewLightbox()
-}
-
-function closePaperPreviewLightboxlIfOuterClick(e) {
-  if (!checkIfOuterClick(paperPreviewLightbox, e)) return
-
-  closePaperPreviewLightbox()
 }
 
 function goToTop() {
@@ -346,13 +317,8 @@ if (goToTopBtn) {
   document.addEventListener('scroll', enableGoTopBtnIfScrolled)
 }
 if (previewLightbox) {
-  previewLightbox.addEventListener('click', closePreviewLightboxlIfOuterClick)
+  previewLightbox.addEventListener('click', closePreviewLightbox)
   previewLightbox.addEventListener('close', closePreviewLightbox)
-}
-
-if (paperPreviewLightbox) {
-  paperPreviewLightbox.addEventListener('click', closePaperPreviewLightboxlIfOuterClick)
-  paperPreviewLightbox.addEventListener('close', closePaperPreviewLightbox)
 }
 
 goForMoreSignaturesBtn && goForMoreSignaturesBtn.addEventListener('click', goToOpenEditorBtn)

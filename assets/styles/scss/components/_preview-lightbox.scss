@@ -7,7 +7,7 @@
   border: var(--border-main);
   border-radius: var(--border-radius-main);
   overflow: hidden;
-  overflow: hidden;
+  padding: 0;
   
   &::backdrop {
     background: rgba(0, 0, 0, 0.75);
@@ -16,66 +16,51 @@
   &__image {
     @include image;
 
-    margin-inline: auto;
-    width: min(100%, 70rem);
-    height: auto;
-    max-height: 80vh;
+    position: absolute;
     object-fit: contain;
+    width: 20%;
+    height: 18rem;
+    width: 20%;
+    bottom: calc(19% + 7vh);
+    left: 44.5%;
+    object-position: left bottom;
+    rotate: 327deg;
+    filter: invert(8%) sepia(100%) saturate(15500%) hue-rotate(201deg) brightness(97%) contrast(142%);
   }
 
-  &.preview-lightbox_paper-preview {
-    padding: 0;
+  &__bg-image {
+    @include image;
 
-    .paper-preview__image {
-      @include image;
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-position: right 80%;
+  }
 
-      position: absolute;
-      object-fit: contain;
-      width: 20%;
-      rotate: -28.5deg;
-      top: 55%;
-      left: 23.5%;
-      translate: 0 -50%;
-      height: auto;
+  @media screen and (width < 750px) {
+    &__image {
+      width: 40%;
+      left: 28.5%;
+    }
+    
+    &__bg-image {
+      width: 200%;
+      margin-left: -65%;
+      object-position: right 70%;
+    }
+  }
 
-      @media screen and (width < 1150px) {
-        top: 59%;
-      }
-
-      @media screen and (width < 800px) {
-        top: 60%;
-      }
-
-      @media screen and (height < 500px) {
-        top: 52%;
-      }
-
-      @media screen and (height < 360px) {
-        top: 42%;
-      }
+  @media screen and (width < 500px) {
+    &__image {
+      width: 40%;
+      left: 32.5%;
+      height: 11rem;
     }
 
-    .paper-preview__bg-image {
-      @include image;
-
-      width: 100%;
-      height: auto;
-      max-height: 80vh;
-      object-position: left 70%;
-    }
-
-    @media screen and (width < 500px) {
-
-      .paper-preview__image {
-        width: 40%;
-        top: 62%;
-        left: 45%;
-      }
-      
-      .paper-preview__bg-image {
-        width: 200%;
-        object-position: left center;
-      }
+    &__bg-image {
+      width: 250%;
+      margin-left: -85%;
+      object-position: right 75%;
     }
   }
 }

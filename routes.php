@@ -27,7 +27,7 @@ function notFound() {
 
   include_once('views/404.php');
   exit;
-}
+}  
 
 get('/%s/%s', function($locale, $path) use ($LOCALES) {
   if (!(array_key_exists($locale, $LOCALES))) return;
@@ -70,7 +70,7 @@ get('/signature-preview/%s', function ($encryptedData) {
   if ($randomIndex === null || $styleIndex === null || $firstName === null || $lastName === null) notFound();
 
   include('script.php');
-  $image = getImageFromStyle($styleIndex - 1);
+  $image = getImageFromStyle($styleIndex - 1, !isset($_GET['image-only']));
   if (!$image) notFound();
   
   $image->setFormat('jpg');
@@ -113,7 +113,7 @@ get('/%s/signature-preview/%s', function ($locale, $encryptedData) {
   if ($randomIndex === null || $styleIndex === null || $firstName === null || $lastName === null) notFound();
 
   include('script.php');
-  $image = getImageFromStyle($styleIndex - 1);
+  $image = getImageFromStyle($styleIndex - 1, !isset($_GET['image-only']));
   if (!$image) notFound();
 
   $image->setFormat('jpg');
