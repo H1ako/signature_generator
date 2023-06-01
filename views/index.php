@@ -169,7 +169,7 @@ try {
     </div>
     <h2 class="about__heading" itemprop="headline"><?= translate('Home Page About Us'); ?></h2>
     <div class="about__block">
-      <img loading="lazy" src="<?= $SITE_URL ?>/assets/images/<?= $ABOUTUS_IMAGE ?>" alt="<?= translate('About us image'); ?>" title="<?= translate('About us image'); ?>" width="1100" height="500" class="block__img" itemprop="image">
+      <img loading="lazy" src="<?= $SITE_URL ?>/assets/images/<?= $ABOUTUS_IMAGE ?>" alt="<?= translate('About us image'); ?>" title="<?= translate('About us image'); ?>" width="1100" height="568" class="block__img" itemprop="image">
       <div class="block__text big-text" itemprop="articleBody">
         <?= isset($contents["aboutUs_$localeShortCode"]) ? $contents["aboutUs_$localeShortCode"] : '' ?>
       </div>
