@@ -69,6 +69,7 @@ try {
       <?php include('components/advertisement-2.php'); ?>
       <?php include('components/advertisement-3.php'); ?>
     </ul>
+    <?php include('components/advertisement-4.php'); ?>
     <button class="generated-signatures__loader" id="generator-loader">
       <span class="loader__variant variant_loading">
         <svg class="variant__icon" fill="currentColor" width="20px" height="20px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">

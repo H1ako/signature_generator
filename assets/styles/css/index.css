@@ -173,6 +173,12 @@
   color: var(--color-text);
   opacity: 0.001;
 }
+.generator-form__field.field-middle-name input::-moz-placeholder {
+  opacity: 0.6 !important;
+}
+.generator-form__field.field-middle-name input::placeholder {
+  opacity: 0.6 !important;
+}
 .generator-form__submit {
   padding: var(--padding-button);
   font-size: var(--font-size-5);

@@ -19,6 +19,10 @@
       color: var(--color-text);
       opacity: .001;
     }
+
+    &.field-middle-name input::placeholder {
+      opacity: .6 !important;
+    }
   }
 
   &__submit {
