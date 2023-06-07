@@ -70,7 +70,7 @@
    ],
    "About us image": [
       null,
-      "Về chúng tôi hình ảnh"
+      "Tạo Chữ Ký Đẹp Online Miễn Phí"
    ],
    "Generate more": [
       null,
@@ -198,7 +198,7 @@
    ],
    "Step Image Title 1": [
       null,
-      "Тайтл Алт 1"
+      "Điền vào biểu mẫu"
    ],
    "Step Image 1": [
       null,
@@ -214,7 +214,7 @@
    ],
    "Step Image Title 2": [
       null,
-      "Тайтл Алт 1"
+      "Nhấp Vào 'Tạo'"
    ],
    "Step Image 2": [
       null,
@@ -230,7 +230,7 @@
    ],
    "Step Image Title 3": [
       null,
-      "Тайтл Алт 1"
+      "Khám phá các tùy chọn có sẵn"
    ],
    "Step Image 3": [
       null,
@@ -238,7 +238,7 @@
    ],
    "Step 4 Title": [
       null,
-      "Xem trước trên giấy (tùy chọn)"
+      "Xem trước trên giấy"
    ],
    "Step 4 Description": [
       null,
@@ -246,7 +246,7 @@
    ],
    "Step Image Title 4": [
       null,
-      "Тайтл Алт 1"
+      "Xem trước trên giấy"
    ],
    "Step Image 4": [
       null,
@@ -262,7 +262,7 @@
    ],
    "Step Image Title 5": [
       null,
-      "Тайтл Алт 1"
+      "Chỉnh sửa chữ ký"
    ],
    "Step Image 5": [
       null,
@@ -278,7 +278,7 @@
    ],
    "Step Image Title 6": [
       null,
-      "Тайтл Алт 1"
+      "Tải xuống chữ ký"
    ],
    "Step Image 6": [
       null,
@@ -294,7 +294,7 @@
    ],
    "Step Image Title 7": [
       null,
-      "Тайтл Алт 1"
+      "Chia sẻ trên phương tiện truyền thông xã hội"
    ],
    "Step Image 7": [
       null,
@@ -315,5 +315,9 @@
    "Copied": [
       null,
       "Sao chép"
+   ],
+   "Not Required": [
+    null,
+    "Không Bắt Buộc"
    ]
 }

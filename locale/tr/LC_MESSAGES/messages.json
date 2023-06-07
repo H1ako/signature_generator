@@ -70,7 +70,7 @@
    ],
    "About us image": [
       null,
-      "Hakkımızda imajı"
+      "İmza Oluşturucu online"
    ],
    "Generate more": [
       null,
@@ -198,7 +198,7 @@
    ],
    "Step Image Title 1": [
       null,
-      "Тайтл Алт 1"
+      "Formu doldurun"
    ],
    "Step Image 1": [
       null,
@@ -206,7 +206,7 @@
    ],
    "Step 2 Title": [
       null,
-      "'Oluştur'a tıklayın"
+      "'Oluştur' düğmesini tıklayın"
    ],
    "Step 2 Description": [
       null,
@@ -214,7 +214,7 @@
    ],
    "Step Image Title 2": [
       null,
-      "Тайтл Алт 1"
+      "'Oluştur' düğmesini tıklayın"
    ],
    "Step Image 2": [
       null,
@@ -230,7 +230,7 @@
    ],
    "Step Image Title 3": [
       null,
-      "Тайтл Алт 1"
+      "Mevcut seçenekleri araştırın"
    ],
    "Step Image 3": [
       null,
@@ -238,7 +238,7 @@
    ],
    "Step 4 Title": [
       null,
-      "Kağıt üzerinde önizleme (isteğe bağlı)"
+      "Kağıt üzerinde önizleme"
    ],
    "Step 4 Description": [
       null,
@@ -246,7 +246,7 @@
    ],
    "Step Image Title 4": [
       null,
-      "Тайтл Алт 1"
+      "Kağıt üzerinde önizleme"
    ],
    "Step Image 4": [
       null,
@@ -262,7 +262,7 @@
    ],
    "Step Image Title 5": [
       null,
-      "Тайтл Алт 1"
+      "İmzayı düzenleme"
    ],
    "Step Image 5": [
       null,
@@ -278,7 +278,7 @@
    ],
    "Step Image Title 6": [
       null,
-      "Тайтл Алт 1"
+      "İmzayı indirin"
    ],
    "Step Image 6": [
       null,
@@ -294,7 +294,7 @@
    ],
    "Step Image Title 7": [
       null,
-      "Тайтл Алт 1"
+      "Sosyal medyada paylaşın"
    ],
    "Step Image 7": [
       null,
@@ -315,5 +315,9 @@
    "Copied": [
       null,
       "Kopyalandı"
+   ],
+   "Not Required": [
+    null,
+    "Gerekli Değil"
    ]
 }

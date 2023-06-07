@@ -62,7 +62,7 @@
    ],
    "About us image": [
       null,
-      "About us image"
+      "Free Online Signature Generator"
    ],
    "Generate more": [
       null,
@@ -198,7 +198,7 @@
    ],
    "Step Image Title 1": [
       null,
-      "Тайтл Алт 1"
+      "Fill the form"
    ],
    "Step Image 1": [
       null,
@@ -214,7 +214,7 @@
    ],
    "Step Image Title 2": [
       null,
-      "Тайтл Алт 1"
+      "Click 'Generate'"
    ],
    "Step Image 2": [
       null,
@@ -230,7 +230,7 @@
    ],
    "Step Image Title 3": [
       null,
-      "Тайтл Алт 1"
+      "Explore the available options"
    ],
    "Step Image 3": [
       null,
@@ -238,7 +238,7 @@
    ],
    "Step 4 Title": [
       null,
-      "Preview on paper (optional)"
+      "Preview on paper"
    ],
    "Step 4 Description": [
       null,
@@ -246,7 +246,7 @@
    ],
    "Step Image Title 4": [
       null,
-      "Тайтл Алт 1"
+      "Preview on paper"
    ],
    "Step Image 4": [
       null,
@@ -262,7 +262,7 @@
    ],
    "Step Image Title 5": [
       null,
-      "Тайтл Алт 1"
+      "Edit the signature"
    ],
    "Step Image 5": [
       null,
@@ -278,7 +278,7 @@
    ],
    "Step Image Title 6": [
       null,
-      "Тайтл Алт 1"
+      "Download the signature"
    ],
    "Step Image 6": [
       null,
@@ -294,7 +294,7 @@
    ],
    "Step Image Title 7": [
       null,
-      "Тайтл Алт 1"
+      "Share on social media"
    ],
    "Step Image 7": [
       null,
@@ -315,5 +315,9 @@
    "Copied": [
       null,
       "Copied"
+   ],
+   "Not Required": [
+    null,
+    "Not Required"
    ]
 }

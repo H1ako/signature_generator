@@ -62,7 +62,7 @@
    ],
    "About us image": [
       null,
-      "Online Signature"
+      "Генератор подписей онлайн"
    ],
    "Generate more": [
       null,
@@ -315,5 +315,9 @@
    "Copied": [
       null,
       "Скопировано"
+   ],
+   "Not Required": [
+    null,
+    "Необязательно"
    ]
 }
