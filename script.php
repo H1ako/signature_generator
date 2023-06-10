@@ -34,16 +34,16 @@ function getImageFromStyle($styleIndex, $trimImage=true) {
   $thickness = max(1, round($fontSize / $font['thickness_index']));
   $bgColor = new ImagickPixel('white');
 
-  $image = new \Imagick();
+  $image = new Imagick();
 
-  $textDraw = new \ImagickDraw();
+  $textDraw = new ImagickDraw();
   setupTextDraw($textDraw, $font['path'], $fontSize);
   $textMetrics = $image->queryFontMetrics($textDraw, $text);
   $textWidth = $textMetrics['textWidth'];
   $textHeight = $textMetrics['textHeight'];
   
-  $width = round($textWidth * 2.5);
-  $height = round($textHeight * 2.5);
+  $width = round($textWidth * 2);
+  $height = round($textHeight * 2);
   $image->newImage($width, $height, $bgColor);
   $image->setImageFormat('png');
 
@@ -53,12 +53,12 @@ function getImageFromStyle($styleIndex, $trimImage=true) {
   $textMostTopY = $textY;
   $image->annotateImage($textDraw, $textX, $textY, 0, $text);
 
-  $textMostRightX = floor($textWidth + $textX - $thickness);
+  $textMostRightX = floor($textWidth + $textX - $thickness * 2.1);
   $textMostRightY = null;
   $textMostLeftX = round($textX - $thickness);
   $textMostLeftY = null;
 
-  $curvesDraw = new \ImagickDraw();
+  $curvesDraw = new ImagickDraw();
   setupCurvesDraw($curvesDraw, $thickness);
 
   for($y=$textY - $textHeight; $y < $textY + $textHeight / 2; $y++) {
@@ -81,7 +81,7 @@ function getImageFromStyle($styleIndex, $trimImage=true) {
     $image->rotateImage('white', $angle);
   }
   $trimImage && $image->trimImage(0);
-  $image->setImageAlphaChannel(\Imagick::ALPHACHANNEL_ACTIVATE);
+  $image->setImageAlphaChannel(Imagick::ALPHACHANNEL_ACTIVATE);
   $image->transparentPaintImage($bgColor, 0, 10000, false);
 
   $curvesDraw->destroy();
@@ -102,8 +102,8 @@ function setupCurvesDraw($draw, $thickness) {
   $draw->setStrokeOpacity(1);
   $draw->setStrokeColor('black');
   $draw->setStrokeAntialias(true);
-  $draw->setStrokeLinecap(\imagick::LINECAP_ROUND);
-  $draw->setStrokeLinejoin(\imagick::LINEJOIN_ROUND);
+  $draw->setStrokeLinecap(imagick::LINECAP_ROUND);
+  $draw->setStrokeLinejoin(imagick::LINEJOIN_ROUND);
   $draw->setStrokeMiterLimit(2);
   $draw->setStrokeAntialias(true);
   $draw->setStrokeWidth($thickness);
