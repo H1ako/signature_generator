@@ -22,14 +22,14 @@ function notFound() {
 }
 
 get('/api/get-signatures', function () use ($SITE_URL) {
-  if (!array_key_exists('first-name', $_GET) || !array_key_exists('first-name', $_GET)) return false;
+  if (!array_key_exists('first-name', $_GET) || !array_key_exists('last-name', $_GET)) return false;
   
   $firstName = ucfirst($_GET['first-name']);
   $lastName = ucfirst($_GET['last-name']);
   $middleName = isset($_GET['middle-name']) ? ucfirst($_GET['middle-name']) : '';
   $randomIndex = isset($_GET['random-index']) && $_GET['random-index'] != null ? intval($_GET['random-index']) : random_int(1, 9999);
   $page = $_GET['page'] ?? 1;
-  $signaturesPerPage = 1;
+  $signaturesPerPage = 6;
   include('script.php');
   
   $images = [];
@@ -46,11 +46,12 @@ get('/api/get-signatures', function () use ($SITE_URL) {
     $encodedText = encodeTextForUrl($textToEncode);
     $shareLink = "$SITE_URL/signature-preview/$encodedText";
 
-    $images = [...$images, [
+    array_push($images, [
       'png' => $imageLink,
       'jpg' => $imageJpgLink,
       'shareLink' => $shareLink
-    ]];
+    ]);
+
     $image->destroy();
   }
   $data = [
