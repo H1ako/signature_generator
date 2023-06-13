@@ -20,6 +20,12 @@ $fonts;
 
 include_once('draw-styles.php');
 
+Imagick::setResourceLimit(Imagick::RESOURCETYPE_THREAD, 1);
+Imagick::setResourceLimit(Imagick::RESOURCETYPE_MEMORY, 536870912);
+Imagick::setResourceLimit(Imagick::RESOURCETYPE_MAP, 268435456);
+Imagick::setResourceLimit(Imagick::RESOURCETYPE_FILE, 3);
+Imagick::setResourceLimit(Imagick::RESOURCETYPE_DISK, 536870912);
+
 function getImageFromStyle($styleIndex, $trimImage=true) {
   global $image, $textDraw, $curvesDraw, $styles, $textWidth, $textHeight, $width, $height, $thickness, $textBoxBottomY, $textMostTopY, $textMostRightX, $textMostRightY, $textMostLeftX, $textMostLeftY;
   
