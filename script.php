@@ -48,8 +48,8 @@ function getImageFromStyle($styleIndex, $trimImage=true) {
   $textWidth = $textMetrics['textWidth'];
   $textHeight = $textMetrics['textHeight'];
   
-  $width = round($textWidth * 2);
-  $height = round($textHeight * 2);
+  $width = max(round($textWidth * 2), 800);
+  $height = max(round($textHeight * 2), 600);
   $image->newImage($width, $height, $bgColor);
   $image->setImageFormat('png');
 
