@@ -1,4 +1,5 @@
 <?php
+set_time_limit(3);
 
 $width;
 $height;
@@ -20,7 +21,7 @@ $fonts;
 
 include_once('draw-styles.php');
 
-Imagick::setResourceLimit(Imagick::RESOURCETYPE_THREAD, 1);
+Imagick::setResourceLimit(Imagick::RESOURCETYPE_THREAD, 0.7);
 Imagick::setResourceLimit(Imagick::RESOURCETYPE_MEMORY, 536870912);
 Imagick::setResourceLimit(Imagick::RESOURCETYPE_MAP, 268435456);
 Imagick::setResourceLimit(Imagick::RESOURCETYPE_FILE, 3);
@@ -34,11 +35,11 @@ function getImageFromStyle($styleIndex, $trimImage=true) {
   $style = $styles[$styleIndex];
   $font = $style['font'];
   $text = $style['text_style'];
-  $fontSize = $style['font_size'];
+  $fontSize = round($style['font_size'] / 2);
   $angle = $style['angle'];
   $drawStyles = $style['draw_styles'];
   $thickness = max(1, round($fontSize / $font['thickness_index']));
-  $bgColor = new ImagickPixel('white');
+  $bgColor = new ImagickPixel('transparent');
 
   $image = new Imagick();
 
@@ -48,8 +49,8 @@ function getImageFromStyle($styleIndex, $trimImage=true) {
   $textWidth = $textMetrics['textWidth'];
   $textHeight = $textMetrics['textHeight'];
   
-  $width = max(round($textWidth * 2), 800);
-  $height = max(round($textHeight * 2), 600);
+  $width = round($textWidth * 2.25);
+  $height = round($textHeight * 2.25);
   $image->newImage($width, $height, $bgColor);
   $image->setImageFormat('png');
 
@@ -67,29 +68,37 @@ function getImageFromStyle($styleIndex, $trimImage=true) {
   $curvesDraw = new ImagickDraw();
   setupCurvesDraw($curvesDraw, $thickness);
 
-  for($y=$textY - $textHeight; $y < $textY + $textHeight / 2; $y++) {
-    $mostRightColorByY = $image->getImagePixelColor($textMostRightX, $y);
-    $isDifferentWithBg = !($bgColor->isPixelSimilar($mostRightColorByY, 0));
-    if ($isDifferentWithBg) {
-      $textMostRightY = $y - $thickness / 2;
+  for($y=$textY + $textHeight; $y > $textY - $textHeight / 2; $y--) {
+    if ($textMostRightY === null) {
+      $mostRightColorByY = $image->getImagePixelColor($textMostRightX, $y);
+      $isDifferentWithBg = !($bgColor->isPixelSimilar($mostRightColorByY, 0));
+      if ($isDifferentWithBg) {
+        $textMostRightY = $y - $thickness / 2;
+      }
     }
     
-    $mostLeftColorByY = $image->getImagePixelColor($textMostLeftX, $y);
-    $isDifferentWithBg = !($bgColor->isPixelSimilar($mostLeftColorByY, 0));
-    if ($isDifferentWithBg) {
-      $textMostLeftY = $y - $thickness / 2;
+    if ($textMostLeftY === null) {
+      $mostLeftColorByY = $image->getImagePixelColor($textMostLeftX, $y);
+      $isDifferentWithBg = !($bgColor->isPixelSimilar($mostLeftColorByY, 0));
+      if ($isDifferentWithBg) {
+        $textMostLeftY = $y - $thickness / 2;
+      }
+    }
+
+    if ($textMostLeftY !== null && $textMostRightY !== null) {
+      break;
     }
   }
 
   $drawStyles();
   $image->drawImage($curvesDraw);
   if ($angle) {
-    $image->rotateImage('white', $angle);
+    $image->rotateImage('transparent', $angle);
   }
   $trimImage && $image->trimImage(0);
-  $image->setImageAlphaChannel(Imagick::ALPHACHANNEL_ACTIVATE);
-  $image->transparentPaintImage($bgColor, 0, 10000, false);
 
+  $curvesDraw->clear();
+  $textDraw->clear();
   $curvesDraw->destroy();
   $textDraw->destroy();
 

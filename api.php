@@ -52,6 +52,7 @@ get('/api/get-signatures', function () use ($SITE_URL) {
       'shareLink' => $shareLink
     ]);
 
+    $image->clear();
     $image->destroy();
   }
   $data = [
