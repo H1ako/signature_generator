@@ -52,8 +52,8 @@
 
         .url__link {
           flex-grow: 1;
-
           background: none;
+          min-width: 0;
         }
         
         .url__copy {

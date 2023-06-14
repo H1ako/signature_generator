@@ -64,6 +64,7 @@
 .socials-modal__content .content__links .links__url .url__link {
   flex-grow: 1;
   background: none;
+  min-width: 0;
 }
 .socials-modal__content .content__links .links__url .url__copy {
   padding: 0.5em;
@@ -238,11 +239,12 @@
     transform: translate(0px);
   }
 }
-.adsbygoogle {
+.advertisement {
+  position: relative;
   width: 100%;
 }
-
-.advertisement {
+.advertisement ins {
+  margin-left: 0 !important;
   width: 100%;
 }
 

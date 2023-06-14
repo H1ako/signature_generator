@@ -131,8 +131,12 @@
     &.before-generation {
       position: absolute;
       left: -9999px;
+      // top: -100%;
       width: var(--width-main-content);
       padding: var(--padding-main-content);
+      // pointer-events: none;
+      // user-select: none;
+      // opacity: 0;
 
       .advertisement {
         display: block !important;

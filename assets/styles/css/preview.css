@@ -1,8 +1,9 @@
-.adsbygoogle {
+.advertisement {
+  position: relative;
   width: 100%;
 }
-
-.advertisement {
+.advertisement ins {
+  margin-left: 0 !important;
   width: 100%;
 }
 

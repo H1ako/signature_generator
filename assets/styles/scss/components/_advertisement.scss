@@ -1,9 +1,11 @@
 @import "../main/mixins";
 
-.adsbygoogle {
-  width: 100%;
-}
-
 .advertisement {
+  position: relative;
   width: 100%;
+  
+  ins {
+    margin-left: 0 !important;
+    width: 100%;
+  }
 }

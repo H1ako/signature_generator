@@ -69,11 +69,8 @@ async function appendGeneratedSignatures() {
 
   if (!signaturesList || isSignaturesGenerating) return
 
-  var newSignatures
-  for(var i=0; i < 15;i++) {
-    newSignatures = await generateSignatures()
-    if (!newSignatures) continue
-    
+  const newSignatures = await generateSignatures()
+  if (newSignatures) {
     addSignaturesToList(newSignatures)
   }
 
