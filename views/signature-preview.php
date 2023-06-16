@@ -35,7 +35,9 @@ $nameTitle = "$lastName $firstName $middleName"
     <h2 class="info__title"><?= $nameTitle ?></h2>
   </section>
   <section class="main-content__advertisement">
-    <?php include('components/advertisement-1.php'); ?>
+    <div class="advertisement">
+      <?php include('components/advertisement-1.php'); ?>
+    </div>
   </section>
   <section class="main-content__preview">
     <img src="<?= $image ?>" alt="<?= $nameTitle ?>" class="preview__image">
@@ -43,5 +45,7 @@ $nameTitle = "$lastName $firstName $middleName"
   <a href="/<?= $currentLocaleShortCode === 'en' ? '' : $currentLocaleShortCode ?>" class="more-button" title="<?= translate('Generate more'); ?>"><?= translate('Generate more'); ?></a>
 </main>
 <?php include_once('components/footer.php'); ?>
+
+<?php include_once('components/advertisement-block-script.php'); ?>
 </body>
 </html>

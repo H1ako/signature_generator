@@ -63,11 +63,19 @@ try {
     <h2 class="editor__heading" go-for-more-signatures-anchor><?= translate('Create your own <b>Signature</b>'); ?></h2>
     <button class="editor__open-editor" open-editor><?= translate('Open Editor'); ?></button>
   </section>
-  <section class="main-content__advertisement"><?php include('components/advertisement-1.php'); ?></section>
+  <section class="main-content__advertisement">
+    <div class="advertisement">
+      <?php include('components/advertisement-1.php'); ?>
+    </div>
+  </section>
   <section class="main-content__generated-signatures before-generation">
     <ul class="generated-signatures__list" id="signatures-list">
-      <?php include('components/advertisement-2.php'); ?>
-      <?php include('components/advertisement-3.php'); ?>
+      <li class="advertisement">
+        <?php include('components/advertisement-2.php'); ?>
+      </li>
+      <li class="advertisement">
+        <?php include('components/advertisement-3.php'); ?>
+      </li>
     </ul>
     <?php include('components/advertisement-4.php'); ?>
     <button class="generated-signatures__loader" id="generator-loader">
@@ -187,5 +195,7 @@ try {
 <?php include('components/image-type-chooser.php'); ?>
 <?php include('components/editor.php'); ?>
 <?php include('components/go-top.php'); ?>
+
+<?php include_once('components/advertisement-block-script.php'); ?>
 </body>
 </html>
