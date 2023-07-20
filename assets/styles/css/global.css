@@ -519,6 +519,123 @@ b {
   font-family: "Flag";
 }
 
+details summary::marker {
+  display: none;
+}
+
+.rad {
+  display: none;
+}
+
+.opt {
+  display: none;
+  cursor: pointer;
+}
+
+[open] .opt,
+.rad:checked + .opt {
+  display: block;
+}
+
+.as-console-wrapper {
+  width: 50%;
+  min-height: 100%;
+  margin-left: 50%;
+  font-variant: normal;
+}
+
+.as-console-row.as-console-row::after {
+  content: "";
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 0;
+}
+
+.language-chooser {
+  position: relative;
+  width: 12.5em;
+  z-index: 999;
+  border: none;
+  padding: 0;
+}
+
+.language-chooser__flag {
+  width: 1.5em;
+  border-radius: 2px;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.language-chooser details[open] .language-chooser__arrow {
+  transform: rotateX(180deg);
+}
+
+.language-chooser__arrow {
+  width: 1em;
+  position: absolute;
+  right: 0.5em;
+  top: 50%;
+  translate: 0 -50%;
+  transform-origin: center;
+  transition: var(--transition-main);
+}
+
+.language-chooser fieldset {
+  height: 3rem;
+  width: 100%;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: var(--color-bg-light);
+  border-radius: var(--border-radius-main);
+}
+
+.language-chooser summary {
+  width: 100%;
+  outline: none;
+  list-style: none;
+  padding: 0.35em 0.75em;
+  position: relative;
+}
+
+.language-chooser details {
+  border: var(--border-main);
+  overflow: hidden;
+  background: var(--color-bg-light);
+  border: var(--border-main);
+  width: 100%;
+  padding: 0.35em 0;
+  border-radius: var(--border-radius-main);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.language-chooser label {
+  padding: 0.35em 0.75em;
+  box-shadow: none;
+  margin: 0;
+}
+
+.language-chooser label:hover {
+  background: rgb(161, 161, 161);
+}
+
+.language-chooser label.disabled {
+  pointer-events: none;
+}
+
+.language-chooser label,
+.language-chooser summary {
+  display: flex !important;
+  align-items: center;
+  gap: 1em;
+  font-weight: 500;
+  font-size: var(--font-size-5);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
 .main-header {
   position: relative;
   width: var(--width-main-content);

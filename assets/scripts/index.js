@@ -19,7 +19,7 @@ const signaturesSection = document.querySelector('.main-content__generated-signa
 function generatorFormHandler(e) {
   e.preventDefault()
   if (!isGeneratorFormValid()) return
-  
+
   replaceWithGeneratedSignatures()
 
   signaturesList.scrollIntoView({
@@ -29,7 +29,7 @@ function generatorFormHandler(e) {
 
 async function replaceWithGeneratedSignatures() {
   if (!signaturesList || !isGeneratorFormValid()) return
-  
+
   resetGeneratorData()
   increaseNumberOfGenerations()
 
@@ -38,7 +38,7 @@ async function replaceWithGeneratedSignatures() {
   signaturesListAdvertisementBlocks.forEach(block => {
     signaturesList.appendChild(block)
   })
-  
+
   appendGeneratedSignatures()
 }
 
@@ -53,7 +53,7 @@ function resetGeneratorData() {
 }
 
 function increaseNumberOfGenerations() {
-  fetch('/api/increase-generations-number', {
+  fetch('/signature_generator_prod/api/increase-generations-number', {
     method: 'put'
   })
 }
@@ -92,7 +92,21 @@ function addSignaturesToList(signatures) {
 
     if (signaturesListAdvertisementBlocks.length > 0) {
       signaturesList.insertBefore(newSignatureCard, signaturesList.children[signaturesList.children.length - 2])
-      
+
+      const newCardCanvas = newSignatureCard.querySelector('.top__image')
+      const tCoords = []
+      image.image.coords.forEach((coordsPack) => {
+        const tCoordsPart = [];
+
+        coordsPack.forEach(coord => {
+          tCoordsPart.push(new paper.Point(coord.x, (coord.y - image.image.fontSize / 4.25 + image.image.thickness / 2)))
+        })
+
+        tCoords.push(tCoordsPart)
+      })
+      const signature = new Signature(newCardCanvas, image.image.text, tCoords, image.image.textMostLeftX, image.image.textMostRightY, image.image.width, image.image.height, image.image.fontSize, image.image.fontName, image.image.fontPath, image.image.thickness, image.image.angle)
+      signature.draw()
+
       return
     }
 
@@ -105,21 +119,22 @@ function getSignatureCard(image) {
 
   const newCardClone = signatureCardTemplate.content.cloneNode(true)
   const newCard = newCardClone.querySelector('.signature-card')
-  newCard.setAttribute('data-signature-src', image.png)
-  newCard.setAttribute('data-signature-src-jpg', image.jpg)
+
+  // newCard.setAttribute('data-signature-src', image.png)
+  // newCard.setAttribute('data-signature-src-jpg', image.jpg)
   newCard.setAttribute('share-link', image.shareLink)
 
   const newCardImageMainPreviewButton = newCard.querySelector('.signature-card__top')
   newCardImageMainPreviewButton.addEventListener('click', previewSignature)
-  const newCardImage = newCardImageMainPreviewButton.querySelector('.top__image')
-  newCardImage.src = image.png
+  // const newCardImage = newCardImageMainPreviewButton.querySelector('.top__image')
+  // newCardImage.src = image.png
 
-  const newCardDownloadLink = newCard.querySelector('[download-signature]')
-  newCardDownloadLink.addEventListener('click', () => openImageTypeChooser(image.png, image.jpg))
+  // const newCardDownloadLink = newCard.querySelector('[download-signature]')
+  // newCardDownloadLink.addEventListener('click', () => openImageTypeChooser(image.png, image.jpg))
 
   const newCardToolsEditButton = newCard.querySelector('[edit-signature]')
   newCardToolsEditButton.addEventListener('click', editSignature)
-  
+
   const newCardToolsShareButton = newCard.querySelector('.btn_share')
   newCardToolsShareButton.addEventListener('click', shareSignature)
 
@@ -177,8 +192,8 @@ async function getGeneratedSignatures() {
   const firstName = cleanFormData.firstName
   const lastName = cleanFormData.lastName
   const middleName = cleanFormData.middleName
-  
-  const response = await fetch(`/api/get-signatures?first-name=${firstName}&last-name=${lastName}&middle-name=${middleName}&page=${page}&random-index=${randomIndex ?? ''}`, {
+
+  const response = await fetch(`/signature_generator_prod/api/get-signatures?first-name=${firstName}&last-name=${lastName}&middle-name=${middleName}&page=${page}&random-index=${randomIndex ?? ''}`, {
     method: 'GET',
   })
   if (response.status == 200) {
@@ -191,7 +206,7 @@ async function getGeneratedSignatures() {
       return []
     }
   }
-  
+
   return []
 }
 
@@ -200,7 +215,7 @@ function getTransliteratedGeneratorData(formData) {
   const lastName = transliterate?.(formData.get('last-name'))
   const middleName = transliterate?.(formData.get('middle-name') ?? '')
 
-  return {firstName, lastName, middleName}
+  return { firstName, lastName, middleName }
 }
 
 function stopLoading() {
@@ -220,9 +235,9 @@ function shareSignatureBySocialsModal(e) {
 }
 
 async function getBlobFromString(blobString) {
-  const response = await fetch(blobString)
+  const response = await fetch(b / signature_generator_prodlobString)
   const blob = await response.blob()
-  
+
   return blob
 }
 
@@ -234,7 +249,7 @@ function previewSignature(e) {
 
 function openPreviewLightbox(imageSrc) {
   previewLightboxImage.src = imageSrc
-  
+
   openModal(previewLightbox)
 }
 
@@ -245,7 +260,7 @@ function openModal(modal) {
 
 function closePreviewLightbox() {
   previewLightboxImage.src = ''
-  
+
   closeModal(previewLightbox)
 }
 
@@ -300,7 +315,7 @@ if (generatorLoader) {
   }, {
     threshold: 0.1,
   })
-  
+
   generatorLoaderObserver.observe(generatorLoader)
   generatorLoader.addEventListener('click', appendGeneratedSignatures)
 }

@@ -21,7 +21,7 @@ function notFound() {
   exit;
 }
 
-get('/api/get-signatures', function () use ($SITE_URL) {
+get('/signature_generator_prod/api/get-signatures', function () use ($SITE_URL) {
   if (!array_key_exists('first-name', $_GET) || !array_key_exists('last-name', $_GET)) return false;
   
   $firstName = ucfirst($_GET['first-name']);
@@ -37,23 +37,26 @@ get('/api/get-signatures', function () use ($SITE_URL) {
     $image = getImageFromStyle($i);
     if (!$image) break;
     
-    $imageLink = 'data:image/'.$image->getImageFormat().';base64,'.base64_encode($image->getimageblob());
-    $image->setImageFormat('jpg');
-    $imageJpgLink = 'data:image/'.$image->getImageFormat().';base64,'.base64_encode($image->getimageblob());
+    // $imageLink = 'data:image/'.$image->getImageFormat().';base64,'.base64_encode($image->getimageblob());
+    // $image->setImageFormat('jpg');
+    // $imageJpgLink = 'data:image/'.$image->getImageFormat().';base64,'.base64_encode($image->getimageblob());
 
     $fullName = $middleName ? "$lastName $firstName" : "$lastName $firstName $middleName";
-    $textToEncode = "$page $randomIndex $fullName";
+    $textToEncode = "$i $randomIndex $fullName";
     $encodedText = encodeTextForUrl($textToEncode);
     $shareLink = "$SITE_URL/signature-preview/$encodedText";
 
     array_push($images, [
-      'png' => $imageLink,
-      'jpg' => $imageJpgLink,
+      'image' => $image,
+      'png' => '',
+      'jpg' => '',
+      // 'png' => $imageLink,
+      // 'jpg' => $imageJpgLink,
       'shareLink' => $shareLink
     ]);
 
-    $image->clear();
-    $image->destroy();
+    // $image->clear();
+    // $image->destroy();
   }
   $data = [
     'signatures' => $images,
@@ -72,7 +75,7 @@ function encodeTextForUrl($text) {
   return $urlEncoded;
 }
 
-put('/api/increase-installations-number', function() {
+put('/signature_generator_prod/api/increase-installations-number', function() {
   $dataFile = 'data.json';
 
   try {
@@ -89,7 +92,7 @@ put('/api/increase-installations-number', function() {
   return false;
 });
 
-put('/api/increase-generations-number', function() {
+put('/signature_generator_prod/api/increase-generations-number', function() {
   $dataFile = 'data.json';
 
   try {
@@ -108,7 +111,7 @@ put('/api/increase-generations-number', function() {
 
 /*
 
-post('/api/admin/update-text', function() {
+post('/signature_generator_prod/api/admin/update-text', function() {
   $data = file_get_contents('php://input');
   $newData = isset($data) ? $data : [];
   $dataFile = 'big-descriptions.json';

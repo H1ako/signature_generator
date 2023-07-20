@@ -1,7 +1,8 @@
 <template id="signature-card-template">
   <li class="signature-card" data-signature-src="">
     <button class="signature-card__top" preview-signature title="<?= translate('Preview'); ?>">
-      <img src="" alt="<?= translate('Signature'); ?>" class="top__image">
+      <canvas class="top__image">
+      <!-- <img src="" alt="<?= translate('Signature'); ?>" class="top__image"> -->
     </button>
     <div class="signature-card__bottom">
       <div class="bottom__left">

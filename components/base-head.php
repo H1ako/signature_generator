@@ -43,10 +43,13 @@
   const SITE_URL = "<?= $SITE_URL ?>"
   const SITE_NAME = "<?= $SITE_NAME ?>"
 </script>
+<script src="https://unpkg.com/paper/dist/paper-core.min.js" defer></script>
+<script src="<?= $SITE_URL ?>/assets/scripts/signature.js" defer></script>
 <script src="<?= $SITE_URL ?>/assets/scripts/pwa.js" defer></script>
 <script src="<?= $SITE_URL ?>/assets/scripts/socials.js" defer></script>
 <script src="<?= $SITE_URL ?>/assets/scripts/footer.js" defer></script>
 <script src="<?= $SITE_URL ?>/assets/scripts/header.js" defer></script>
+<script src="<?= $SITE_URL ?>/assets/scripts/signature-fonts.js" defer></script>
 <!-- Google Analytics Script -->
 <?php include_once('components/analytics-script.php'); ?>
 <!-- Google Adsense Script -->

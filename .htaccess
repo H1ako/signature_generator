@@ -1,28 +1,20 @@
-Header set X-Robots-Tag "noindex, nofollow"
-order deny, allow
-deny from all
-allow from 92.39.213.219 31.14.75.29
-
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteBase /
-
-  RewriteCond %{HTTP_HOST} ^random.randomcountry.net
-  RewriteRule (.*) http://randomcountry.net/$1 [R=301,L]
+  RewriteBase /signature_generator_prod/
 
   # Redirect to api.php if URL starts with /api/
   RewriteCond %{REQUEST_URI} !(\.png|\.jpg|\.webp|\.gif|\.jpeg|\.zip|\.css|\.svg|\.js|\.pdf|\.mo|\.po)$ [NC]
   RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_URI} ^/api/ [NC]
-  RewriteCond %{REQUEST_URI} !^/locale/ [NC]
+  RewriteCond %{REQUEST_URI} ^/signature_generator_prod/api/ [NC]
+  RewriteCond %{REQUEST_URI} !^/signature_generator_prod/locale/ [NC]
   RewriteRule (.*) api.php [QSA,L]
 
   # Redirect to routes.php for all other URLs
   RewriteCond %{REQUEST_URI} !(\.png|\.jpg|\.webp|\.gif|\.jpeg|\.zip|\.css|\.svg|\.js|\.pdf|\.mo|\.po)$ [NC]
   RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_URI} !^/assets/ [NC]
-  RewriteCond %{REQUEST_URI} !^/api/ [NC]
-  RewriteCond %{REQUEST_URI} !^/locale/ [NC]
+  RewriteCond %{REQUEST_URI} !^/signature_generator_prod/assets/ [NC]
+  RewriteCond %{REQUEST_URI} !^/signature_generator_prod/api/ [NC]
+  RewriteCond %{REQUEST_URI} !^/signature_generator_prod/locale/ [NC]
   RewriteRule (.*) routes.php [QSA,L]
 </IfModule>
 

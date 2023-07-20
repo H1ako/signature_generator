@@ -34,3 +34,9 @@ if (languageChooser) {
   languageChooser.addEventListener('change', updateSiteLagnuage)
   updateLanguageInputValueByCurrent()
 }
+
+document.addEventListener('click', function(e){
+  if(!languageChooser.contains(e.target)){
+    languageChooser.querySelector('details').removeAttribute('open')
+  }
+})

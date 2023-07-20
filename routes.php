@@ -29,7 +29,7 @@ function notFound() {
   exit;
 }  
 
-get('/%s/%s', function($locale, $path) use ($LOCALES) {
+get('/signature_generator_prod/%s/%s', function($locale, $path) use ($LOCALES) {
   if (!(array_key_exists($locale, $LOCALES))) return;
   
   global $currentLocale;
@@ -40,7 +40,7 @@ get('/%s/%s', function($locale, $path) use ($LOCALES) {
   setTranslationStream($localeShortCode);
 });
 
-get('/%s/%s/%s', function($locale, $path) use ($LOCALES) {
+get('/signature_generator_prod/%s/%s/%s', function($locale, $path) use ($LOCALES) {
   if (!(array_key_exists($locale, $LOCALES))) return;
   
   global $currentLocale;
@@ -55,8 +55,8 @@ get('/%s/%s/%s', function($locale, $path) use ($LOCALES) {
 // ##################################################
 // ##################################################
 
-//get('/admin','views/admin.php');
-get('/signature-preview/%s', function ($encryptedData) {
+//get('/signature_generator_prod/admin','views/admin.php');
+get('/signature_generator_prod/signature-preview/%s', function ($encryptedData) {
   global $data;
 
   $decryptedData = decodeTextForUrl($encryptedData);
@@ -70,7 +70,7 @@ get('/signature-preview/%s', function ($encryptedData) {
   if ($randomIndex === null || $styleIndex === null || $firstName === null || $lastName === null) notFound();
 
   include('script.php');
-  $image = getImageFromStyle($styleIndex - 1, !isset($_GET['image-only']));
+  $image = getImageFromStyle($styleIndex, !isset($_GET['image-only']));
   if (!$image) notFound();
   
   $image->setFormat('jpg');
@@ -99,7 +99,7 @@ function decodeTextForUrl($text) {
   return $decoded;
 }
 
-get('/%s/signature-preview/%s', function ($locale, $encryptedData) {
+get('/signature_generator_prod/%s/signature-preview/%s', function ($locale, $encryptedData) {
   global $data;
 
   $decryptedData = decodeTextForUrl($encryptedData);
@@ -113,7 +113,7 @@ get('/%s/signature-preview/%s', function ($locale, $encryptedData) {
   if ($randomIndex === null || $styleIndex === null || $firstName === null || $lastName === null) notFound();
 
   include('script.php');
-  $image = getImageFromStyle($styleIndex - 1, !isset($_GET['image-only']));
+  $image = getImageFromStyle($styleIndex, !isset($_GET['image-only']));
   if (!$image) notFound();
 
   $image->setFormat('jpg');
@@ -135,15 +135,15 @@ get('/%s/signature-preview/%s', function ($locale, $encryptedData) {
   return 'views/signature-preview.php';
 });
 
-get('', 'views/index.php');
-get('/privacy-policy', 'views/privacy-policy.php');
+get('/signature_generator_prod', 'views/index.php');
+get('/signature_generator_prod/privacy-policy', 'views/privacy-policy.php');
 
-get('/%s', function($locale) {
+get('/signature_generator_prod/%s', function($locale) {
   notFoundIfNoLocale($locale);
 
   return 'views/index.php';
 });
-get('/%s/privacy-policy', function($locale) {
+get('/signature_generator_prod/%s/privacy-policy', function($locale) {
   notFoundIfNoLocale($locale);
 
   return 'views/privacy-policy.php';
